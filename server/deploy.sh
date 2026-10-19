@@ -4,7 +4,7 @@
 # when it has changed, then copies the site files into the subdomain folder.
 #
 # Edit these four values once:
-REPO="OWNER/REPO"                      # e.g. elvis/solarconnect-preview
+REPO="elviskwetuagency-png/solarconnect-preview"
 TOKEN=""                               # fine-grained GitHub token (read-only, this repo). Leave empty if the repo is public.
 TARGET="$HOME/domains/elvisdigital.co.ke/public_html/solarconnect"   # the subdomain's folder
 STATE="$HOME/.solarconnect-deploy"    # where the script remembers the last deployed version

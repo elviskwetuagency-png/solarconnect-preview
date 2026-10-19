@@ -1,0 +1,980 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Solar Connect Kenya supplies genuine solar panels, inverters and batteries, and installs, tests and supports complete solar systems for homes and businesses in Nairobi and Watamu.">
+<meta property="og:title" content="Solar Connect Kenya: Reliable solar for Kenyan homes and businesses">
+<meta property="og:description" content="Genuine solar products, clean installation and WhatsApp support after handover. Nairobi and Watamu.">
+<meta property="og:type" content="website">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0F0F10">
+<link rel="icon" type="image/png" href="assets/img/685172a7fa.png">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font-family:system-ui,sans-serif}[hidden]{display:none!important}</style>
+<title>Solar Connect Kenya | Solar Panels, Inverters, Batteries &amp; Installation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap">
+<style>
+/* Layout: T1-style alternating warm-light / near-black bands, oversized rounded media cards, Orbix section flow */
+:root{
+  --paper:#EEEDE9; --paper-2:#F7F6F3; --paper-3:#E4E3DE; --line:#CFCEC8; --line-2:#BDBCB6;
+  --ink:#111111; --ink-2:#55554F; --ink-3:#6B6B64;
+  --night:#0F0F10; --night-2:#1A1A1C; --night-3:#2A2A2D; --night-line:#2E2E31;
+  --mist:#A3A39C; --mist-2:#8E8E88; --white:#FFFFFF;
+  --sun:#F2A23A;
+  --f-display:'Geist',ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;
+  --r-xl:28px; --r-lg:24px; --r-md:20px; --r-sm:14px;
+  --gut-l:max(16px, env(safe-area-inset-left, 0px));
+  --gut-r:max(16px, env(safe-area-inset-right, 0px));
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-display);font-size:16px;line-height:1.5;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--night)}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+img,video{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--sun);outline-offset:3px;border-radius:8px}
+h1,h2,h3{margin:0;font-weight:300;letter-spacing:-.03em;text-wrap:balance}
+p{margin:0}
+.mono{font-size:13px;letter-spacing:0;text-transform:none}
+.wrap{max-width:1360px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+@media (min-width:760px){.wrap{padding-left:max(40px, env(safe-area-inset-left, 0px));padding-right:max(40px, env(safe-area-inset-right, 0px))}}
+.h2{font-size:clamp(34px,4.2vw,62px);line-height:1.02}
+.eyebrow{color:var(--ink-3)}
+.dark .eyebrow{color:var(--mist)}
+.head-row{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-end}
+.head-row > div{display:flex;flex-direction:column;gap:18px;min-width:0}
+
+/* media frames: real photo on top of a cell-grid fallback */
+.media{position:relative;overflow:hidden;background-color:#16171A;background-image:linear-gradient(rgba(255,255,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.055) 1px,transparent 1px);background-size:44px 44px}
+.media.light{background-color:#DAD9D4;background-image:linear-gradient(rgba(0,0,0,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.05) 1px,transparent 1px);background-size:36px 36px}
+.media > img,.media > video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.media .cap{position:absolute;left:18px;bottom:16px;color:var(--mist-2);font-size:12px;z-index:0}
+.media > img + .cap,.media > video + .cap{z-index:-1}
+.tag{position:absolute;top:16px;left:16px;z-index:2;padding:8px 12px;border-radius:999px;background:rgba(17,17,17,.55);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--white);font-size:12.5px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;border-radius:999px;font-size:15px;font-weight:500;transition:transform .25s ease,background .25s ease,opacity .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn-white{background:var(--white);color:var(--ink)}
+.btn-ink{background:var(--ink);color:var(--white)}
+.btn-ghost{border:1px solid var(--line-2);font-weight:400}
+.btn-ghost-dark{border:1px solid rgba(255,255,255,.35);color:var(--white);font-weight:400}
+.btn-sun{background:var(--sun);color:var(--ink)}
+.btn svg{transition:transform .25s ease}
+.btn:hover svg{transform:translateX(3px)}
+
+/* reveal on scroll: visible at rest, only lifts in */
+.rv{transition:transform .9s cubic-bezier(.2,.7,.1,1),opacity .9s ease}
+.js .rv.pre{transform:translateY(36px);opacity:.25}
+
+/* ================= NAV ================= */
+.nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;transform:translateY(-130%);opacity:0;transition:transform .5s cubic-bezier(.2,.7,.1,1),opacity .4s;padding:16px max(16px, env(safe-area-inset-right, 0px)) 0 max(16px, env(safe-area-inset-left, 0px));pointer-events:none}
+.nav-in{max-width:1400px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.brand,.pill{pointer-events:auto}
+.brand{display:flex;align-items:center;gap:10px;color:var(--white);padding:8px 14px 8px 8px;border-radius:999px;transition:background .3s}
+.brand span{font-size:18px;font-weight:500;letter-spacing:-.01em}
+.pill{display:flex;align-items:center;gap:2px;padding:5px;border-radius:999px;background:rgba(28,28,30,.55);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);color:var(--white);transition:background .3s}
+.pill a.lk{padding:10px 15px;border-radius:999px;font-size:14px;transition:background .2s}
+.pill a.lk:hover{background:rgba(255,255,255,.12)}
+.pill .icon{width:42px;height:42px;display:grid;place-items:center;border-radius:999px}
+.pill .icon:hover{background:rgba(255,255,255,.12)}
+.pill .cta{padding:0 18px;min-height:42px;font-size:14px}
+.nav.scrolled{transform:none;opacity:1}
+.nav.scrolled .brand{background:rgba(28,28,30,.7);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.nav.scrolled .pill{background:rgba(20,20,22,.82)}
+.menu-btn{display:none}
+@media (max-width:900px){.pill a.lk{display:none}.menu-btn{display:grid}}
+
+/* ================= HERO (full bleed, mobile-first) ================= */
+.hero{position:relative;color:var(--white);background:var(--night);overflow:hidden;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-2}
+.hero-bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(var(--hs,1.06));transition:transform .1s linear}
+.hero-bg .bg-desk{display:none}
+.hero-bg .bg-mob{object-position:50% 30%}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,rgba(10,11,10,.55) 0%,rgba(10,11,10,.25) 30%,rgba(10,11,10,.7) 62%,rgba(10,11,10,.94) 100%)}
+.hero-in{min-height:100svh;display:flex;flex-direction:column;padding-top:calc(env(safe-area-inset-top,0px) + 16px);padding-bottom:20px;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+
+/* top bar */
+.hnav{display:flex;align-items:center;justify-content:space-between;gap:12px;position:relative;z-index:5}
+.hnav .logo img{height:38px;width:auto;display:block}
+.hnav ul{display:none;list-style:none;margin:0;padding:0;gap:4px}
+.hnav ul a{display:block;padding:10px 14px;border-radius:999px;font-size:14px;color:#ECECE6;transition:background .2s}
+.hnav ul a:hover{background:rgba(255,255,255,.12)}
+.hnav .right{display:flex;align-items:center;gap:8px}
+.icon-btn{width:44px;height:44px;border-radius:999px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.3);background:rgba(20,20,22,.35);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.hnav .contact{display:none}
+.mmenu{position:absolute;left:0;right:0;top:calc(100% + 10px);padding:8px;border-radius:20px;background:rgba(20,20,22,.92);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.12);display:flex;flex-direction:column}
+.mmenu a{padding:14px 16px;border-radius:12px;font-size:17px}
+.mmenu a:hover{background:rgba(255,255,255,.08)}
+.mmenu .btn{margin-top:6px}
+
+/* copy */
+.hero-main{flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:22px;padding-block:48px 28px;max-width:760px}
+.hero h1{font-weight:500;font-size:clamp(40px,10.5vw,84px);line-height:1;letter-spacing:-.045em}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.07em}
+.hero h1 .ln > span{display:block;animation:rise 1.1s cubic-bezier(.2,.7,.1,1) both}
+.hero h1 .ln:nth-child(2) > span{animation-delay:.12s}
+.hero h1 .ln:nth-child(3) > span{animation-delay:.24s}
+.hero h1 .dim{color:rgba(255,255,255,.62)}
+@keyframes rise{from{transform:translateY(105%)}to{transform:none}}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.hero-sub{max-width:46ch;font-size:16px;line-height:1.55;color:#E3E3DD;animation:fade 1s .45s both}
+.hero-actions{display:flex;flex-direction:column;align-items:stretch;gap:12px;animation:fade 1s .6s both}
+.arrow-pill{display:inline-flex;align-items:center;justify-content:space-between;gap:12px;min-height:56px;padding:5px 5px 5px 24px;border-radius:999px;background:var(--white);color:var(--ink);font-size:16px;font-weight:500;transition:transform .25s}
+.arrow-pill:hover{transform:translateY(-2px)}
+.arrow-pill .ac{width:46px;height:46px;border-radius:999px;display:grid;place-items:center;background:var(--ink);color:var(--white);transition:transform .3s}
+.arrow-pill:hover .ac{transform:rotate(45deg)}
+.wa-pill{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 22px;border-radius:999px;border:1px solid rgba(255,255,255,.35);font-size:15px;color:var(--white)}
+
+/* stats */
+.hstats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border-top:1px solid rgba(255,255,255,.18);animation:fade 1s .75s both}
+.hstat{display:flex;flex-direction:column;gap:4px;padding:16px 0}
+.hstat:nth-child(even){padding-left:16px;border-left:1px solid rgba(255,255,255,.18)}
+.hstat:nth-child(n+3){border-top:1px solid rgba(255,255,255,.18)}
+.hstat b{font-weight:400;font-size:30px;letter-spacing:-.04em;line-height:1;font-variant-numeric:tabular-nums}
+.hstat span{font-size:13px;line-height:1.35;color:#CFCFC9}
+.hstat .stars{color:var(--sun);font-size:15px;letter-spacing:2px;line-height:30px}
+
+@media (min-width:640px){
+  .hero-actions{flex-direction:row;align-items:center}
+  .arrow-pill{justify-content:flex-start}
+  .hstats{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .hstat{padding:20px 0 4px 20px;border-left:1px solid rgba(255,255,255,.18)}
+  .hstat:first-child{padding-left:0;border-left:0}
+  .hstat:nth-child(n+3){border-top:0}
+  .hstat b{font-size:clamp(30px,3.4vw,44px)}
+}
+@media (min-width:761px){
+  .hero-bg .bg-mob{display:none}
+  .hero-bg .bg-desk{display:block}
+  .hero::after{background:linear-gradient(90deg,rgba(10,11,10,.78) 0%,rgba(10,11,10,.45) 45%,rgba(10,11,10,.15) 75%),linear-gradient(180deg,rgba(10,11,10,.45) 0%,rgba(10,11,10,0) 25%,rgba(10,11,10,0) 60%,rgba(10,11,10,.75) 100%)}
+  .hero-in{min-height:clamp(640px,100svh,920px);padding-top:calc(env(safe-area-inset-top,0px) + 24px);padding-bottom:28px;padding-left:max(40px, env(safe-area-inset-left, 0px));padding-right:max(40px, env(safe-area-inset-right, 0px))}
+  .hero-in > *{width:100%;max-width:1360px;margin-left:auto;margin-right:auto}
+  .hnav .logo img{height:44px}
+  .hnav .contact{display:inline-flex;min-height:44px;font-size:14px}
+  .hero-main{justify-content:center;padding-block:64px 48px}
+  .hero-main > *{max-width:720px}
+  .hero-sub{font-size:17px}
+}
+@media (min-width:1000px){
+  .hnav ul{display:flex}
+  .hnav .menu-toggle{display:none}
+  .mmenu{display:none!important}
+}
+/* ================= MARQUEE ================= */
+.brands{padding-block:44px 60px;display:flex;flex-direction:column;gap:24px}
+.brands p{text-align:center}
+.marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.track{display:flex;gap:76px;width:max-content;animation:mq 40s linear infinite;font-size:clamp(22px,2.2vw,30px);letter-spacing:-.02em;color:#4A4A45;white-space:nowrap}
+.marquee:hover .track{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* ================= STATEMENT + STATS ================= */
+.statement{padding-block:88px 112px;display:flex;flex-direction:column;gap:clamp(56px,7vw,96px)}
+.statement h2{flex:none;max-width:920px;font-size:clamp(28px,3.6vw,52px);line-height:1.1;min-width:0}
+.statement h2 em{font-style:normal;color:inherit}
+.about2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,96px);align-items:center}
+@media (max-width:920px){.about2{grid-template-columns:minmax(0,1fr)}}
+.ashow{position:relative;aspect-ratio:4/4.4;max-width:100%;border-radius:24px;overflow:hidden;background:#16171A;isolation:isolate}
+.aslide{position:absolute;inset:0;margin:0;opacity:0;transition:opacity 1s ease}
+.aslide.on{opacity:1}
+.aslide img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);transition:transform 6s ease-out}
+.aslide.on img{transform:scale(1)}
+.ashow::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,0) 62%,rgba(8,10,8,.72) 100%);pointer-events:none}
+.ashow-bar{position:absolute;left:0;right:0;bottom:0;z-index:2;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px;padding:18px 20px;color:var(--white)}
+.ashow-cap{font-size:14.5px;line-height:1.35;max-width:32ch}
+.adots{display:flex;gap:6px}
+.adot{width:22px;height:4px;border-radius:2px;background:rgba(255,255,255,.4);padding:0;transition:width .35s,background .35s;position:relative}
+.adot::before{content:"";position:absolute;inset:-10px -2px}
+.adot.on{width:38px;background:var(--white)}
+.about2-txt{display:flex;flex-direction:column;align-items:flex-start;gap:22px;min-width:0}
+.about2-txt h2{font-size:clamp(28px,3vw,44px);line-height:1.1;max-width:18ch}
+.about2-txt p{font-size:16.5px;line-height:1.65;color:var(--ink-2);max-width:48ch}
+.astats{width:100%;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 24px;margin-top:14px}
+.astats .stat b{font-size:clamp(36px,3.4vw,52px)}
+.about{display:flex;flex-wrap:wrap;gap:32px 64px;justify-content:space-between;align-items:flex-end}
+.about h2{flex:1 1 560px;max-width:860px}
+.about-side{flex:0 1 400px;display:flex;flex-direction:column;align-items:flex-start;gap:20px;min-width:0}
+.about-side p{font-size:17px;line-height:1.6;color:var(--ink-2)}
+.steps-mini{line-height:1.9;color:var(--ink-3)}
+.stat-row{display:flex;flex-wrap:wrap;gap:12px}
+.stat-row .media{flex:1 1 420px;min-height:440px;border-radius:var(--r-lg)}
+.stats{flex:1 1 520px;border-radius:var(--r-lg);background:var(--paper-2);padding:clamp(24px,3.2vw,48px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:44px 24px;align-content:center}
+.stat{display:flex;flex-direction:column;gap:10px;border-top:1px solid var(--line);padding-top:18px}
+.stat b{font-weight:300;font-size:clamp(46px,4.8vw,72px);letter-spacing:-.045em;line-height:1;font-variant-numeric:tabular-nums}
+.stat span{color:var(--ink-2)}
+
+/* ================= TWO WAYS (dark) ================= */
+.dark{background:var(--night);color:var(--white)}
+.band{padding-block:120px}
+.ways{display:flex;flex-direction:column;gap:56px}
+.ways .lede{max-width:430px;color:var(--mist);font-size:16px;line-height:1.6}
+.way-row{display:flex;flex-wrap:wrap;gap:12px}
+.way{flex:1 1 480px;border-radius:var(--r-xl);padding:12px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.way.a{background:var(--night-2)}
+.way.b{background:var(--paper);color:var(--ink)}
+.way .media{border-radius:var(--r-md);min-height:380px}
+.way .media img{transition:transform 1.2s cubic-bezier(.2,.7,.1,1)}
+.way:hover .media img{transform:scale(1.05)}
+.way-body{padding:16px 16px 20px;display:flex;flex-direction:column;gap:14px}
+.way h3{font-size:28px;font-weight:400;letter-spacing:-.02em}
+.way p{font-size:15px;line-height:1.6;color:var(--mist)}
+.way.b p{color:var(--ink-2)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;font-size:13px}
+.tags span{padding:7px 12px;border-radius:999px;border:1px solid #333336}
+.way.b .tags span{border-color:#C9C8C2}
+.way .btn{align-self:flex-start;margin-top:6px;font-size:14px}
+
+/* ================= PROJECTS ================= */
+.projects{padding-block:120px;display:flex;flex-direction:column;gap:44px}
+.ctrl{display:flex;align-items:center;gap:10px}
+.arrow{width:48px;height:48px;border-radius:999px;border:1px solid var(--line-2);display:grid;place-items:center;transition:background .2s}
+.arrow:hover{background:var(--paper-3)}
+.pj-h{font-weight:400;font-size:clamp(34px,3.6vw,52px);line-height:1.08;letter-spacing:-.03em}
+.pj-intro{max-width:34ch;font-size:15px;line-height:1.6;color:var(--ink-2);padding-top:10px}
+.projects .head-row{align-items:flex-start}
+.pj-body{display:grid;grid-template-columns:200px minmax(0,1fr);gap:clamp(24px,4vw,64px);overflow:hidden}
+.pj-side{display:flex;flex-direction:column;gap:12px;padding-block:4px}
+.pj-count{display:flex;align-items:baseline;gap:2px;font-weight:300;letter-spacing:-.04em;line-height:1}
+.pj-count b{font-weight:300;font-size:clamp(48px,4.6vw,64px);font-variant-numeric:tabular-nums}
+.pj-count span{font-size:18px;color:var(--ink-3);letter-spacing:0}
+.pj-cap{font-size:14px;line-height:1.5;color:var(--ink-2);max-width:22ch;min-height:3em}
+.pj-btns{margin-top:auto;display:flex;gap:8px}
+.sq{width:44px;height:44px;border-radius:8px;display:grid;place-items:center;border:1px solid var(--line-2);background:var(--white);color:var(--ink);transition:transform .2s,background .2s}
+.sq:hover{transform:translateY(-2px)}
+.sq.dark{background:var(--ink);border-color:var(--ink);color:var(--white)}
+.rail{min-width:0;overflow-x:auto;scrollbar-width:none;cursor:grab;scroll-snap-type:x mandatory;margin-right:calc(-1 * max(16px, env(safe-area-inset-right, 0px)))}
+@media (min-width:760px){.rail{margin-right:0}}
+.rail::-webkit-scrollbar{display:none}
+.rail.dragging{cursor:grabbing;scroll-snap-type:none}
+.rail.dragging *{user-select:none;pointer-events:none}
+.rail-in{display:flex;gap:14px;width:max-content}
+.ocard{position:relative;width:clamp(260px,calc((min(100vw,1360px) - 380px) / 2.4),440px);aspect-ratio:1/1.05;max-width:84vw;border-radius:18px;overflow:hidden;scroll-snap-align:start;background:#16171A;color:var(--white);isolation:isolate}
+.ocard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform 1.2s cubic-bezier(.2,.7,.1,1)}
+.ocard img.contain{object-fit:contain;background:#fff}
+.ocard:hover img{transform:scale(1.05)}
+.ocard::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(8,10,8,.28) 0%,rgba(8,10,8,.12) 22%,rgba(8,10,8,.35) 42%,rgba(8,10,8,.82) 64%,rgba(8,10,8,.95) 100%)}
+.ocard-txt::before{content:"";position:absolute;inset:-48px 0 0 0;z-index:-1;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);-webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 45%);mask-image:linear-gradient(180deg,transparent 0%,#000 45%);pointer-events:none}
+.ocard-txt h3,.ocard-txt p,.ocard-k{text-shadow:0 1px 12px rgba(0,0,0,.35)}
+.ocard-tag{position:absolute;left:16px;top:16px;padding:5px 9px;border-radius:5px;background:rgba(255,255,255,.82);color:var(--ink);font-size:12px;font-weight:500}
+.ocard-txt{position:absolute;left:0;right:0;bottom:0;padding:22px;display:flex;flex-direction:column;gap:8px;isolation:isolate}
+.ocard h3{font-size:clamp(20px,1.8vw,26px);font-weight:400;letter-spacing:-.02em;line-height:1.15;max-width:16ch}
+.ocard p{font-size:13.5px;line-height:1.5;color:#E1E1DB;max-width:34ch}
+.ocard-k{font-size:12.5px;color:#D2D2CC}
+@media (max-width:760px){
+  .pj-body{grid-template-columns:minmax(0,1fr);gap:20px;overflow:visible}
+  .pj-side{flex-direction:row;flex-wrap:wrap;align-items:flex-end;gap:12px 20px}
+  .pj-cap{flex:1 1 160px;min-height:0}
+  .pj-btns{margin-top:0}
+  .ocard{width:80vw}
+}
+
+/* ================= LAYERS (dark) ================= */
+.layers{display:flex;flex-wrap:wrap;gap:56px;align-items:center}
+.anat{flex:1 1 460px;min-height:600px;border-radius:var(--r-xl);min-width:0}
+.anat .shot{position:absolute;inset:0;opacity:0;transform:scale(1.07);transition:opacity .8s ease,transform 1.4s cubic-bezier(.2,.7,.1,1)}
+.anat .shot.on{opacity:1;transform:scale(1)}
+.anat .shot img{width:100%;height:100%;object-fit:cover}
+.anat .shot .cap{z-index:0}
+.anat .shot img + .cap{display:none}
+.anat::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 28%,rgba(0,0,0,0) 55%,rgba(0,0,0,.7) 100%);pointer-events:none;z-index:1}
+.anat .lbl{position:absolute;left:20px;top:20px;z-index:2;color:#E4E4DE}
+.anat .dots{position:absolute;right:20px;top:20px;z-index:2;display:flex;gap:6px}
+.anat .dots i{width:22px;height:3px;border-radius:2px;background:rgba(255,255,255,.3);transition:background .4s,width .4s}
+.anat .dots i.on{background:var(--sun);width:38px}
+.anat .now{position:absolute;left:20px;right:20px;bottom:20px;z-index:2;display:flex;align-items:flex-end;justify-content:space-between;gap:16px;color:var(--white)}
+.anat .now b{font-weight:300;font-size:clamp(26px,2.6vw,38px);letter-spacing:-.03em;line-height:1.05}
+.anat .now span{color:#D6D6D0;white-space:nowrap}
+.anat .now .swap{display:block}
+.acc-side{flex:1 1 460px;display:flex;flex-direction:column;gap:28px;min-width:0}
+.acc-side h2{font-size:clamp(30px,3.4vw,50px);line-height:1.05}
+.acc{border-top:1px solid var(--night-line)}
+.acc-item{border-bottom:1px solid var(--night-line)}
+.acc-item button{width:100%;min-height:62px;display:flex;justify-content:space-between;align-items:center;gap:16px;text-align:left;font-size:19px;color:var(--mist-2);padding-block:14px;transition:color .2s}
+.acc-item button:hover,.acc-item.open button{color:var(--white)}
+.acc-item .sign{width:30px;height:30px;border-radius:999px;background:var(--white);color:var(--ink);display:grid;place-items:center;flex-shrink:0;transition:transform .3s,background .3s}
+.acc-item.open .sign{background:var(--sun);transform:rotate(45deg)}
+.acc-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s ease}
+.acc-item.open .acc-panel{grid-template-rows:1fr}
+.acc-panel > div{overflow:hidden}
+.acc-panel p{padding-bottom:20px;max-width:520px;font-size:15px;line-height:1.6;color:var(--mist)}
+
+/* ================= PROCESS ================= */
+.process{padding-block:120px;display:flex;flex-direction:column;gap:44px}
+.tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+@media (max-width:820px){.tabs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.tab{min-height:88px;display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;gap:14px;padding:16px 18px;border-radius:18px;text-align:left;border:1px solid #C9C8C2;position:relative;overflow:hidden;transition:background .3s,color .3s,border-color .3s}
+.tab .nm{font-size:18px}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--white);border-color:var(--ink)}
+.step-view{display:flex;flex-wrap:wrap;gap:12px}
+.step-card{flex:1 1 420px;border-radius:var(--r-lg);background:var(--paper-2);padding:clamp(24px,3.2vw,48px);display:flex;flex-direction:column;justify-content:space-between;gap:40px;min-height:430px;min-width:0}
+.step-card .top{display:flex;flex-direction:column;gap:18px}
+.step-card h3{font-size:clamp(28px,2.8vw,42px)}
+.step-card p{font-size:16px;line-height:1.6;color:var(--ink-2);max-width:480px}
+.step-card .tags span{border-color:#C9C8C2}
+.step-view .media{flex:1.3 1 520px;min-height:430px;border-radius:var(--r-lg)}
+.swap{animation:swap .6s cubic-bezier(.2,.7,.1,1)}
+@keyframes swap{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* ================= SERVICES ================= */
+.services{padding-bottom:120px;display:flex;flex-direction:column;gap:40px}
+.svc-list{border-top:1px solid var(--line)}
+.svc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr) 150px 48px;align-items:center;gap:16px 32px;padding:22px 12px;border-bottom:1px solid var(--line);transition:background .3s,padding .3s}
+.svc:hover{background:var(--paper-3);padding-left:20px}
+.svc .num{color:var(--ink-3)}
+.svc .nm{font-size:clamp(22px,2vw,30px);letter-spacing:-.02em}
+.svc .ds{font-size:15px;line-height:1.55;color:var(--ink-2)}
+.svc .media{width:150px;height:100px;border-radius:var(--r-sm)}
+.svc .go{width:48px;height:48px;border-radius:999px;border:1px solid var(--line-2);display:grid;place-items:center;transition:background .3s,color .3s,transform .3s}
+.svc:hover .go{background:var(--ink);color:var(--white);transform:rotate(45deg)}
+@media (max-width:860px){.svc{grid-template-columns:minmax(0,1fr) 48px}.svc .ds,.svc .media{grid-column:1 / 2}.svc .media{width:100%;height:160px}}
+
+/* ================= SHOP ================= */
+.shop{background:var(--paper-2);padding-block:104px}
+.shop .wrap{display:flex;flex-direction:column;gap:40px}
+.shop-lede{color:var(--ink-2);font-size:16px;line-height:1.55;max-width:44ch}
+.link-arrow{display:inline-flex;align-items:center;gap:10px;font-size:15px;font-weight:500;padding-bottom:4px;border-bottom:1px solid var(--ink)}
+.link-arrow svg{transition:transform .25s}
+.link-arrow:hover svg{transform:translateX(4px)}
+.filter-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;margin-top:-8px}
+.filters{display:flex;gap:4px;padding:4px;border-radius:999px;background:var(--white);border:1px solid var(--line);max-width:100%;overflow-x:auto;scrollbar-width:none}
+.filters::-webkit-scrollbar{display:none}
+.filters button{flex:0 0 auto;min-height:44px;padding:0 20px;border-radius:999px;font-size:14px;color:var(--ink-2);white-space:nowrap;transition:background .25s,color .25s}
+.filters button:hover{color:var(--ink)}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--white)}
+.filter-count{color:var(--ink-3);font-size:14px}
+.shop-all-btn{align-self:center;font-size:15px}
+.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+@media (max-width:980px){.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.prod{position:relative;background:var(--white);border:1px solid transparent;border-radius:22px;padding:10px;display:flex;flex-direction:column;overflow:hidden;transition:transform .45s cubic-bezier(.2,.7,.1,1),box-shadow .45s,border-color .3s}
+.prod:hover{transform:translateY(-4px);border-color:var(--line-2);box-shadow:0 18px 36px -24px rgba(17,17,17,.3)}
+.prod a.media.light,.prod a.media{display:block;aspect-ratio:1/1;max-width:100%;border-radius:16px;overflow:hidden;background:var(--white);background-image:none}
+.prod a.media img{width:100%;height:100%;object-fit:contain;padding:18px;background:var(--white);transition:transform .8s cubic-bezier(.2,.7,.1,1)}
+.prod:hover a.media img{transform:scale(1.05)}
+.prod .b{padding:8px 8px 8px;display:flex;flex-direction:column;gap:6px;flex-grow:1}
+.prod .c{color:var(--ink-3);font-size:13px}
+.prod h3{font-size:15.5px;font-weight:400;line-height:1.4;letter-spacing:0}
+.prod h3 a::after{content:"";position:absolute;inset:0;z-index:1}
+.prod .f{margin-top:auto;padding-top:14px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px}
+.prod .pr{display:flex;flex-direction:column;gap:3px;line-height:1.2;min-width:0}
+.prod .pr b{font-size:18px;font-weight:500;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.pold{display:flex;flex-wrap:wrap;gap:2px 8px;font-size:12.5px}
+.pold s{color:var(--ink-3)}
+.psave{color:#9A5B0C;font-weight:500}
+.prod .add{position:relative;z-index:2;flex-shrink:0;width:44px;height:44px;border-radius:999px;display:grid;place-items:center;border:1px solid var(--line-2);color:var(--ink);transition:background .25s,color .25s,border-color .25s}
+.prod .add:hover,.prod:hover .add{background:var(--ink);border-color:var(--ink);color:var(--white)}
+@media (max-width:480px){.grid4{gap:8px}.prod .b{padding:12px 12px 14px}.prod h3{font-size:14px}.prod .pr b{font-size:16px}.prod .add{width:40px;height:40px}}
+.shop .all{align-self:center}
+
+/* ================= REVIEWS ================= */
+.reviews{padding-block:120px;display:flex;flex-direction:column;gap:48px}
+.rev-viewport{--per:3;overflow:hidden}
+@media (max-width:980px){.rev-viewport{--per:2}}
+@media (max-width:640px){.rev-viewport{--per:1}}
+.rev-track{display:flex;gap:12px;transition:transform .8s cubic-bezier(.2,.7,.1,1);will-change:transform}
+.rev-track.jump{transition:none}
+.rev-track .rev{flex:0 0 calc((100% - (var(--per) - 1) * 12px) / var(--per));min-width:0}
+.rev{margin:0;background:var(--paper-2);border-radius:22px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;gap:32px;min-height:290px}
+.rev blockquote{margin:0;font-size:17px;line-height:1.55}
+.rev figcaption{display:flex;align-items:center;gap:12px}
+.rev .av{width:44px;height:44px;border-radius:999px;background:var(--ink);color:var(--white);display:grid;place-items:center;font-size:14px}
+.rev .who{display:flex;flex-direction:column;gap:2px}
+.rev .who b{font-weight:500;font-size:15px}
+.rev .who span{color:var(--ink-3);font-size:13px}
+
+/* ================= CTA ================= */
+.cta{padding:0 max(12px, env(safe-area-inset-right, 0px)) 12px max(12px, env(safe-area-inset-left, 0px))}
+.cta-frame{border-radius:var(--r-xl);min-height:640px;color:var(--white);display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(24px,4vw,56px)}
+.cta-frame::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,.65));pointer-events:none}
+.cta-body{position:relative;z-index:2;display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between;align-items:flex-end}
+.cta-copy{flex:1 1 520px;max-width:780px;display:flex;flex-direction:column;gap:22px;min-width:0}
+.cta-copy h2{font-size:clamp(36px,4.8vw,70px);line-height:1;letter-spacing:-.04em}
+.cta-copy p{max-width:520px;font-size:16px;line-height:1.6;color:#DADAD4}
+.qform{flex:0 1 430px;display:flex;flex-direction:column;gap:10px;padding:10px;border-radius:22px;background:rgba(28,28,30,.6);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);min-width:0}
+.qform label{color:#CFCFC9;font-size:13px;padding:6px 8px 0}
+.qrow{display:flex;gap:8px}
+.qrow input{flex:1 1 auto;min-width:0;height:48px;padding:0 16px;border-radius:999px;border:1px solid rgba(255,255,255,.22);background:rgba(0,0,0,.28);color:var(--white);font:inherit;font-size:15px}
+.qrow input::placeholder{color:#9A9A94}
+.qrow .btn{min-height:48px;font-size:14px;white-space:nowrap}
+.qform .msg{font-size:13px;color:#DADAD4;padding:0 8px 4px}
+.qform .btn-sun{font-size:14px}
+
+/* ================= FOOTER ================= */
+footer{background:var(--night);color:var(--white);padding-top:80px;overflow:hidden}
+.f-head{display:flex;flex-wrap:wrap;gap:40px 64px;justify-content:space-between;align-items:flex-end;padding-bottom:48px;border-bottom:1px solid var(--night-line)}
+.f-brand{flex:1 1 320px;max-width:440px;display:flex;flex-direction:column;gap:20px}
+.f-brand p{color:var(--mist);font-size:16px;line-height:1.65}
+.f-promise{flex:1 1 520px;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.f-promise li{display:flex;align-items:center;gap:12px;padding:16px 18px;border-radius:16px;background:var(--night-2);border:1px solid var(--night-line);font-size:15px;line-height:1.35}
+.f-chk{width:30px;height:30px;border-radius:999px;display:grid;place-items:center;flex-shrink:0;background:rgba(242,162,58,.14);color:var(--sun)}
+.f-main{display:grid;grid-template-columns:minmax(160px,.8fr) minmax(0,2.4fr) minmax(260px,1.1fr);gap:48px;padding-block:56px}
+@media (max-width:1060px){.f-main{grid-template-columns:repeat(2,minmax(0,1fr))}.f-deps{grid-column:1 / -1;order:-1}}
+@media (max-width:620px){.f-main{grid-template-columns:minmax(0,1fr)}.f-promise{grid-template-columns:minmax(0,1fr)}}
+footer h3{font-size:14px;font-weight:500;letter-spacing:0;color:var(--mist-2);margin-bottom:18px}
+.f-col{display:flex;flex-direction:column;gap:12px}
+.f-col h3{margin-bottom:6px}
+.f-col a,.f-dep a{color:#E4E4DE;font-size:15px;line-height:1.4;transition:color .2s}
+.f-col a:hover,.f-dep a:hover,.b-map:hover{color:var(--sun)}
+.f-dep-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px 24px}
+@media (max-width:760px){.f-dep-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.f-dep{display:flex;flex-direction:column;gap:10px;min-width:0}
+.f-dep h4{margin:0 0 4px;font-size:16px;font-weight:500;color:var(--white);line-height:1.3}
+.f-dep a{color:var(--mist)}
+.f-branches{display:flex;flex-direction:column;gap:10px}
+.f-branches h3{margin-bottom:8px}
+.branch{display:flex;gap:14px;padding:18px;border-radius:18px;background:var(--night-2);border:1px solid var(--night-line)}
+.b-ic{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;flex-shrink:0;background:rgba(242,162,58,.14);color:var(--sun)}
+.b-txt{display:flex;flex-direction:column;gap:4px;min-width:0}
+.b-name{font-size:13px;color:var(--mist-2)}
+.b-addr{font-size:16px;font-weight:500}
+.b-tel{display:inline-flex;align-items:center;gap:8px;color:#E4E4DE;font-size:15px;margin-top:4px;user-select:all}
+.b-map{color:var(--sun);font-size:14px;margin-top:6px}
+.f-base{padding-block:24px;border-top:1px solid var(--night-line);display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;align-items:center;color:var(--mist-2);font-size:13px}
+.f-top{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:0 16px;border-radius:999px;border:1px solid var(--night-line);color:#E4E4DE;transition:background .2s}
+.f-top:hover{background:var(--night-2)}
+.giant{font-size:clamp(64px,15.6vw,240px);letter-spacing:-.06em;line-height:.8;color:#1F1F22;white-space:nowrap;padding:28px 0 0 max(8px, env(safe-area-inset-left, 0px));margin-bottom:-.12em;transform:translateY(var(--gy,40px));transition:transform .2s linear}
+
+/* floating WhatsApp */
+.wa{position:fixed;z-index:55;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));width:56px;height:56px;border-radius:999px;background:#25D366;color:#0B2E17;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.25);transition:transform .25s}
+.wa:hover{transform:scale(1.07)}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .rv.pre{transform:none;opacity:1}
+}
+.ubar{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 24px;padding-bottom:14px;margin-bottom:14px;border-bottom:1px solid rgba(255,255,255,.14);font-size:13px;color:#DADAD4;position:relative;z-index:6}
+.ubar-l,.ubar-r{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center}
+.ubar a{color:#ECECE6;transition:color .2s}
+.ubar a:hover{color:var(--sun)}
+.ubar-k{color:#A8A8A2}
+@media (max-width:760px){.ubar-r,.ubar-k,.ubar-map{display:none}.ubar{font-size:12.5px}.ubar-l{gap:4px 14px}}
+.hnav .acct{display:none}
+@media (min-width:761px){.hnav .acct{display:grid}}
+.gband{position:relative;border-radius:28px;overflow:hidden;isolation:isolate;background:#14161A;color:var(--white)}
+.gband-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transform:scale(1.08);filter:saturate(1.1)}
+.gband::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(120deg,rgba(10,12,14,.82) 0%,rgba(10,12,14,.55) 55%,rgba(10,12,14,.75) 100%)}
+.gband-in{padding:clamp(28px,4vw,56px);display:flex;flex-direction:column;gap:clamp(28px,3vw,40px)}
+.gband-h{font-size:clamp(24px,2.4vw,34px);font-weight:400;letter-spacing:-.025em;max-width:20ch}
+.gcards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+@media (max-width:1000px){.gcards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.gcards{grid-template-columns:minmax(0,1fr)}}
+.gcard{position:relative;display:flex;flex-direction:column;gap:14px;padding:26px 24px 28px;border-radius:20px;background:linear-gradient(160deg,rgba(255,255,255,.16),rgba(255,255,255,.05));border:1px solid rgba(255,255,255,.22);box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 20px 40px -24px rgba(0,0,0,.6);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);transition:transform .45s cubic-bezier(.2,.7,.1,1),background .35s,border-color .35s}
+.gcard:hover{transform:translateY(-6px);background:linear-gradient(160deg,rgba(255,255,255,.22),rgba(255,255,255,.08));border-color:rgba(255,255,255,.34)}
+.gcard h3{font-size:clamp(20px,1.7vw,24px);font-weight:400;letter-spacing:-.02em;line-height:1.2;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.2)}
+.gcard p{font-size:14.5px;line-height:1.6;color:#DCDCD6}
+.f-legal{display:flex;gap:16px}
+.f-legal a{color:var(--mist-2)}
+.f-legal a:hover{color:var(--white)}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a class="brand" href="#top" aria-label="Solar Connect Kenya home"><img src="assets/img/685172a7fa.png" alt="Solar Conect, Building a better future" style="height:36px;width:auto;display:block">
+    </a>
+    <nav class="pill" aria-label="Main">
+      <a class="lk" href="#solutions">Solutions</a>
+      <a class="lk" href="#shop">Shop</a>
+      <a class="lk" href="#projects">Projects</a>
+      <a class="lk" href="#process">How we work</a>
+      <a class="icon" href="https://solarconnectkenya.com/products" aria-label="Search products"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4-4"/></svg></a>
+      <a class="icon" href="https://solarconnectkenya.com/get/cart" aria-label="Cart, Ksh 0.00"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L21 8H6.2"/><circle cx="9.5" cy="20" r="1.2"/><circle cx="17.5" cy="20" r="1.2"/></svg></a>
+      <a class="btn btn-white cta" href="#contact">Get a quote</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <img class="bg-desk" src="assets/img/b40d931493.webp" alt="">
+    <img class="bg-mob" src="assets/img/6fd700f137.webp" alt="">
+  </div>
+  <div class="hero-in">
+    <div class="ubar">
+      <div class="ubar-l"><span class="ubar-k">Visit or call</span><a href="tel:+254706636447">Nairobi · 0706 636 447</a><a href="tel:+254705760861">Watamu · 0705 760 861</a><a href="https://www.google.com/maps/place/M2H7%2B23Q,+Watamu/@-3.3224125,40.0127344,17z" class="ubar-map">Watamu map ↗</a></div>
+      <div class="ubar-r"><a href="https://solarconnectkenya.com/about-us">About us</a><a href="https://solarconnectkenya.com/user/orders">Order tracking</a><a href="https://solarconnectkenya.com/login">Login / My account</a></div>
+    </div>
+    <div class="hnav">
+      <a class="logo" href="#top" aria-label="Solar Connect Kenya home"><img src="assets/img/685172a7fa.png" alt="Solar Conect, Building a better future"></a>
+      <nav aria-label="Hero menu"><ul>
+        <li><a href="#solutions">Solutions</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#process">How we work</a></li>
+        <li><a href="https://solarconnectkenya.com/about-us">About</a></li>
+      </ul></nav>
+      <div class="right">
+        <a class="icon-btn" href="https://solarconnectkenya.com/products" aria-label="Search panels, batteries, inverters"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4-4"/></svg></a>
+        <a class="icon-btn acct" href="https://solarconnectkenya.com/login" aria-label="Login or my account"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></a>
+        <a class="icon-btn" href="https://solarconnectkenya.com/get/cart" aria-label="Cart, Ksh 0.00"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L21 8H6.2"/><circle cx="9.5" cy="20" r="1.2"/><circle cx="17.5" cy="20" r="1.2"/></svg></a>
+        <a class="btn btn-white contact" href="https://wa.me/254706636447?text=Hello%20Solar%20Connect%2C%20I%20need%20help%20choosing%20a%20solar%20system.">Contact us</a>
+        <button class="icon-btn menu-toggle" type="button" id="menu-toggle" aria-expanded="false" aria-controls="mmenu" aria-label="Open menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      </div>
+      <nav class="mmenu" id="mmenu" aria-label="Mobile menu" hidden>
+        <a href="#solutions">Solutions</a>
+        <a href="#shop">Shop</a>
+        <a href="#projects">Projects</a>
+        <a href="#process">How we work</a>
+        <a href="https://solarconnectkenya.com/about-us">About</a>
+        <a href="https://solarconnectkenya.com/user/orders">Order tracking</a>
+        <a href="https://solarconnectkenya.com/login">Login / My account</a>
+        <a class="btn btn-white" href="https://wa.me/254706636447?text=Hello%20Solar%20Connect%2C%20I%20need%20help%20choosing%20a%20solar%20system.">Get a free quote</a>
+      </nav>
+    </div>
+
+    <div class="hero-main">
+      <h1><span class="ln"><span>Reliable solar</span></span><span class="ln"><span>for Kenyan homes</span></span><span class="ln"><span class="dim">&amp; businesses.</span></span></h1>
+      <p class="hero-sub">Genuine panels, inverters and batteries, sized to your power needs, installed cleanly, and supported on WhatsApp after handover.</p>
+      <div class="hero-actions">
+        <a class="arrow-pill" href="#contact">Get a free quote <span class="ac"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
+        <a class="wa-pill" href="https://wa.me/254706636447?text=Hello%20Solar%20Connect%2C%20I%20need%20help%20choosing%20a%20solar%20system."><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19.1z"/></svg>WhatsApp 0706 636 447</a>
+      </div>
+    </div>
+
+    <div class="hstats">
+      <div class="hstat"><b>200+</b><span>Solar projects completed</span></div>
+      <div class="hstat"><b>10+</b><span>Genuine brands in stock</span></div>
+      <div class="hstat"><b>2</b><span>Bases in Nairobi &amp; Watamu</span></div>
+      <div class="hstat"><span class="stars" aria-hidden="true">★★★★★</span><span>Rated 5 stars by our customers</span></div>
+    </div>
+  </div>
+</section>
+<!-- ============ BRANDS ============ -->
+<section class="brands" aria-label="Brands we supply and install">
+  <p class="mono eyebrow">Genuine brands behind every system</p>
+  <div class="marquee">
+    <div class="track">
+      <span>Deye</span><span>Felicity Solar</span><span>JA Solar</span><span>Jinko Solar</span><span>SMA</span><span>SRNE</span><span>Must</span><span>Taico</span><span>Suntree</span><span>Vestwoods</span>
+      <span aria-hidden="true">Deye</span><span aria-hidden="true">Felicity Solar</span><span aria-hidden="true">JA Solar</span><span aria-hidden="true">Jinko Solar</span><span aria-hidden="true">SMA</span><span aria-hidden="true">SRNE</span><span aria-hidden="true">Must</span><span aria-hidden="true">Taico</span><span aria-hidden="true">Suntree</span><span aria-hidden="true">Vestwoods</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ STATEMENT + STATS ============ -->
+<section class="wrap statement">
+  <div class="about2">
+    <div class="about2-txt rv">
+      <h2>Solar Connect Kenya is a solar shop and installation team, <em>with bases in Nairobi and Watamu.</em></h2>
+      <p>We supply genuine panels, inverters, batteries and accessories from brands like Deye, Felicity and Jinko. Our own team then sizes the system to your power needs, installs and tests it, and stays reachable on WhatsApp after handover.</p>
+        <a class="link-arrow" href="https://solarconnectkenya.com/about-us">More about Solar Connect <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <div class="astats"><div class="stat"><b data-count="200" data-suffix="+">200+</b><span class="mono">Project records</span></div><div class="stat"><b data-count="10" data-suffix="+">10+</b><span class="mono">Genuine brands stocked</span></div><div class="stat"><b data-count="2">2</b><span class="mono">Bases · Nairobi &amp; Watamu</span></div><div class="stat"><b data-count="4" data-suffix="-step">4-step</b><span class="mono">Service process</span></div></div>
+    </div>
+    <div class="ashow rv" id="ashow"><figure class="aslide on"><img src="assets/img/6fd700f137.webp" alt="Solar Connect technician handling a panel on site"></figure><figure class="aslide"><img src="assets/img/b40d931493.webp" alt="6kW hybrid rooftop array in South C" loading="lazy"></figure><figure class="aslide"><img src="assets/img/510a930c57.webp" alt="Inverter, battery and protection wall" loading="lazy"></figure><figure class="aslide"><img src="assets/img/360449f788.webp" alt="Battery storage cabinet delivered to site" loading="lazy"></figure><figure class="aslide"><img src="assets/img/eec44d0885.webp" alt="Completed 4kW hybrid array" loading="lazy"></figure><figure class="aslide"><img src="assets/img/90fc216d74.webp" alt="Clean indoor inverter and battery backup" loading="lazy"></figure>
+      <div class="ashow-bar"><span class="ashow-cap" id="ashow-cap">Solar Connect technician handling a panel on site</span><span class="adots"><button type="button" class="adot on" aria-label="Show photo 1" aria-current="true"></button><button type="button" class="adot" aria-label="Show photo 2"></button><button type="button" class="adot" aria-label="Show photo 3"></button><button type="button" class="adot" aria-label="Show photo 4"></button><button type="button" class="adot" aria-label="Show photo 5"></button><button type="button" class="adot" aria-label="Show photo 6"></button></span></div>
+    </div>
+  </div>
+  <div class="gband rv"><img class="gband-bg" src="assets/img/ae37fea010.webp" alt="" aria-hidden="true"><div class="gband-in"><h3 class="gband-h">What every Solar Connect customer gets</h3><div class="gcards"><div class="gcard"><h3>System-first guidance</h3><p>Start with your power need before choosing panels, batteries, inverters or accessories.</p></div><div class="gcard"><h3>Professional installation</h3><p>Delivery, mounting, wiring, inverter and battery setup, testing and handover, done by our own team.</p></div><div class="gcard"><h3>Genuine solar products</h3><p>Quality panels, batteries, inverters, protection equipment and accessories for complete systems.</p></div><div class="gcard"><h3>After-sales support you can reach</h3><p>Phone and WhatsApp guidance before purchase, during installation and after handover.</p></div></div></div></div>
+</section>
+
+<!-- ============ SHOP ============ -->
+<section id="shop" class="shop">
+  <div class="wrap">
+    <div class="head-row rv">
+      <div><h2 class="h2">Shop the components.</h2><p class="shop-lede">Genuine inverters, batteries, panels and controllers, in stock in Nairobi.</p></div>
+      <a class="link-arrow" href="https://solarconnectkenya.com/products"><span class="shop-all-lbl">Browse all products</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <div class="filter-bar rv">
+      <div class="filters" id="filters" role="group" aria-label="Filter products">
+        <button type="button" aria-pressed="true" data-f="all">All products</button>
+        <button type="button" aria-pressed="false" data-f="inv">Inverters</button>
+        <button type="button" aria-pressed="false" data-f="bat">Batteries</button>
+        <button type="button" aria-pressed="false" data-f="cc">Charge controllers</button>
+      </div>
+      <span class="filter-count" id="filter-count" aria-live="polite">Showing 8 products</span>
+    </div>
+    <div class="grid4" id="prods">
+      <article class="prod rv" data-c="inv"><a class="media light" href="https://solarconnectkenya.com/product/sun-16k-sg01lp1-eu-16kw-48v-single-phase-deye-inverter" tabindex="-1" aria-hidden="true"><img src="assets/img/81bb51d37a.webp" alt="Deye SUN-16K-SG01LP1 16kW 48V single-phase inverter" loading="lazy"></a><div class="b"><span class="c">Hybrid inverter</span><h3><a href="https://solarconnectkenya.com/product/sun-16k-sg01lp1-eu-16kw-48v-single-phase-deye-inverter">Deye SUN-16K-SG01LP1 16kW 48V single-phase inverter</a></h3><div class="f"><div class="pr"><b>Ksh 380,000</b></div><a class="add" href="https://solarconnectkenya.com/product/sun-16k-sg01lp1-eu-16kw-48v-single-phase-deye-inverter" aria-label="Add Deye SUN-16K-SG01LP1 16kW 48V single-phase inverter to cart"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L21 8H6.2"/><circle cx="9.5" cy="20" r="1.2"/><circle cx="17.5" cy="20" r="1.2"/></svg></a></div></div></article>
+      <article class="prod rv" data-c="inv"><a class="media light" href="https://solarconnectkenya.com/product/deye-8kw-8kva-48v-single-phase-hybrid-solar-inverter" tabindex="-1" aria-hidden="true"><img src="assets/img/765a80b230.webp" alt="Deye 8kW (8kVA) 48V single-phase hybrid solar inverter" loading="lazy"></a><div class="b"><span class="c">Hybrid inverter</span><h3><a href="https://solarconnectkenya.com/product/deye-8kw-8kva-48v-single-phase-hybrid-solar-inverter">Deye 8kW (8kVA) 48V single-phase hybrid solar inverter</a></h3><div class="f"><div class="pr"><b>Ksh 229,000</b></div><a class="add" href="https://solarconnectkenya.com/product/deye-8kw-8kva-48v-single-phase-hybrid-solar-inverter" aria-label="Add Deye 8kW (8kVA) 48V single-phase hybrid solar inverter to cart"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L21 8H6.2"/><circle cx="9.5" cy="20" r="1.2"/><circle cx="17.5" cy="20" r="1.2"/></svg></a></div></div></article>
+      <article class="prod rv" data-c="inv"><a class="media light" href="https://solarconnectkenya.com/product/hinen-m2000s-series-hybrid-inverter" tabindex="-1" aria-hidden="true"><img src="assets/img/b204f0709a.webp" alt="Hinen M2000s Series hybrid inverter" loading="lazy"></a><div class="b"><span class="c">Hybrid inverter</span><h3><a href="https://solarconnectkenya.com/product/hinen-m2000s-series-hybrid-inverter">Hinen M2000s Series hybrid inverter</a></h3><div class="f"><div class="pr"><b>Ksh 45,000</b><span class="pold"><s>Ksh 50,000</s><span class="psave">Save Ksh 5,000</span></span></div><a class="add" href="https://solarconnectkenya.com/product/hinen-m2000s-series-hybrid-inverter" aria-label="Add Hinen M2000s Series hybrid inverter to cart"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L21 8H6.2"/><circle cx="9.5" cy="20" r="1.2"/><circle cx="17.5" cy="20" r="1.2"/></svg></a></div></div></article>
+      <article class="prod rv" data-c="bat"><a class="media light" href="https://solarconnectkenya.com/product/felicity-175kwh-48v-lpbf-48350-lithium-battery-pack-with-bms" tabindex="-1" aria-hidden="true"><img src="assets/img/7637eb2800.webp" alt="Felicity 17.5kWh 48V LPBF 48350 battery pack with BMS" loading="lazy"></a><div class="b"><span class="c">Lithium battery</span><h3><a href="https://solarconnectkenya.com/product/felicity-175kwh-48v-lpbf-48350-lithium-battery-pack-with-bms">Felicity 17.5kWh 48V LPBF 48350 battery pack with BMS</a></h3><div class="f"><div class="pr"><b>Ksh 310,000</b><span class="pold"><s>Ksh 370,000</s><span class="psave">Save Ksh 60,000</span></span></div><a class="add" href="https://solarconnectkenya.com/product/felicity-175kwh-48v-lpbf-48350-lithium-battery-pack-with-bms" aria-label="Add Felicity 17.5kWh 48V LPBF 48350 battery pack with BMS to cart"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L21 8H6.2"/><circle cx="9.5" cy="20" r="1.2"/><circle cx="17.5" cy="20" r="1.2"/></svg></a></div></div></article>
+      <article class="prod rv" data-c="bat"><a class="media light" href="https://solarconnectkenya.com/product/fla48100-512kw-felicity-lithium-battery" tabindex="-1" aria-hidden="true"><img src="assets/img/7149ed22fc.webp" alt="Felicity FLA48100 5.12kWh lithium battery" loading="lazy"></a><div class="b"><span class="c">Lithium battery</span><h3><a href="https://solarconnectkenya.com/product/fla48100-512kw-felicity-lithium-battery">Felicity FLA48100 5.12kWh lithium battery</a></h3><div class="f"><div class="pr"><b>Ksh 115,000</b><span class="pold"><s>Ksh 120,000</s><span class="psave">Save Ksh 5,000</span></span></div><a class="add" href="https://solarconnectkenya.com/product/fla48100-512kw-felicity-lithium-battery" aria-label="Add Felicity FLA48100 5.12kWh lithium battery to cart"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L21 8H6.2"/><circle cx="9.5" cy="20" r="1.2"/><circle cx="17.5" cy="20" r="1.2"/></svg></a></div></div></article>
+      <article class="prod rv" data-c="bat"><a class="media light" href="https://solarconnectkenya.com/product/bp5000-5kw-48v-hinen-lithium-battery-stackable-low-voltage" tabindex="-1" aria-hidden="true"><img src="assets/img/1e3acdd8fe.webp" alt="Hinen BP5000 5kWh 48V stackable lithium battery" loading="lazy"></a><div class="b"><span class="c">Lithium battery</span><h3><a href="https://solarconnectkenya.com/product/bp5000-5kw-48v-hinen-lithium-battery-stackable-low-voltage">Hinen BP5000 5kWh 48V stackable lithium battery</a></h3><div class="f"><div class="pr"><b>Ksh 121,000</b><span class="pold"><s>Ksh 130,000</s><span class="psave">Save Ksh 9,000</span></span></div><a class="add" href="https://solarconnectkenya.com/product/bp5000-5kw-48v-hinen-lithium-battery-stackable-low-voltage" aria-label="Add Hinen BP5000 5kWh 48V stackable lithium battery to cart"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L21 8H6.2"/><circle cx="9.5" cy="20" r="1.2"/><circle cx="17.5" cy="20" r="1.2"/></svg></a></div></div></article>
+      <article class="prod rv" data-c="cc"><a class="media light" href="https://solarconnectkenya.com/product/sccm12048-ii-120a-12v-24v-48v-felicity-mppt-charge-controller" tabindex="-1" aria-hidden="true"><img src="assets/img/8feba53140.webp" alt="Felicity SCCM12048-II 120A 12/24/48V MPPT controller" loading="lazy"></a><div class="b"><span class="c">MPPT charge controller</span><h3><a href="https://solarconnectkenya.com/product/sccm12048-ii-120a-12v-24v-48v-felicity-mppt-charge-controller">Felicity SCCM12048-II 120A 12/24/48V MPPT controller</a></h3><div class="f"><div class="pr"><b>Ksh 36,000</b><span class="pold"><s>Ksh 39,000</s><span class="psave">Save Ksh 3,000</span></span></div><a class="add" href="https://solarconnectkenya.com/product/sccm12048-ii-120a-12v-24v-48v-felicity-mppt-charge-controller" aria-label="Add Felicity SCCM12048-II 120A 12/24/48V MPPT controller to cart"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L21 8H6.2"/><circle cx="9.5" cy="20" r="1.2"/><circle cx="17.5" cy="20" r="1.2"/></svg></a></div></div></article>
+      <article class="prod rv" data-c="cc"><a class="media light" href="https://solarconnectkenya.com/product/must-80a-mppt-solar-charge-controller-pc18-8025f" tabindex="-1" aria-hidden="true"><img src="assets/img/ec1516fb12.webp" alt="MUST 80A MPPT solar charge controller PC18-8025F" loading="lazy"></a><div class="b"><span class="c">MPPT charge controller</span><h3><a href="https://solarconnectkenya.com/product/must-80a-mppt-solar-charge-controller-pc18-8025f">MUST 80A MPPT solar charge controller PC18-8025F</a></h3><div class="f"><div class="pr"><b>Ksh 27,000</b><span class="pold"><s>Ksh 29,000</s><span class="psave">Save Ksh 2,000</span></span></div><a class="add" href="https://solarconnectkenya.com/product/must-80a-mppt-solar-charge-controller-pc18-8025f" aria-label="Add MUST 80A MPPT solar charge controller PC18-8025F to cart"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L21 8H6.2"/><circle cx="9.5" cy="20" r="1.2"/><circle cx="17.5" cy="20" r="1.2"/></svg></a></div></div></article>
+    </div>
+    <a class="btn btn-ink shop-all-btn" href="https://solarconnectkenya.com/products"><span class="shop-all-lbl">Browse all products</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<!-- ============ TWO WAYS ============ -->
+<section id="solutions" class="dark band">
+  <div class="wrap ways">
+    <div class="head-row rv">
+      <h2 class="h2">Two ways in.<br>One standard of work.</h2>
+      <p class="lede">Start with the outcome you need. We match the panels, inverter, batteries and installation plan to it.</p>
+    </div>
+    <div class="way-row">
+      <article class="way a rv">
+        <div class="media"><img src="assets/img/510a930c57.webp" alt="Inverter and battery installed at a home in South C" loading="lazy"><span class="tag mono">Residential</span><span class="cap mono">Photo · full home solar</span></div>
+        <div class="way-body">
+          <h3>For homes</h3>
+          <p>Full home solar and inverter-battery backup that keeps essential appliances running through outages.</p>
+          <div class="tags"><span>Full home solar</span><span>Power backup</span><span>Solar water heating</span></div>
+          <a class="btn btn-white" href="#contact">Explore home systems</a>
+        </div>
+      </article>
+      <article class="way b rv">
+        <div class="media"><img src="assets/img/eec44d0885.webp" alt="Completed 4kW hybrid solar array" loading="lazy"><span class="tag mono">Business</span><span class="cap mono">Photo · hybrid business system</span></div>
+        <div class="way-body">
+          <h3>For businesses</h3>
+          <p>Practical hybrid setups for shops, offices, apartments and facilities, plus solar lighting for compounds and walkways.</p>
+          <div class="tags"><span>Hybrid systems</span><span>Outdoor lighting</span><span>Parts &amp; accessories</span></div>
+          <a class="btn btn-ink" href="#contact">Explore business systems</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects" class="projects">
+  <div class="wrap head-row rv">
+    <h2 class="pj-h">Recent<br>installations</h2>
+    <p class="pj-intro">Real systems our team has sized, delivered, installed and handed over, from first site visit to after-sales support.</p>
+  </div>
+  <div class="wrap"><div class="pj-body rv">
+    <div class="pj-side">
+      <div class="pj-count"><b id="pj-n">01</b><span>/06</span></div>
+      <p class="pj-cap" id="pj-cap">A full hybrid system for a family home in South C.</p>
+      <div class="pj-btns">
+        <button class="sq" type="button" id="prev" aria-label="Previous project"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 14L4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></svg></button>
+        <button class="sq dark" type="button" id="next" aria-label="Next project"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 14l5-5-5-5"/><path d="M20 9H9.5a5.5 5.5 0 0 0 0 11H13"/></svg></button>
+      </div>
+    </div>
+    <div class="rail" id="rail"><div class="rail-in"><article class="ocard" data-cap="A full hybrid system for a family home in South C."><img src="assets/img/b40d931493.webp" alt="A family home in South C" loading="lazy" draggable="false"><span class="ocard-tag">South C, Nairobi</span><div class="ocard-txt"><span class="ocard-k">Case study 01</span><h3>A family home in South C</h3><p>6kW hybrid system: rooftop panels, a Felicity inverter, lithium battery and wall-mounted protection.</p></div></article><article class="ocard" data-cap="A 4kW hybrid system, tested and handed over."><img src="assets/img/eec44d0885.webp" alt="A 4kW hybrid home system" loading="lazy" draggable="false"><span class="ocard-tag">Residential</span><div class="ocard-txt"><span class="ocard-k">Case study 02</span><h3>A 4kW hybrid home system</h3><p>Delivered, installed, tested and confirmed with the customer at handover.</p></div></article><article class="ocard" data-cap="Daily backup that keeps essentials running."><img src="assets/img/90fc216d74.webp" alt="Indoor battery backup in Nairobi" loading="lazy" draggable="false"><span class="ocard-tag">Nairobi</span><div class="ocard-txt"><span class="ocard-k">Case study 03</span><h3>Indoor battery backup in Nairobi</h3><p>A wall-mounted inverter and battery that keeps essential appliances running through outages.</p></div></article><article class="ocard" data-cap="Every system is drawn up before we install."><img src="assets/img/b645ffe928.webp" alt="A 6kW 48V Felicity hybrid system" loading="lazy" draggable="false" class="contain"><span class="ocard-tag">System design</span><div class="ocard-txt"><span class="ocard-k">Case study 04</span><h3>A 6kW 48V Felicity hybrid system</h3><p>Panels, inverter and battery planned and drawn up, with the protection between them, before any work on site.</p></div></article><article class="ocard" data-cap="Lithium storage supplied and delivered to site."><img src="assets/img/360449f788.webp" alt="AlphaESS battery storage" loading="lazy" draggable="false"><span class="ocard-tag">Energy storage</span><div class="ocard-txt"><span class="ocard-k">Case study 05</span><h3>AlphaESS battery storage</h3><p>A lithium storage cabinet supplied and delivered to site, ready for installation.</p></div></article><article class="ocard" data-cap="Our own team handles panels from truck to roof."><img src="assets/img/6fd700f137.webp" alt="Site preparation and panel handling" loading="lazy" draggable="false"><span class="ocard-tag">Panel delivery</span><div class="ocard-txt"><span class="ocard-k">Case study 06</span><h3>Site preparation and panel handling</h3><p>Our own team moves the panels from the truck to the roof, so nothing is damaged before mounting.</p></div></article></div></div>
+  </div></div>
+</section>
+
+<!-- ============ LAYERS ============ -->
+<section class="dark band">
+  <div class="wrap layers">
+    <div class="anat media rv" id="anat">
+      <div class="shot on"><img src="assets/img/eec44d0885.webp" alt="Solar panel array" loading="lazy"><span class="cap mono">Photo · 20250205_120325 — panels</span></div>
+      <div class="shot"><img src="assets/img/90fc216d74.webp" alt="Wall-mounted inverter" loading="lazy"><span class="cap mono">Photo · IMG-20251220-WA0004 — inverter</span></div>
+      <div class="shot"><img src="assets/img/360449f788.webp" alt="Lithium battery cabinet on delivery" loading="lazy"><span class="cap mono">Photo · IMG-20260528-WA0035 — batteries</span></div>
+      <div class="shot"><img src="assets/img/510a930c57.webp" alt="Breakers, isolator and wiring under the inverter" loading="lazy"><span class="cap mono">Photo · IMG-20250904-WA0014 — wiring</span></div>
+      <div class="shot"><img src="assets/img/6fd700f137.webp" alt="Technician handling a solar panel on site" loading="lazy"><span class="cap mono">Photo · IMG-20260414-WA0003 — handover</span></div>
+      <span class="lbl mono">System anatomy</span>
+      <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+      <div class="now" aria-live="polite"><b class="swap" id="anat-name">Solar panels</b><span class="mono" id="anat-n">1 of 5</span></div>
+    </div>
+    <div class="acc-side rv">
+      <h2>Matched components.<br>Nothing left to guesswork.</h2>
+      <div class="acc" id="acc">
+        <div class="acc-item open"><button type="button" aria-expanded="true" aria-controls="acc-0" id="accb-0"><span>Solar panels</span><span class="sign" aria-hidden="true">+</span></button><div class="acc-panel" id="acc-0" role="region" aria-labelledby="accb-0"><div><p>Tier-one modules from JA Solar and Jinko Solar, sized to your roof and daily energy use.</p></div></div></div>
+        <div class="acc-item"><button type="button" aria-expanded="false" aria-controls="acc-1" id="accb-1"><span>Inverter</span><span class="sign" aria-hidden="true">+</span></button><div class="acc-panel" id="acc-1" role="region" aria-labelledby="accb-1"><div><p>Hybrid, off-grid or grid-tie inverters from Deye, Felicity, Solis and SRNE, matched to your load and phase.</p></div></div></div>
+        <div class="acc-item"><button type="button" aria-expanded="false" aria-controls="acc-2" id="accb-2"><span>Batteries</span><span class="sign" aria-hidden="true">+</span></button><div class="acc-panel" id="acc-2" role="region" aria-labelledby="accb-2"><div><p>Lithium and gel storage sized to the backup hours you need, up to 17.5kWh packs.</p></div></div></div>
+        <div class="acc-item"><button type="button" aria-expanded="false" aria-controls="acc-3" id="accb-3"><span>Protection &amp; wiring</span><span class="sign" aria-hidden="true">+</span></button><div class="acc-panel" id="acc-3" role="region" aria-labelledby="accb-3"><div><p>Breakers, surge protection, cabling and cabinets installed neatly and labelled for safe servicing.</p></div></div></div>
+        <div class="acc-item"><button type="button" aria-expanded="false" aria-controls="acc-4" id="accb-4"><span>Mounting &amp; handover</span><span class="sign" aria-hidden="true">+</span></button><div class="acc-panel" id="acc-4" role="region" aria-labelledby="accb-4"><div><p>Rails and mounting hardware, system testing, a usage walkthrough, and WhatsApp support after handover.</p></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section id="process" class="wrap process">
+  <div class="head-row rv">
+    <div><h2 class="h2">From power need<br>to working system.</h2><p class="shop-lede">Design. Deliver. Install. Test. A clear process you can follow before you buy.</p></div>
+    <a class="btn btn-ink" href="#contact">Send your power needs</a>
+  </div>
+  <div class="tabs rv" role="tablist" aria-label="Process steps" id="tabs">
+    <button class="tab" type="button" role="tab" aria-selected="true" aria-controls="step-view" data-i="0"><span class="mono">Step 1</span><span class="nm">Consultation</span></button>
+    <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="step-view" data-i="1"><span class="mono">Step 2</span><span class="nm">System design</span></button>
+    <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="step-view" data-i="2"><span class="mono">Step 3</span><span class="nm">Delivery &amp; installation</span></button>
+    <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="step-view" data-i="3"><span class="mono">Step 4</span><span class="nm">Testing &amp; support</span></button>
+  </div>
+  <div class="step-view rv" id="step-view" role="tabpanel">
+    <div class="step-card">
+      <div class="top swap" id="step-top">
+        <span class="mono eyebrow" id="step-n">Step 1 of 4</span>
+        <h3 id="step-h">Consultation</h3>
+        <p id="step-p">We understand the property, your appliances, budget and how many hours of backup you need.</p>
+      </div>
+      <div class="tags" id="step-tags"><span>Site survey</span><span>Load audit</span><span>Budget</span></div>
+    </div>
+    <div class="media" id="step-media"><img id="step-img" src="assets/img/6fd700f137.webp" alt="Technician on site" loading="lazy" onerror="this.style.visibility='hidden'"><span class="cap mono" id="step-cap">Photo · technician on site</span></div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="wrap services">
+  <h2 class="h2 rv">What we install.</h2>
+  <div class="svc-list">
+    <a class="svc rv" href="#contact"><span class="nm">Full home solar</span><span class="ds">Panels, inverter, battery, protection, installation and testing for dependable home power.</span><span class="media"><img src="assets/img/b40d931493.webp" alt="" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
+    <a class="svc rv" href="#contact"><span class="nm">Power backup</span><span class="ds">Keep essential appliances running with a properly matched inverter and battery system.</span><span class="media"><img src="assets/img/90fc216d74.webp" alt="" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
+    <a class="svc rv" href="#contact"><span class="nm">Business power systems</span><span class="ds">Practical hybrid setups for shops, offices, apartments and small business operations.</span><span class="media"><img src="assets/img/eec44d0885.webp" alt="" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
+    <a class="svc rv" href="#contact"><span class="nm">Solar water heating</span><span class="ds">Reliable water heating that reduces electricity use in homes and facilities.</span><span class="media"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
+    <a class="svc rv" href="#contact"><span class="nm">Outdoor lighting</span><span class="ds">Solar lighting for compounds, walkways, security points and commercial outdoor spaces.</span><span class="media"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
+    <a class="svc rv" href="#contact"><span class="nm">Parts &amp; accessories</span><span class="ds">Controllers, cables, breakers, rails, cabinets and mounting hardware for clean installations.</span><span class="media"><img src="assets/img/510a930c57.webp" alt="" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
+  </div>
+</section>
+
+
+<!-- ============ REVIEWS ============ -->
+<section class="wrap reviews">
+  <div class="head-row rv">
+    <div><h2 class="h2">What customers say<br>after handover.</h2></div>
+    <div class="ctrl"><span style="color:var(--ink-2)">★★★★★ rated by customers</span><button class="arrow" type="button" id="rev-prev" aria-label="Previous review"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button class="arrow" type="button" id="rev-next" aria-label="Next review"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+  </div>
+  <div class="rev-viewport" id="revs" aria-roledescription="carousel" aria-label="Customer reviews"><div class="rev-track" id="rev-track">
+    <figure class="rev rv"><blockquote>“Very good seller. George is responsive and if he doesn’t have a product and says he will get it to you by a certain day, he sure keeps his word.”</blockquote><figcaption><span class="av">AR</span><span class="who"><b>Abu Rutunu</b><span class="mono">Nairobi · ★★★★★</span></span></figcaption></figure>
+    <figure class="rev rv"><blockquote>“The follow-up after installation made me forever love Solar Connect. Thank you, George.”</blockquote><figcaption><span class="av">CO</span><span class="who"><b>Cavine Ochieng</b><span class="mono">Nairobi · ★★★★★</span></span></figcaption></figure>
+    <figure class="rev rv"><blockquote>“The team is very professional and their services are top notch. I have also been using their panels and pump for the past year.”</blockquote><figcaption><span class="av">AW</span><span class="who"><b>Anna Wangechi</b><span class="mono">Nairobi · ★★★★★</span></span></figcaption></figure>
+    <figure class="rev rv"><blockquote>“Great customer service and excellent site work.”</blockquote><figcaption><span class="av">LM</span><span class="who"><b>Linus Mutahi</b><span class="mono">Nairobi · ★★★★★</span></span></figcaption></figure>
+    </div></div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section id="contact" class="cta">
+  <div class="cta-frame media">
+    <img src="assets/img/b40d931493.webp" alt="" loading="lazy">
+    <span class="cap mono" style="top:24px;right:28px;left:auto;bottom:auto">Photo · team with panels</span>
+    <div class="cta-body">
+      <div class="cta-copy rv">
+        <h2>Send us your power needs. We’ll recommend the right setup.</h2>
+        <p>Tell us your appliances, backup hours, property type and budget. We’ll guide you to the right panels, inverter, battery and installation plan.</p>
+      </div>
+      <form class="qform rv" id="qform" novalidate>
+        <label for="q-phone" class="mono">Your phone or WhatsApp number</label>
+        <div class="qrow">
+          <input id="q-phone" name="phone" type="tel" inputmode="tel" placeholder="07XX XXX XXX" autocomplete="tel">
+          <button class="btn btn-white" type="submit">Request a quote</button>
+        </div>
+        <p class="msg" id="q-msg" hidden></p>
+        <a class="btn btn-sun" href="https://wa.me/254706636447?text=Hello%20Solar%20Connect%2C%20I%20need%20help%20choosing%20a%20solar%20system."><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19.1z"/></svg>Chat on WhatsApp · 0706 636 447</a>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="f-head">
+      <div class="f-brand">
+        <img src="assets/img/685172a7fa.png" alt="Solar Conect, Building a better future" style="height:56px;width:auto">
+        <p>Solar Connect Kenya provides quality solar products, system guidance, project delivery, installation, testing, and local support for homes and businesses.</p>
+      </div>
+      <ul class="f-promise" aria-label="Our service promise"><li><span class="f-chk"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Consultation and system sizing</li><li><span class="f-chk"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Delivery and installation support</li><li><span class="f-chk"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Testing and confirmation</li><li><span class="f-chk"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>After-sales WhatsApp support</li></ul>
+    </div>
+
+    <div class="f-main">
+      <nav class="f-col f-paths" aria-label="Customer paths">
+        <h3>Customer paths</h3>
+        <a href="https://solarconnectkenya.com/products">Shop products</a>
+        <a href="https://solarconnectkenya.com/user/orders">Check order status</a>
+        <a href="https://wa.me/254706636447?text=Hello%20Solar%20Connect%2C%20I%20need%20help%20choosing%20a%20solar%20system.">Request a quote</a>
+        <a href="https://solarconnectkenya.com/about-us">About Solar Connect</a>
+      </nav>
+      <nav class="f-deps" aria-label="Departments">
+        <h3>Departments</h3>
+        <div class="f-dep-grid"><div class="f-dep"><h4><a href="https://solarconnectkenya.com/product/c/solar-inverters" style="color:inherit">Solar inverters</a></h4><a href="https://solarconnectkenya.com/product/c/hybrid-solar-inverters">Hybrid solar inverters</a><a href="https://solarconnectkenya.com/product/c/off-grid-solar-inverters">Off-grid solar inverters</a><a href="https://solarconnectkenya.com/product/c/inverter-chargers">Inverter chargers</a><a href="https://solarconnectkenya.com/product/c/grid-tie-inverters">Grid-tie inverters</a></div><div class="f-dep"><h4><a href="https://solarconnectkenya.com/product/c/solar-charger-controllers" style="color:inherit">Solar charge controllers</a></h4><a href="https://solarconnectkenya.com/product/c/mppt-charge-controller">MPPT charge controllers</a><a href="https://solarconnectkenya.com/product/c/pwm-charge-controller">PWM charge controllers</a></div><div class="f-dep"><h4><a href="https://solarconnectkenya.com/product/c/solar-batteries" style="color:inherit">Solar batteries</a></h4><a href="https://solarconnectkenya.com/product/c/lithium-batteries">Lithium batteries</a><a href="https://solarconnectkenya.com/product/c/solar-gel-batteries">Solar gel batteries</a><a href="https://solarconnectkenya.com/product/c/tubular-battery">Tubular batteries</a></div><div class="f-dep"><h4><a href="https://solarconnectkenya.com/product/c/solar-panel" style="color:inherit">Solar panels</a></h4><a href="https://solarconnectkenya.com/product/c/monocrystalline">Monocrystalline panels</a><a href="https://solarconnectkenya.com/product/c/polycrystalline-solar-panel">Polycrystalline panels</a></div></div>
+      </nav>
+      <div class="f-branches">
+        <h3>Visit us</h3>
+        <div class="branch">
+          <span class="b-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+          <div class="b-txt"><span class="b-name">Nairobi branch</span><span class="b-addr">Lusaka Road</span><a class="b-tel" href="tel:+254706636447"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg> 0706 636 447</a></div>
+        </div>
+        <div class="branch">
+          <span class="b-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+          <div class="b-txt"><span class="b-name">Watamu branch</span><span class="b-addr">M2H7+23Q, Watamu</span><a class="b-tel" href="tel:+254705760861"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg> 0705 760 861</a><a class="b-map" href="https://www.google.com/maps/place/M2H7%2B23Q,+Watamu/@-3.3224125,40.0127344,17z">View on Google Maps ↗</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="f-base">
+      <span>© 2026 Solar Connect Kenya. All rights reserved.</span>
+      <span class="f-legal"><a href="#">Terms</a><a href="#">Privacy</a><a href="https://solarconnectkenya.com/sitemap.xml">Sitemap</a></span>
+      <a class="f-top" href="#top">Back to top <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
+    </div>
+  </div>
+  <div class="giant" id="giant" aria-hidden="true">Solar Connect</div>
+</footer>
+
+<a class="wa" href="https://wa.me/254706636447?text=Hello%20Solar%20Connect%2C%20I%20need%20help%20choosing%20a%20solar%20system." aria-label="Chat with Solar Connect on WhatsApp"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19.1z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.4-1.9-1-.8.8a3.6 3.6 0 0 1-2.4-2.4l.8-.8-1-1.9z"/></svg></a>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.documentElement.classList.add('js');
+
+  /* nav state + hero zoom + footer drift */
+  var nav = document.getElementById('nav'), hero = document.getElementById('hero'), giant = document.getElementById('giant');
+  function onScroll(){
+    var y = window.scrollY;
+    nav.classList.toggle('scrolled', y > (hero ? hero.offsetHeight - 60 : 40));
+    if (!reduce && hero){ var p = Math.min(y / (hero.offsetHeight || 1), 1); hero.style.setProperty('--hs', (1.08 - p*0.08).toFixed(3)); }
+    if (!reduce && giant){ var r = giant.getBoundingClientRect(); var t = Math.max(0, Math.min(1, (window.innerHeight - r.top) / (r.height + 200))); giant.style.setProperty('--gy', (40 - t*40).toFixed(1) + 'px'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  /* mobile menu */
+  var mt = document.getElementById('menu-toggle'), mm = document.getElementById('mmenu');
+  if (mt && mm){
+    mt.addEventListener('click', function(){ var open = mm.hidden; mm.hidden = !open; mt.setAttribute('aria-expanded', open); mt.setAttribute('aria-label', open ? 'Close menu' : 'Open menu'); });
+    mm.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ mm.hidden = true; mt.setAttribute('aria-expanded', 'false'); mt.setAttribute('aria-label', 'Open menu'); }); });
+  }
+
+  /* reveal: only lift items that start below the fold */
+  var rvs = [].slice.call(document.querySelectorAll('.rv'));
+  if ('IntersectionObserver' in window && !reduce){
+    rvs.forEach(function(el){ if (el.getBoundingClientRect().top > window.innerHeight) el.classList.add('pre'); });
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.remove('pre'); io.unobserve(e.target); } }); }, {rootMargin:'0px 0px -8% 0px'});
+    rvs.forEach(function(el){ if (el.classList.contains('pre')) io.observe(el); });
+  }
+
+  /* stat count-up when stats scroll in */
+  var stats = document.querySelector('.stats');
+  if (stats && 'IntersectionObserver' in window && !reduce && stats.getBoundingClientRect().top > window.innerHeight){
+    var so = new IntersectionObserver(function(es){
+      if (!es[0].isIntersecting) return; so.disconnect();
+      stats.querySelectorAll('[data-count]').forEach(function(b){
+        var end = +b.dataset.count, suf = b.dataset.suffix || '', t0 = performance.now();
+        (function tick(t){ var k = Math.min((t - t0)/1400, 1), v = Math.round(end * (1 - Math.pow(1-k, 3))); b.textContent = v + suf; if (k < 1) requestAnimationFrame(tick); })(t0);
+      });
+    }, {threshold:.4});
+    so.observe(stats);
+  }
+
+  /* project rail: drag, arrows, counter */
+  var rail = document.getElementById('rail'), cards = [].slice.call(rail.querySelectorAll('.ocard'));
+  var pjN = document.getElementById('pj-n'), pjCap = document.getElementById('pj-cap'), curIdx = 0;
+  var down = false, sx = 0, sl = 0;
+  rail.addEventListener('pointerdown', function(e){ if (e.pointerType !== 'mouse') return; down = true; sx = e.clientX; sl = rail.scrollLeft; });
+  window.addEventListener('pointermove', function(e){ if (!down) return; var dx = e.clientX - sx; if (Math.abs(dx) > 4) rail.classList.add('dragging'); rail.scrollLeft = sl - dx; });
+  window.addEventListener('pointerup', function(){ down = false; rail.classList.remove('dragging'); });
+  function goCard(i){ i = Math.max(0, Math.min(cards.length - 1, i)); rail.scrollTo({left: cards[i].offsetLeft - cards[0].offsetLeft, behavior: reduce ? 'auto' : 'smooth'}); }
+  function setIdx(i){ if (i === curIdx) return; curIdx = i; pjN.textContent = (i + 1 < 10 ? '0' : '') + (i + 1); pjCap.textContent = cards[i].dataset.cap; }
+  document.getElementById('prev').addEventListener('click', function(){ goCard(curIdx - 1); });
+  document.getElementById('next').addEventListener('click', function(){ goCard(curIdx + 1 >= cards.length ? 0 : curIdx + 1); });
+  var auto = null, inView = false, hold = false;
+  function startAuto(){ clearInterval(auto); if (reduce || !inView || hold) return; auto = setInterval(function(){ goCard(curIdx + 1 >= cards.length ? 0 : curIdx + 1); }, 4500); }
+  function pause(){ hold = true; clearInterval(auto); }
+  function resume(){ hold = false; startAuto(); }
+  rail.addEventListener('mouseenter', pause); rail.addEventListener('mouseleave', resume);
+  rail.addEventListener('touchstart', pause, {passive:true}); rail.addEventListener('touchend', function(){ setTimeout(resume, 2500); });
+  ['prev','next'].forEach(function(id){ document.getElementById(id).addEventListener('click', function(){ if (!hold) startAuto(); }); });
+  if ('IntersectionObserver' in window){ new IntersectionObserver(function(es){ inView = es[0].isIntersecting; if (inView) startAuto(); else clearInterval(auto); }, {threshold:.3}).observe(rail); } else { inView = true; startAuto(); }
+  rail.addEventListener('scroll', function(){
+    var max = rail.scrollWidth - rail.clientWidth, x = rail.scrollLeft, best = 0, bd = 1e9;
+    if (max > 0 && x >= max - 4){ best = cards.length - 1; } else cards.forEach(function(c, j){ var d = Math.abs(c.offsetLeft - cards[0].offsetLeft - x); if (d < bd){ bd = d; best = j; } });
+    setIdx(best);
+  }, {passive:true});
+
+  /* accordion synced to the layer stack */
+  var items = [].slice.call(document.querySelectorAll('.acc-item')),
+      shots = [].slice.call(document.querySelectorAll('#anat .shot')),
+      dots = [].slice.call(document.querySelectorAll('#anat .dots i')),
+      aName = document.getElementById('anat-name'), aNum = document.getElementById('anat-n');
+  function openAcc(i){
+    items.forEach(function(it, j){ var on = j === i; it.classList.toggle('open', on); it.querySelector('button').setAttribute('aria-expanded', on); });
+    if (i < 0) return;
+    shots.forEach(function(s, j){ s.classList.toggle('on', j === i); });
+    dots.forEach(function(d, j){ d.classList.toggle('on', j === i); });
+    aName.textContent = items[i].querySelector('button span').textContent;
+    aNum.textContent = (i + 1) + ' of ' + items.length;
+    aName.classList.remove('swap'); void aName.offsetWidth; aName.classList.add('swap');
+  }
+  items.forEach(function(it, i){ it.querySelector('button').addEventListener('click', function(){ openAcc(it.classList.contains('open') ? -1 : i); }); });
+  openAcc(0);
+
+  /* process tabs with auto-advance */
+  var data = [
+    {h:'Consultation', p:'We understand the property, your appliances, budget and how many hours of backup you need.', t:['Site survey','Load audit','Budget'], img:'team-panels', cap:'technician on site', alt:'Technician handling a solar panel on site'},
+    {h:'System design', p:'We recommend the right panels, inverter, batteries, protection gear and accessories for the job.', t:['Panels','Inverter','Battery sizing'], img:'diagram', cap:'system layout', alt:'6kW hybrid system layout drawing'},
+    {h:'Delivery & installation', p:'We coordinate delivery, mounting, wiring, inverter and battery setup, and safety checks.', t:['Mounting','Wiring','Safety checks'], img:'roof', cap:'rooftop install', alt:'Panels mounted on a rooftop'},
+    {h:'Testing & support', p:'We confirm the system works, explain how to use it, and keep WhatsApp support open after handover.', t:['Testing','Walkthrough','WhatsApp support'], img:'inverter-wall', cap:'clean indoor backup', alt:'Wall-mounted inverter and battery backup'}
+  ];
+  var IMG = {'team-panels':'assets/img/6fd700f137.webp', diagram:'assets/img/b645ffe928.webp', roof:'assets/img/b40d931493.webp', 'inverter-wall':'assets/img/90fc216d74.webp'};
+  var tabs = [].slice.call(document.querySelectorAll('.tab')), proc = document.getElementById('process'), cur = 0, timer = null;
+  var top = document.getElementById('step-top'), img = document.getElementById('step-img');
+  function show(i){
+    cur = i; var d = data[i];
+    tabs.forEach(function(t, j){ t.setAttribute('aria-selected', j === i); });
+    document.getElementById('step-n').textContent = 'Step ' + (i+1) + ' of 4';
+    document.getElementById('step-h').textContent = d.h;
+    document.getElementById('step-p').textContent = d.p;
+    document.getElementById('step-tags').innerHTML = d.t.map(function(x){ return '<span>' + x + '</span>'; }).join('');
+    document.getElementById('step-cap').textContent = 'Photo · ' + d.cap;
+    img.style.visibility = ''; img.alt = d.alt; img.src = IMG[d.img]; img.style.objectFit = d.img === 'diagram' ? 'contain' : ''; img.style.background = d.img === 'diagram' ? '#fff' : '';
+    top.classList.remove('swap'); void top.offsetWidth; top.classList.add('swap');
+    restart();
+  }
+  function restart(){ clearTimeout(timer); if (!reduce && !proc.classList.contains('paused')) timer = setTimeout(function(){ show((cur + 1) % data.length); }, 6000); }
+  tabs.forEach(function(t, i){ t.addEventListener('click', function(){ show(i); }); });
+  proc.addEventListener('mouseenter', function(){ proc.classList.add('paused'); clearTimeout(timer); });
+  proc.addEventListener('mouseleave', function(){ proc.classList.remove('paused'); restart(); });
+  if ('IntersectionObserver' in window){ new IntersectionObserver(function(es){ if (es[0].isIntersecting) restart(); else clearTimeout(timer); }).observe(proc); }
+
+
+  /* reviews carousel: 3 per view, auto-advance, seamless loop */
+  var rv = document.getElementById('revs'), rt = document.getElementById('rev-track');
+  if (rv && rt){
+    var orig = [].slice.call(rt.children), n = orig.length, ri = 0, rtimer = null;
+    orig.forEach(function(c){ var k = c.cloneNode(true); k.classList.remove('rv','pre'); k.setAttribute('aria-hidden','true'); rt.appendChild(k); });
+    function stepW(){ var c = rt.children[0]; return c.getBoundingClientRect().width + 12; }
+    function go(i, instant){ ri = i; rt.classList.toggle('jump', !!instant); rt.style.transform = 'translateX(' + (-ri * stepW()) + 'px)'; }
+    rt.addEventListener('transitionend', function(){ if (ri >= n){ go(ri - n, true); } });
+    function next(){ go(ri + 1); }
+    function prev(){ if (ri <= 0){ go(n, true); void rt.offsetWidth; } go(ri - 1); }
+    function auto(){ clearInterval(rtimer); if (!reduce) rtimer = setInterval(next, 4000); }
+    document.getElementById('rev-next').addEventListener('click', function(){ next(); auto(); });
+    document.getElementById('rev-prev').addEventListener('click', function(){ prev(); auto(); });
+    rv.addEventListener('mouseenter', function(){ clearInterval(rtimer); });
+    rv.addEventListener('mouseleave', auto);
+    window.addEventListener('resize', function(){ go(ri, true); });
+    auto();
+  }
+
+
+  /* about slideshow */
+  var ash = document.getElementById('ashow');
+  if (ash){
+    var sl = [].slice.call(ash.querySelectorAll('.aslide')), dt = [].slice.call(ash.querySelectorAll('.adot')), cap = document.getElementById('ashow-cap'), ai = 0, at = null;
+    function showA(i){ ai = (i + sl.length) % sl.length; sl.forEach(function(x, j){ x.classList.toggle('on', j === ai); }); dt.forEach(function(x, j){ x.classList.toggle('on', j === ai); if (j === ai) x.setAttribute('aria-current','true'); else x.removeAttribute('aria-current'); }); cap.textContent = sl[ai].querySelector('img').alt; }
+    function runA(){ clearInterval(at); if (!reduce) at = setInterval(function(){ showA(ai + 1); }, 4000); }
+    dt.forEach(function(d, j){ d.addEventListener('click', function(){ showA(j); runA(); }); });
+    ash.addEventListener('mouseenter', function(){ clearInterval(at); }); ash.addEventListener('mouseleave', runA);
+    runA();
+  }
+
+  /* shop filters */
+  var fbtns = [].slice.call(document.querySelectorAll('#filters button')), prods = [].slice.call(document.querySelectorAll('#prods .prod'));
+  fbtns.forEach(function(b){ b.addEventListener('click', function(){
+    var f = b.dataset.f;
+    fbtns.forEach(function(x){ x.setAttribute('aria-pressed', x === b); });
+    prods.forEach(function(p, i){ p.hidden = f !== 'all' && p.dataset.c !== f; p.classList.remove('pre'); });
+    var shown = prods.filter(function(p){ return !p.hidden; }).length;
+    document.getElementById('filter-count').textContent = 'Showing ' + shown + ' product' + (shown === 1 ? '' : 's');
+    var lbl = {all:'Browse all products', inv:'Browse all inverters', bat:'Browse all batteries', cc:'Browse all charge controllers'}[f];
+    var href = {all:'https://solarconnectkenya.com/products', inv:'https://solarconnectkenya.com/product/c/solar-inverters', bat:'https://solarconnectkenya.com/product/c/solar-batteries', cc:'https://solarconnectkenya.com/product/c/solar-charger-controllers'}[f];
+    document.querySelectorAll('.shop-all-lbl').forEach(function(el){ el.parentNode.href = href; });
+    document.querySelectorAll('.shop-all-lbl').forEach(function(el){ el.textContent = lbl; });
+  }); });
+
+  /* quote form (demo) */
+  var form = document.getElementById('qform'), msg = document.getElementById('q-msg'), phone = document.getElementById('q-phone');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var v = phone.value.replace(/\s+/g, '');
+    msg.hidden = false;
+    msg.textContent = /^(\+?254|0)7\d{8}$|^(\+?254|0)1\d{8}$/.test(v) ? 'Thanks. On the live site this sends your number to the Solar Connect team.' : 'Enter a Kenyan mobile number, for example 0706 636 447.';
+  });
+})();
+</script>
+
+</body>
+</html>

@@ -123,35 +123,25 @@ p{margin:0}
 @keyframes rise{from{transform:translateY(105%)}to{transform:none}}
 @keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
 .hero-sub{max-width:46ch;font-size:16px;line-height:1.55;color:#E3E3DD;animation:fade 1s .45s both}
-.hero-actions{display:flex;flex-direction:column;align-items:center;gap:14px;animation:fade 1s .6s both}
+.hero-actions{display:flex;animation:fade 1s .6s both}
 .arrow-pill{display:inline-flex;align-items:center;justify-content:space-between;gap:12px;min-height:56px;width:100%;padding:5px 5px 5px 24px;border-radius:999px;background:var(--white);color:var(--ink);font-size:16px;font-weight:500;transition:transform .25s}
 .arrow-pill:hover{transform:translateY(-2px)}
 .arrow-pill .ac{width:46px;height:46px;border-radius:999px;display:grid;place-items:center;background:var(--ink);color:var(--white);transition:transform .3s}
 .arrow-pill:hover .ac{transform:rotate(45deg)}
-.wa-pill{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:auto;padding:0;border:0;background:none;font-size:14px;color:rgba(255,255,255,.75)}
-.wa-pill svg{width:15px;height:15px}
 
 /* stats */
 .hstats{display:flex;flex-wrap:wrap;column-gap:24px;row-gap:4px;border-top:1px solid rgba(255,255,255,.18);padding-top:14px;animation:fade 1s .75s both}
 .hstat{display:flex;flex-direction:row;align-items:baseline;gap:6px;padding:0}
-.hstat:nth-child(even){padding-left:0;border-left:0}
-.hstat:nth-child(n+3){border-top:0}
 .hstat b{font-weight:600;font-size:16px;letter-spacing:-.02em;line-height:1;font-variant-numeric:tabular-nums}
 .hstat span{font-size:12.5px;line-height:1.3;color:#CFCFC9}
-.hstat .stars{color:var(--sun);font-size:13px;letter-spacing:1px;line-height:1}
 
 @media (min-width:640px){
-  .hero-actions{flex-direction:row;align-items:center}
-  .arrow-pill{justify-content:flex-start;width:auto}
-  .wa-pill{border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:0 22px;min-height:52px;font-size:15px;color:var(--white)}
-  .wa-pill svg{width:18px;height:18px}
-  .hstats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));column-gap:0;row-gap:0;padding-top:0}
+  .arrow-pill{width:auto}
+  .hstats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:0;row-gap:0;padding-top:0;max-width:560px}
   .hstat{flex-direction:column;align-items:flex-start;gap:4px;padding:20px 0 4px 20px;border-left:1px solid rgba(255,255,255,.18)}
   .hstat:first-child{padding-left:0;border-left:0}
-  .hstat:nth-child(n+3){border-top:0}
   .hstat b{font-size:clamp(30px,3.4vw,44px);font-weight:400}
   .hstat span{font-size:13px}
-  .hstat .stars{font-size:15px;letter-spacing:2px;line-height:30px}
 }
 @media (min-width:761px){
   .hero-bg .bg-mob{display:none}
@@ -544,7 +534,6 @@ footer h3{font-size:14px;font-weight:500;letter-spacing:0;color:var(--mist-2);ma
       <p class="hero-sub">Genuine panels, inverters and batteries, sized to your power needs, installed cleanly, and supported on WhatsApp after handover.</p>
       <div class="hero-actions">
         <a class="arrow-pill" href="#contact">Get a free quote <span class="ac"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
-        <a class="wa-pill" href="https://wa.me/254706636447?text=Hello%20Solar%20Connect%2C%20I%20need%20help%20choosing%20a%20solar%20system."><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19.1z"/></svg>WhatsApp 0706 636 447</a>
       </div>
     </div>
 
@@ -552,7 +541,6 @@ footer h3{font-size:14px;font-weight:500;letter-spacing:0;color:var(--mist-2);ma
       <div class="hstat"><b>200+</b><span>Solar projects completed</span></div>
       <div class="hstat"><b>10+</b><span>Genuine brands in stock</span></div>
       <div class="hstat"><b>2</b><span>Bases in Nairobi &amp; Watamu</span></div>
-      <div class="hstat"><span class="stars" aria-hidden="true">★★★★★</span><span>Rated 5 stars by our customers</span></div>
     </div>
   </div>
 </section>

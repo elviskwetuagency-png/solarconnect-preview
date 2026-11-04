@@ -77,6 +77,7 @@ $sck_terms   = ($sck_terms_id && get_post_status($sck_terms_id) === 'publish') ?
       <nav class="f-col f-paths" aria-label="Customer paths">
         <h3>Customer paths</h3>
         <a href="<?php echo esc_url($sck_shop); ?>">Shop products</a>
+        <?php $sck_sol_hub = get_page_by_path('solutions'); if ($sck_sol_hub && $sck_sol_hub->post_status === 'publish') : ?><a href="<?php echo esc_url(get_permalink($sck_sol_hub)); ?>">Solar solutions</a><?php endif; ?>
         <a href="<?php echo esc_url($sck_acct); ?>">Check order status</a>
         <a href="https://wa.me/254706636447?text=Hello%20Solar%20Connect%2C%20I%20need%20help%20choosing%20a%20solar%20system.">Request a quote</a>
         <?php if ($sck_about) : ?><a href="<?php echo esc_url($sck_about); ?>">About Solar Connect</a><?php endif; ?>

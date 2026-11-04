@@ -27,10 +27,8 @@ $sck_cur   = function ($k) use ($sck_nav_current) { return $k === $sck_nav_curre
 <div class="hnav">
   <a class="logo" href="<?php echo esc_url($sck_home); ?>" aria-label="Solar Connect Kenya home"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/685172a7fa.png" alt="Solar Connect, Building a better future"></a>
   <nav aria-label="Main menu"><ul>
-    <li><a href="<?php echo esc_url($sck_home . '#solutions'); ?>">Solutions</a></li>
+    <li><a href="<?php echo esc_url(home_url('/solutions/')); ?>"<?php echo $sck_cur('solutions'); ?>>Solutions</a></li>
     <li><a href="<?php echo esc_url($sck_shop); ?>"<?php echo $sck_cur('shop'); ?>>Shop</a></li>
-    <li><a href="<?php echo esc_url($sck_home . '#projects'); ?>">Projects</a></li>
-    <li><a href="<?php echo esc_url($sck_home . '#process'); ?>">How we work</a></li>
     <li><a href="<?php echo esc_url($sck_about); ?>"<?php echo $sck_cur('about'); ?>>About</a></li>
     <li><a href="<?php echo esc_url($sck_blog); ?>"<?php echo $sck_cur('blog'); ?>>Guides</a></li>
     <li><a href="<?php echo esc_url($sck_contact); ?>"<?php echo $sck_cur('contact'); ?>>Contact</a></li>
@@ -43,10 +41,8 @@ $sck_cur   = function ($k) use ($sck_nav_current) { return $k === $sck_nav_curre
     <button class="icon-btn menu-toggle" type="button" id="menu-toggle" aria-expanded="false" aria-controls="mmenu" aria-label="Open menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
   <nav class="mmenu" id="mmenu" aria-label="Mobile menu" hidden>
-    <a href="<?php echo esc_url($sck_home . '#solutions'); ?>">Solutions</a>
+    <a href="<?php echo esc_url(home_url('/solutions/')); ?>"<?php echo $sck_cur('solutions'); ?>>Solutions</a>
     <a href="<?php echo esc_url($sck_shop); ?>">Shop</a>
-    <a href="<?php echo esc_url($sck_home . '#projects'); ?>">Projects</a>
-    <a href="<?php echo esc_url($sck_home . '#process'); ?>">How we work</a>
     <a href="<?php echo esc_url($sck_about); ?>"<?php echo $sck_cur('about'); ?>>About</a>
     <a href="<?php echo esc_url($sck_blog); ?>"<?php echo $sck_cur('blog'); ?>>Guides</a>
     <a href="<?php echo esc_url($sck_contact); ?>"<?php echo $sck_cur('contact'); ?>>Contact</a>

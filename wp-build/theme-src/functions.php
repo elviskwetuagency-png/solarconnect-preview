@@ -91,6 +91,7 @@ add_filter('body_class', function ($classes) {
 });
 
 require_once get_stylesheet_directory() . '/inc-shop-filters.php';
+require_once get_stylesheet_directory() . '/inc-solutions.php';
 
 
 /**
@@ -107,7 +108,7 @@ remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar');
  * the body class and the header's "Get a quote" target.
  */
 function sck_hero_templates() {
-    return ['page-about-a.php', 'page-about-b.php', 'page-contact.php', 'page-faqs.php'];
+    return ['page-about-a.php', 'page-about-b.php', 'page-contact.php', 'page-faqs.php', 'page-solutions.php', 'page-solution.php'];
 }
 
 /** Content pages that use pages.css and the in-page hero nav: the templates above plus the blog. */
@@ -146,7 +147,7 @@ add_filter('rank_math/json_ld', function ($data) {
             unset($data[$key]);
         }
     }
-    $page_types = ['page-about-a.php' => 'AboutPage', 'page-about-b.php' => 'AboutPage', 'page-contact.php' => 'ContactPage'];
+    $page_types = ['page-about-a.php' => 'AboutPage', 'page-about-b.php' => 'AboutPage', 'page-contact.php' => 'ContactPage', 'page-solutions.php' => 'CollectionPage'];
     $tpl = get_page_template_slug();
     foreach ($data as $key => $node) {
         if (isset($node['@type']) && $node['@type'] === 'WebPage') {
@@ -225,3 +226,31 @@ add_action('wp_head', function () {
     }
     echo '<script type="application/ld+json">' . wp_json_encode(['@context' => 'https://schema.org', '@type' => 'FAQPage', 'mainEntity' => $items], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>' . "\n";
 }, 30);
+
+/**
+ * One product card (homepage "Shop the components" style), rendered live
+ * from WooCommerce: image, label, name, price with sale saving, link.
+ * Shared by the homepage product grid and the solution pages. Returns ''
+ * for missing or unpublished products.
+ */
+function sck_product_card($product_id, $label = '', $filter = '') {
+    $p = function_exists('wc_get_product') ? wc_get_product($product_id) : null;
+    if (!$p || get_post_status($product_id) !== 'publish') return '';
+    $ksh   = function ($n) { return 'Ksh ' . number_format((float) $n); };
+    $url   = get_permalink($product_id);
+    $name  = $p->get_name();
+    $img   = wp_get_attachment_image_url($p->get_image_id(), 'woocommerce_thumbnail') ?: wc_placeholder_img_src('woocommerce_thumbnail');
+    $price = (float) $p->get_price();
+    $reg   = (float) $p->get_regular_price();
+    $price_html = '<b>' . esc_html($ksh($price)) . '</b>';
+    if ($p->is_on_sale() && $reg > $price) {
+        $price_html .= '<span class="pold"><s>' . esc_html($ksh($reg)) . '</s><span class="psave">Save ' . esc_html($ksh($reg - $price)) . '</span></span>';
+    }
+    $cart = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L21 8H6.2"/><circle cx="9.5" cy="20" r="1.2"/><circle cx="17.5" cy="20" r="1.2"/></svg>';
+    return '<article class="prod rv"' . ($filter ? ' data-c="' . esc_attr($filter) . '"' : '') . '>'
+        . '<a class="media light" href="' . esc_url($url) . '" tabindex="-1" aria-hidden="true"><img src="' . esc_url($img) . '" alt="' . esc_attr($name) . '" loading="lazy"></a>'
+        . '<div class="b">' . ($label ? '<span class="c">' . esc_html($label) . '</span>' : '')
+        . '<h3><a href="' . esc_url($url) . '">' . esc_html($name) . '</a></h3>'
+        . '<div class="f"><div class="pr">' . $price_html . '</div>'
+        . '<a class="add" href="' . esc_url($url) . '" aria-label="View ' . esc_attr($name) . '">' . $cart . '</a></div></div></article>';
+}

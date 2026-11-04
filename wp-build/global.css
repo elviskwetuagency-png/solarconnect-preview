@@ -446,3 +446,9 @@ footer h3{font-size:14px;font-weight:500;letter-spacing:0;color:var(--mist-2);ma
 .f-legal{display:flex;gap:16px}
 .f-legal a{color:var(--mist-2)}
 .f-legal a:hover{color:var(--white)}
+
+/* Homepage solution tags are links to the solution pages */
+.tags a{padding:7px 12px;border-radius:999px;border:1px solid #333336;transition:border-color .2s,background .2s}
+.tags a:hover{border-color:var(--sun)}
+.way.b .tags a{border-color:#C9C8C2}
+.way.b .tags a:hover{border-color:var(--ink)}

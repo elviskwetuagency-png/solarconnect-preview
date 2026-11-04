@@ -13,19 +13,16 @@
 $sck_h_home = home_url('/');
 $sck_h_shop = function_exists('wc_get_page_permalink') ? wc_get_page_permalink('shop') : home_url('/shop/');
 $sck_h_cart = function_exists('wc_get_cart_url') ? wc_get_cart_url() : home_url('/cart/');
-/* Pages that carry their own #contact section scroll to it; elsewhere go straight to WhatsApp. */
-$sck_h_has_contact = is_front_page() || sck_is_content_page();
-$sck_h_quote = $sck_h_has_contact ? '#contact' : 'https://wa.me/254706636447?text=' . rawurlencode('Hello Solar Connect, I would like a quote.');
+/* "Get a quote" always opens the Contact page (quote form, phones, WhatsApp). */
+$sck_h_quote = home_url('/contact-us/');
 ?>
 <header class="nav" id="nav">
   <div class="nav-in">
     <a class="brand" href="<?php echo esc_url($sck_h_home); ?>" aria-label="Solar Connect Kenya home"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/685172a7fa.png" alt="Solar Connect, Building a better future" style="height:36px;width:auto;display:block">
     </a>
     <nav class="pill" aria-label="Main">
-      <a class="lk" href="<?php echo esc_url($sck_h_home . '#solutions'); ?>">Solutions</a>
+      <a class="lk" href="<?php echo esc_url(home_url('/solutions/')); ?>">Solutions</a>
       <a class="lk" href="<?php echo esc_url($sck_h_shop); ?>">Shop</a>
-      <a class="lk" href="<?php echo esc_url($sck_h_home . '#projects'); ?>">Projects</a>
-      <a class="lk" href="<?php echo esc_url($sck_h_home . '#process'); ?>">How we work</a>
       <a class="lk" href="<?php echo esc_url(home_url('/about-us/')); ?>">About</a>
       <a class="lk" href="<?php echo esc_url(home_url('/blog/')); ?>">Guides</a>
       <a class="lk" href="<?php echo esc_url(home_url('/contact-us/')); ?>">Contact</a>

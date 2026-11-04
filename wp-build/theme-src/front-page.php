@@ -20,12 +20,10 @@ get_header();
       <div class="ubar-r"><a href="<?php echo esc_url(home_url('/faqs/')); ?>">FAQs</a><a href="<?php echo esc_url(home_url('/about-us/')); ?>">About us</a><a href="<?php echo esc_url(wc_get_page_permalink('myaccount')); ?>">Order tracking</a><a href="<?php echo esc_url(wc_get_page_permalink('myaccount')); ?>">Login / My account</a></div>
     </div>
     <div class="hnav">
-      <a class="logo" href="#top" aria-label="Solar Connect Kenya home"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/685172a7fa.png" alt="Solar Connect, Building a better future"></a>
+      <a class="logo" href="<?php echo esc_url(home_url('/')); ?>" aria-label="Solar Connect Kenya home"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/685172a7fa.png" alt="Solar Connect, Building a better future"></a>
       <nav aria-label="Hero menu"><ul>
-        <li><a href="#solutions">Solutions</a></li>
-        <li><a href="#shop">Shop</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#process">How we work</a></li>
+        <li><a href="<?php echo esc_url(home_url('/solutions/')); ?>">Solutions</a></li>
+        <li><a href="<?php echo esc_url(wc_get_page_permalink('shop')); ?>">Shop</a></li>
         <li><a href="<?php echo esc_url(home_url('/about-us/')); ?>">About</a></li>
         <li><a href="<?php echo esc_url(home_url('/blog/')); ?>">Guides</a></li>
         <li><a href="<?php echo esc_url(home_url('/contact-us/')); ?>">Contact</a></li>
@@ -38,10 +36,8 @@ get_header();
         <button class="icon-btn menu-toggle" type="button" id="menu-toggle" aria-expanded="false" aria-controls="mmenu" aria-label="Open menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
       </div>
       <nav class="mmenu" id="mmenu" aria-label="Mobile menu" hidden>
-        <a href="#solutions">Solutions</a>
-        <a href="#shop">Shop</a>
-        <a href="#projects">Projects</a>
-        <a href="#process">How we work</a>
+        <a href="<?php echo esc_url(home_url('/solutions/')); ?>">Solutions</a>
+        <a href="<?php echo esc_url(wc_get_page_permalink('shop')); ?>">Shop</a>
         <a href="<?php echo esc_url(home_url('/about-us/')); ?>">About</a>
         <a href="<?php echo esc_url(home_url('/blog/')); ?>">Guides</a>
         <a href="<?php echo esc_url(home_url('/contact-us/')); ?>">Contact</a>
@@ -56,7 +52,7 @@ get_header();
       <h1><span class="ln"><span>Reliable solar</span></span><span class="ln"><span>for Kenyan homes</span></span><span class="ln"><span class="dim">&amp; businesses.</span></span></h1>
       <p class="hero-sub">Genuine panels, inverters and batteries, sized to your power needs, installed cleanly, and supported on WhatsApp after handover.</p>
       <div class="hero-actions">
-        <a class="arrow-pill" href="#contact">Get a free quote <span class="ac"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
+        <a class="arrow-pill" href="<?php echo esc_url(home_url('/contact-us/')); ?>">Get a free quote <span class="ac"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
       </div>
     </div>
 
@@ -128,8 +124,8 @@ get_header();
         <div class="way-body">
           <h3>For homes</h3>
           <p>Full home solar and inverter-battery backup that keeps essential appliances running through outages.</p>
-          <div class="tags"><span>Full home solar</span><span>Power backup</span><span>Solar water heating</span></div>
-          <a class="btn btn-white" href="#contact">Explore home systems</a>
+          <div class="tags"><a href="<?php echo esc_url(home_url('/solutions/full-home-solar/')); ?>">Full home solar</a><a href="<?php echo esc_url(home_url('/solutions/power-backup/')); ?>">Power backup</a><a href="<?php echo esc_url(home_url('/solutions/solar-water-heating/')); ?>">Solar water heating</a></div>
+          <a class="btn btn-white" href="<?php echo esc_url(home_url('/solutions/')); ?>">Explore home systems</a>
         </div>
       </article>
       <article class="way b rv">
@@ -137,8 +133,8 @@ get_header();
         <div class="way-body">
           <h3>For businesses</h3>
           <p>Practical hybrid setups for shops, offices, apartments and facilities, plus solar lighting for compounds and walkways.</p>
-          <div class="tags"><span>Hybrid systems</span><span>Outdoor lighting</span><span>Parts &amp; accessories</span></div>
-          <a class="btn btn-ink" href="#contact">Explore business systems</a>
+          <div class="tags"><a href="<?php echo esc_url(home_url('/solutions/business-power-systems/')); ?>">Hybrid systems</a><a href="<?php echo esc_url(home_url('/solutions/outdoor-lighting/')); ?>">Outdoor lighting</a><a href="<?php echo esc_url(home_url('/solutions/parts-and-accessories/')); ?>">Parts &amp; accessories</a></div>
+          <a class="btn btn-ink" href="<?php echo esc_url(home_url('/solutions/business-power-systems/')); ?>">Explore business systems</a>
         </div>
       </article>
     </div>
@@ -194,7 +190,7 @@ get_header();
 <section id="process" class="wrap process">
   <div class="head-row rv">
     <div><h2 class="h2">From power need<br>to working system.</h2><p class="shop-lede">Design. Deliver. Install. Test. A clear process you can follow before you buy.</p></div>
-    <a class="btn btn-ink" href="#contact">Send your power needs</a>
+    <a class="btn btn-ink" href="<?php echo esc_url(home_url('/contact-us/')); ?>">Send your power needs</a>
   </div>
   <div class="tabs rv" role="tablist" aria-label="Process steps" id="tabs">
     <button class="tab" type="button" role="tab" aria-selected="true" aria-controls="step-view" data-i="0"><span class="mono">Step 1</span><span class="nm">Consultation</span></button>
@@ -219,12 +215,12 @@ get_header();
 <section class="wrap services">
   <h2 class="h2 rv">What we install.</h2>
   <div class="svc-list">
-    <a class="svc rv" href="#contact"><span class="nm">Full home solar</span><span class="ds">Panels, inverter, battery, protection, installation and testing for dependable home power.</span><span class="media"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/b40d931493.webp" alt="" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
-    <a class="svc rv" href="#contact"><span class="nm">Power backup</span><span class="ds">Keep essential appliances running with a properly matched inverter and battery system.</span><span class="media"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/90fc216d74.webp" alt="" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
-    <a class="svc rv" href="#contact"><span class="nm">Business power systems</span><span class="ds">Practical hybrid setups for shops, offices, apartments and small business operations.</span><span class="media"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/eec44d0885.webp" alt="" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
-    <a class="svc rv" href="#contact"><span class="nm">Solar water heating</span><span class="ds">Reliable water heating that reduces electricity use in homes and facilities.</span><span class="media"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/solar-water-heating.webp" alt="Seven SS Stars solar water heater" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
-    <a class="svc rv" href="#contact"><span class="nm">Outdoor lighting</span><span class="ds">Solar lighting for compounds, walkways, security points and commercial outdoor spaces.</span><span class="media"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/outdoor-lighting.webp" alt="Solar garden and pathway lighting" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
-    <a class="svc rv" href="#contact"><span class="nm">Parts &amp; accessories</span><span class="ds">Controllers, cables, breakers, rails, cabinets and mounting hardware for clean installations.</span><span class="media"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/510a930c57.webp" alt="" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
+    <a class="svc rv" href="<?php echo esc_url(home_url('/solutions/full-home-solar/')); ?>"><span class="nm">Full home solar</span><span class="ds">Panels, inverter, battery, protection, installation and testing for dependable home power.</span><span class="media"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/b40d931493.webp" alt="" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
+    <a class="svc rv" href="<?php echo esc_url(home_url('/solutions/power-backup/')); ?>"><span class="nm">Power backup</span><span class="ds">Keep essential appliances running with a properly matched inverter and battery system.</span><span class="media"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/90fc216d74.webp" alt="" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
+    <a class="svc rv" href="<?php echo esc_url(home_url('/solutions/business-power-systems/')); ?>"><span class="nm">Business power systems</span><span class="ds">Practical hybrid setups for shops, offices, apartments and small business operations.</span><span class="media"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/eec44d0885.webp" alt="" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
+    <a class="svc rv" href="<?php echo esc_url(home_url('/solutions/solar-water-heating/')); ?>"><span class="nm">Solar water heating</span><span class="ds">Reliable water heating that reduces electricity use in homes and facilities.</span><span class="media"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/solar-water-heating.webp" alt="Seven SS Stars solar water heater" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
+    <a class="svc rv" href="<?php echo esc_url(home_url('/solutions/outdoor-lighting/')); ?>"><span class="nm">Outdoor lighting</span><span class="ds">Solar lighting for compounds, walkways, security points and commercial outdoor spaces.</span><span class="media"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/outdoor-lighting.webp" alt="Solar garden and pathway lighting" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
+    <a class="svc rv" href="<?php echo esc_url(home_url('/solutions/parts-and-accessories/')); ?>"><span class="nm">Parts &amp; accessories</span><span class="ds">Controllers, cables, breakers, rails, cabinets and mounting hardware for clean installations.</span><span class="media"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/510a930c57.webp" alt="" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
   </div>
 </section>
 

@@ -76,12 +76,12 @@ $shop = function_exists('wc_get_page_permalink') ? wc_get_page_permalink('shop')
   <div class="abB-cards">
     <?php
     $cards = [
-      ['Homes', 'Full home solar', 'Panels, inverter, battery, protection, installation and testing for dependable household power.', 'b40d931493.webp'],
-      ['Backup', 'Inverter & battery systems', 'Matched backup for lights, entertainment, fridges, routers, tills and essential loads.', 'about/inverter-wall-a.webp'],
-      ['Business', 'Hybrid commercial setups', 'Solar and backup power for shops, offices, apartments, clinics and small business operations.', 'about/battery-rack.webp'],
-      ['Heating', 'Solar water heating', 'Water heating that reduces electricity use in homes, rentals and commercial facilities.', 'solar-water-heating.webp'],
-      ['Outdoor', 'Solar lighting', 'Compound, walkway, security, street and commercial outdoor lighting for safer spaces.', 'outdoor-lighting.webp'],
-      ['Parts', 'Accessories & protection', 'Controllers, cables, breakers, rails, cabinets and mounting hardware for clean installs.', '510a930c57.webp'],
+      ['Homes', 'Full home solar', 'Panels, inverter, battery, protection, installation and testing for dependable household power.', 'b40d931493.webp', 'full-home-solar'],
+      ['Backup', 'Inverter & battery systems', 'Matched backup for lights, entertainment, fridges, routers, tills and essential loads.', 'about/inverter-wall-a.webp', 'power-backup'],
+      ['Business', 'Hybrid commercial setups', 'Solar and backup power for shops, offices, apartments, clinics and small business operations.', 'about/battery-rack.webp', 'business-power-systems'],
+      ['Heating', 'Solar water heating', 'Water heating that reduces electricity use in homes, rentals and commercial facilities.', 'solar-water-heating.webp', 'solar-water-heating'],
+      ['Outdoor', 'Solar lighting', 'Compound, walkway, security, street and commercial outdoor lighting for safer spaces.', 'outdoor-lighting.webp', 'outdoor-lighting'],
+      ['Parts', 'Accessories & protection', 'Controllers, cables, breakers, rails, cabinets and mounting hardware for clean installs.', '510a930c57.webp', 'parts-and-accessories'],
     ];
     foreach ($cards as $c) : ?>
       <article class="abB-card rv">
@@ -90,7 +90,7 @@ $shop = function_exists('wc_get_page_permalink') ? wc_get_page_permalink('shop')
           <span class="mono abB-k"><?php echo esc_html($c[0]); ?></span>
           <h3><?php echo esc_html($c[1]); ?></h3>
           <p><?php echo esc_html($c[2]); ?></p>
-          <a class="link-arrow" href="<?php echo esc_url($wa('Hello Solar Connect, I would like advice on ' . strtolower($c[1]) . '.')); ?>">Ask about this <?php echo $arrow_r; ?></a>
+          <a class="link-arrow" href="<?php echo esc_url(home_url('/solutions/' . $c[4] . '/')); ?>">Explore <?php echo esc_html(strtolower($c[1])); ?> <?php echo $arrow_r; ?></a>
         </div>
       </article>
     <?php endforeach; ?>

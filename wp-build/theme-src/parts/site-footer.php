@@ -108,7 +108,7 @@ $sck_terms   = ($sck_terms_id && get_post_status($sck_terms_id) === 'publish') ?
       <span class="f-legal"><?php
         if ($sck_terms) echo '<a href="' . esc_url($sck_terms) . '">Terms</a>';
         if ($sck_privacy) echo '<a href="' . esc_url($sck_privacy) . '">Privacy</a>';
-      ?><a href="<?php echo esc_url(home_url('/wp-sitemap.xml')); ?>">Sitemap</a></span>
+      ?><a href="<?php echo esc_url(home_url('/sitemap_index.xml')); ?>">Sitemap</a></span>
       <a class="f-top" href="#top">Back to top <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
     </div>
   </div>

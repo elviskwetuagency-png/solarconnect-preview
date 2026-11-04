@@ -455,3 +455,6 @@ button.checkout:hover, input#place_order:hover, a.checkout-button:hover { transf
 /* Store notices: keep the icon clear of the message text */
 .woocommerce-message, .woocommerce-info, .woocommerce-error { position: relative; padding-left: 52px !important; }
 .woocommerce-message::before, .woocommerce-info::before, .woocommerce-error::before { left: 20px !important; }
+.woocommerce .page-description { max-width: 72ch; }
+.woocommerce .page-description p { color: var(--ink-2); font-size: 16px; line-height: 1.65; margin: 0 0 8px; }
+.woocommerce .page-description a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }

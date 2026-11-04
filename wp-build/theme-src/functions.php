@@ -53,7 +53,7 @@ add_action('wp_enqueue_scripts', function () {
         );
     }
 
-    if (is_page_template(sck_hero_templates())) {
+    if (sck_is_content_page()) {
         wp_enqueue_style(
             'sck-pages',
             get_stylesheet_directory_uri() . '/assets/pages.css',
@@ -84,7 +84,7 @@ add_action('wp_enqueue_scripts', function () {
 add_filter('body_class', function ($classes) {
     /* About templates open with their own dark hero nav (like the homepage),
        so they keep the scroll-to-reveal behaviour instead. */
-    if (!is_front_page() && !is_page_template(sck_hero_templates())) {
+    if (!is_front_page() && !sck_is_content_page()) {
         $classes[] = 'sck-interior';
     }
     return $classes;
@@ -108,6 +108,11 @@ remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar');
  */
 function sck_hero_templates() {
     return ['page-about-a.php', 'page-about-b.php', 'page-contact.php', 'page-faqs.php'];
+}
+
+/** Content pages that use pages.css and the in-page hero nav: the templates above plus the blog. */
+function sck_is_content_page() {
+    return is_page_template(sck_hero_templates()) || is_home() || is_singular('post');
 }
 
 /**
@@ -151,3 +156,72 @@ add_filter('rank_math/json_ld', function ($data) {
     }
     return $data;
 }, 99);
+
+/**
+ * Shop archive heading: a descriptive H1 instead of the bare page name.
+ * The intro paragraph under it is the Shop page's own content (WooCommerce
+ * prints it as the archive description), so it stays editable in wp-admin.
+ */
+add_filter('woocommerce_page_title', function ($title) {
+    return (function_exists('is_shop') && is_shop() && !is_search()) ? 'Shop solar panels, inverters and batteries' : $title;
+});
+
+/**
+ * Blog posts: the byline is the company, so make the Article schema author
+ * the Organization (not the WordPress login account) and drop the Person.
+ */
+add_filter('rank_math/json_ld', function ($data) {
+    if (!is_singular('post') || !is_array($data)) return $data;
+    $org = ['@id' => home_url('/#organization')];
+    foreach ($data as $key => $node) {
+        $types = isset($node['@type']) ? (array) $node['@type'] : [];
+        if (in_array('Person', $types, true)) { unset($data[$key]); continue; }
+        if (array_intersect($types, ['Article', 'BlogPosting', 'NewsArticle'])) {
+            $data[$key]['author'] = $org;
+            $data[$key]['publisher'] = $org;
+        }
+        if (isset($node['author'])) $data[$key]['author'] = $org;
+    }
+    return $data;
+}, 100);
+
+/**
+ * llms.txt (served by Rank Math): keep shop utility pages out, and describe
+ * each entry with its SEO meta description when one is set (falls back to
+ * Rank Math's excerpt), so AI assistants get the same accurate summaries
+ * as search engines.
+ */
+add_filter('rank_math/llms_txt/posts', function ($posts) {
+    $skip = array_filter([
+        function_exists('wc_get_page_id') ? wc_get_page_id('cart') : 0,
+        function_exists('wc_get_page_id') ? wc_get_page_id('checkout') : 0,
+        function_exists('wc_get_page_id') ? wc_get_page_id('myaccount') : 0,
+    ]);
+    return array_values(array_filter((array) $posts, function ($p) use ($skip) {
+        if (in_array((int) $p->ID, array_map('intval', $skip), true)) return false;
+        $robots = get_post_meta($p->ID, 'rank_math_robots', true);
+        return !(is_array($robots) && in_array('noindex', $robots, true));
+    }));
+});
+add_filter('rank_math/llms_txt/post_description', function ($desc, $post) {
+    $meta = trim((string) get_post_meta($post->ID, 'rank_math_description', true));
+    if ($meta !== '') return $meta;
+    if ($post->post_type === 'product' && has_excerpt($post)) return wp_strip_all_tags($post->post_excerpt);
+    return $desc;
+}, 10, 2);
+
+/**
+ * Blog posts: build FAQPage structured data from the article's own FAQ
+ * accordion (<details class="fq">), so the visible Q&A and the schema can
+ * never disagree.
+ */
+add_action('wp_head', function () {
+    if (!is_singular('post')) return;
+    $html = get_post_field('post_content', get_queried_object_id());
+    if (!preg_match_all('#<details class="fq"><summary>(.*?)<span[^>]*></span></summary><div class="fq-a">(.*?)</div></details>#s', $html, $m, PREG_SET_ORDER)) return;
+    $items = [];
+    foreach ($m as $qa) {
+        $items[] = ['@type' => 'Question', 'name' => trim(wp_strip_all_tags($qa[1])), 'acceptedAnswer' => ['@type' => 'Answer', 'text' => trim(wp_strip_all_tags($qa[2]))]];
+    }
+    echo '<script type="application/ld+json">' . wp_json_encode(['@context' => 'https://schema.org', '@type' => 'FAQPage', 'mainEntity' => $items], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>' . "\n";
+}, 30);

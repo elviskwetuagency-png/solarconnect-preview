@@ -44,6 +44,12 @@ $sck_deps = [
         ['Monocrystalline panels', 'monocrystalline'],
         ['Polycrystalline panels', 'polycrystalline-solar-panel', 'polycrystalline'],
     ],
+    'Systems and more' => [
+        ['Solar system packages', 'solar-system-packages'],
+        ['Portable power stations', 'portable-power-stations'],
+        ['Solar water heaters', 'pressurized-systems'],
+        ['Solar flood lights', 'solar-flood-light'],
+    ],
 ];
 
 $sck_chk = '<span class="f-chk"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>';
@@ -74,6 +80,7 @@ $sck_terms   = ($sck_terms_id && get_post_status($sck_terms_id) === 'publish') ?
         <a href="<?php echo esc_url($sck_acct); ?>">Check order status</a>
         <a href="https://wa.me/254706636447?text=Hello%20Solar%20Connect%2C%20I%20need%20help%20choosing%20a%20solar%20system.">Request a quote</a>
         <?php if ($sck_about) : ?><a href="<?php echo esc_url($sck_about); ?>">About Solar Connect</a><?php endif; ?>
+        <?php $sck_blog_id = (int) get_option('page_for_posts'); if ($sck_blog_id && get_post_status($sck_blog_id) === 'publish') : ?><a href="<?php echo esc_url(get_permalink($sck_blog_id)); ?>">Solar guides</a><?php endif; ?>
         <?php if ($sck_faqs) : ?><a href="<?php echo esc_url($sck_faqs); ?>">FAQs</a><?php endif; ?>
         <?php if ($sck_contact) : ?><a href="<?php echo esc_url($sck_contact); ?>">Contact us</a><?php endif; ?>
       </nav>

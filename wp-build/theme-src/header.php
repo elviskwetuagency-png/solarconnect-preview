@@ -14,7 +14,7 @@ $sck_h_home = home_url('/');
 $sck_h_shop = function_exists('wc_get_page_permalink') ? wc_get_page_permalink('shop') : home_url('/shop/');
 $sck_h_cart = function_exists('wc_get_cart_url') ? wc_get_cart_url() : home_url('/cart/');
 /* Pages that carry their own #contact section scroll to it; elsewhere go straight to WhatsApp. */
-$sck_h_has_contact = is_front_page() || is_page_template(sck_hero_templates());
+$sck_h_has_contact = is_front_page() || sck_is_content_page();
 $sck_h_quote = $sck_h_has_contact ? '#contact' : 'https://wa.me/254706636447?text=' . rawurlencode('Hello Solar Connect, I would like a quote.');
 ?>
 <header class="nav" id="nav">
@@ -27,6 +27,7 @@ $sck_h_quote = $sck_h_has_contact ? '#contact' : 'https://wa.me/254706636447?tex
       <a class="lk" href="<?php echo esc_url($sck_h_home . '#projects'); ?>">Projects</a>
       <a class="lk" href="<?php echo esc_url($sck_h_home . '#process'); ?>">How we work</a>
       <a class="lk" href="<?php echo esc_url(home_url('/about-us/')); ?>">About</a>
+      <a class="lk" href="<?php echo esc_url(home_url('/blog/')); ?>">Guides</a>
       <a class="lk" href="<?php echo esc_url(home_url('/contact-us/')); ?>">Contact</a>
       <a class="icon" href="<?php echo esc_url($sck_h_shop); ?>" aria-label="Search products"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4-4"/></svg></a>
       <a class="icon" href="<?php echo esc_url($sck_h_cart); ?>" aria-label="Cart"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L21 8H6.2"/><circle cx="9.5" cy="20" r="1.2"/><circle cx="17.5" cy="20" r="1.2"/></svg></a>

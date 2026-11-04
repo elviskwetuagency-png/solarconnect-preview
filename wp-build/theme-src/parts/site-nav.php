@@ -16,6 +16,7 @@ $sck_about_page = get_page_by_path('about-us');
 $sck_about = $sck_about_page ? get_permalink($sck_about_page) : get_permalink();
 $sck_contact = home_url('/contact-us/');
 $sck_faqs    = home_url('/faqs/');
+$sck_blog    = home_url('/blog/');
 $sck_wa    = 'https://wa.me/254706636447?text=' . rawurlencode('Hello Solar Connect, I need help choosing a solar system.');
 $sck_cur   = function ($k) use ($sck_nav_current) { return $k === $sck_nav_current ? ' aria-current="page"' : ''; };
 ?>
@@ -31,6 +32,7 @@ $sck_cur   = function ($k) use ($sck_nav_current) { return $k === $sck_nav_curre
     <li><a href="<?php echo esc_url($sck_home . '#projects'); ?>">Projects</a></li>
     <li><a href="<?php echo esc_url($sck_home . '#process'); ?>">How we work</a></li>
     <li><a href="<?php echo esc_url($sck_about); ?>"<?php echo $sck_cur('about'); ?>>About</a></li>
+    <li><a href="<?php echo esc_url($sck_blog); ?>"<?php echo $sck_cur('blog'); ?>>Guides</a></li>
     <li><a href="<?php echo esc_url($sck_contact); ?>"<?php echo $sck_cur('contact'); ?>>Contact</a></li>
   </ul></nav>
   <div class="right">
@@ -46,6 +48,7 @@ $sck_cur   = function ($k) use ($sck_nav_current) { return $k === $sck_nav_curre
     <a href="<?php echo esc_url($sck_home . '#projects'); ?>">Projects</a>
     <a href="<?php echo esc_url($sck_home . '#process'); ?>">How we work</a>
     <a href="<?php echo esc_url($sck_about); ?>"<?php echo $sck_cur('about'); ?>>About</a>
+    <a href="<?php echo esc_url($sck_blog); ?>"<?php echo $sck_cur('blog'); ?>>Guides</a>
     <a href="<?php echo esc_url($sck_contact); ?>"<?php echo $sck_cur('contact'); ?>>Contact</a>
     <a href="<?php echo esc_url($sck_faqs); ?>"<?php echo $sck_cur('faqs'); ?>>FAQs</a>
     <a href="<?php echo esc_url($sck_acct); ?>">Order tracking</a>

@@ -27,6 +27,7 @@ get_header();
         <li><a href="#projects">Projects</a></li>
         <li><a href="#process">How we work</a></li>
         <li><a href="<?php echo esc_url(home_url('/about-us/')); ?>">About</a></li>
+        <li><a href="<?php echo esc_url(home_url('/blog/')); ?>">Guides</a></li>
         <li><a href="<?php echo esc_url(home_url('/contact-us/')); ?>">Contact</a></li>
       </ul></nav>
       <div class="right">
@@ -42,6 +43,7 @@ get_header();
         <a href="#projects">Projects</a>
         <a href="#process">How we work</a>
         <a href="<?php echo esc_url(home_url('/about-us/')); ?>">About</a>
+        <a href="<?php echo esc_url(home_url('/blog/')); ?>">Guides</a>
         <a href="<?php echo esc_url(home_url('/contact-us/')); ?>">Contact</a>
         <a href="<?php echo esc_url(home_url('/faqs/')); ?>">FAQs</a>
         <a href="<?php echo esc_url(wc_get_page_permalink('myaccount')); ?>">Order tracking</a>

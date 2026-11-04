@@ -53,6 +53,22 @@ add_action('wp_enqueue_scripts', function () {
         );
     }
 
+    if (is_page_template(['page-about-a.php', 'page-about-b.php'])) {
+        wp_enqueue_style(
+            'sck-about',
+            get_stylesheet_directory_uri() . '/assets/about.css',
+            ['sck-global'],
+            filemtime(get_stylesheet_directory() . '/assets/about.css')
+        );
+        wp_enqueue_script(
+            'sck-about',
+            get_stylesheet_directory_uri() . '/assets/about.js',
+            [],
+            filemtime(get_stylesheet_directory() . '/assets/about.js'),
+            true
+        );
+    }
+
     wp_enqueue_style(
         'sck-geist-font',
         'https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap',

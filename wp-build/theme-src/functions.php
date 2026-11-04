@@ -117,3 +117,11 @@ function sck_hero_templates() {
 add_filter('wp_sitemaps_add_provider', function ($provider, $name) {
     return $name === 'users' ? false : $provider;
 }, 10, 2);
+
+/**
+ * No page uses a Contact Form 7 form (the contact and quote forms hand off
+ * to WhatsApp), so don't load CF7's scripts and styles on every page.
+ * Remove these two lines if a CF7 form is added later.
+ */
+add_filter('wpcf7_load_js', '__return_false');
+add_filter('wpcf7_load_css', '__return_false');

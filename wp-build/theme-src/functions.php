@@ -109,3 +109,11 @@ remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar');
 function sck_hero_templates() {
     return ['page-about-a.php', 'page-about-b.php', 'page-contact.php', 'page-faqs.php'];
 }
+
+/**
+ * Keep the user list out of the public XML sitemap: it only exposes the
+ * admin login name and has no value for search engines on a shop site.
+ */
+add_filter('wp_sitemaps_add_provider', function ($provider, $name) {
+    return $name === 'users' ? false : $provider;
+}, 10, 2);

@@ -56,7 +56,9 @@
     {h:'Delivery & installation', p:'We coordinate delivery, mounting, wiring, inverter and battery setup, and safety checks.', t:['Mounting','Wiring','Safety checks'], img:'roof', cap:'rooftop install', alt:'Panels mounted on a rooftop'},
     {h:'Testing & support', p:'We confirm the system works, explain how to use it, and keep WhatsApp support open after handover.', t:['Testing','Walkthrough','WhatsApp support'], img:'inverter-wall', cap:'clean indoor backup', alt:'Wall-mounted inverter and battery backup'}
   ];
-  var IMG = {'team-panels':'https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/6fd700f137.webp', diagram:'https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/b645ffe928.webp', roof:'https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/b40d931493.webp', 'inverter-wall':'https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/90fc216d74.webp'};
+  var stepImgEl = document.getElementById('step-img');
+  var IMGBASE = stepImgEl ? stepImgEl.src.replace(/[^\/]+$/, '') : '';
+  var IMG = {'team-panels':IMGBASE+'6fd700f137.webp', diagram:IMGBASE+'b645ffe928.webp', roof:IMGBASE+'b40d931493.webp', 'inverter-wall':IMGBASE+'90fc216d74.webp'};
   var tabs = [].slice.call(document.querySelectorAll('.tab')), proc = document.getElementById('process'), cur = 0, timer = null;
   var top = document.getElementById('step-top'), img = document.getElementById('step-img');
   function show(i){
@@ -66,7 +68,7 @@
     document.getElementById('step-h').textContent = d.h;
     document.getElementById('step-p').textContent = d.p;
     document.getElementById('step-tags').innerHTML = d.t.map(function(x){ return '<span>' + x + '</span>'; }).join('');
-    document.getElementById('step-cap').textContent = 'Photo · ' + d.cap;
+    var capEl = document.getElementById('step-cap'); if (capEl) capEl.textContent = 'Photo · ' + d.cap;
     img.style.visibility = ''; img.alt = d.alt; img.src = IMG[d.img]; img.style.objectFit = d.img === 'diagram' ? 'contain' : ''; img.style.background = d.img === 'diagram' ? '#fff' : '';
     top.classList.remove('swap'); void top.offsetWidth; top.classList.add('swap');
     restart();
@@ -118,19 +120,20 @@
     var shown = prods.filter(function(p){ return !p.hidden; }).length;
     document.getElementById('filter-count').textContent = 'Showing ' + shown + ' product' + (shown === 1 ? '' : 's');
     var lbl = {all:'Browse all products', inv:'Browse all inverters', bat:'Browse all batteries', cc:'Browse all charge controllers'}[f];
-    var href = {all:'https://solarconnectkenya.com/products', inv:'https://solarconnectkenya.com/product/c/solar-inverters', bat:'https://solarconnectkenya.com/product/c/solar-batteries', cc:'https://solarconnectkenya.com/product/c/solar-charger-controllers'}[f];
+    var home = location.origin + '/', shopUrl = home + 'shop/';
+    var href = {all:shopUrl, inv:home + '?s=inverter&post_type=product', bat:home + '?s=battery&post_type=product', cc:home + 'product-category/mppt-charge-controller/'}[f];
     document.querySelectorAll('.shop-all-lbl').forEach(function(el){ el.parentNode.href = href; });
     document.querySelectorAll('.shop-all-lbl').forEach(function(el){ el.textContent = lbl; });
   }); });
 
-  /* quote form (demo) */
+  /* quote form: validate a Kenyan number, then open WhatsApp with a call-back request */
   var form = document.getElementById('qform'), msg = document.getElementById('q-msg'), phone = document.getElementById('q-phone');
-  form.addEventListener('submit', function(e){
+  if (form && msg && phone) form.addEventListener('submit', function(e){
     e.preventDefault();
-    var v = phone.value.replace(/\s+/g, '');
+    var v = phone.value.replace(/[\s-]+/g, '');
     msg.hidden = false;
-    msg.textContent = /^(\+?254|0)7\d{8}$|^(\+?254|0)1\d{8}$/.test(v) ? 'Thanks. On the live site this sends your number to the Solar Connect team.' : 'Enter a Kenyan mobile number, for example 0706 636 447.';
+    if (!/^(\+?254|0)(7|1)\d{8}$/.test(v)){ msg.textContent = 'Enter a Kenyan mobile number, for example 0706 636 447.'; phone.focus(); return; }
+    msg.textContent = 'Opening WhatsApp with your request…';
+    window.open('https://wa.me/254706636447?text=' + encodeURIComponent('Hello Solar Connect, I would like a quote. Please call me back on ' + phone.value.trim() + '.'), '_blank', 'noopener');
   });
-})();
-</script>
 })();

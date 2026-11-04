@@ -448,3 +448,10 @@ button.checkout:hover, input#place_order:hover, a.checkout-button:hover { transf
 .wc-block-grid__product-price { color: var(--ink) !important; font-weight: 500; }
 .wc-block-grid__product-add-to-cart { margin-top: auto !important; }
 @media (max-width: 900px) { .wc-block-grid__products { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* Category / brand intro text under the archive title */
+.woocommerce .term-description, .woocommerce-products-header .term-description { max-width: 72ch; }
+.woocommerce .term-description p { color: var(--ink-2); font-size: 16px; line-height: 1.65; margin: 0 0 8px; }
+/* Store notices: keep the icon clear of the message text */
+.woocommerce-message, .woocommerce-info, .woocommerce-error { position: relative; padding-left: 52px !important; }
+.woocommerce-message::before, .woocommerce-info::before, .woocommerce-error::before { left: 20px !important; }

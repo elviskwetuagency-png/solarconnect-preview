@@ -82,7 +82,9 @@ add_action('wp_enqueue_scripts', function () {
  * to scroll past, so show it immediately instead of waiting for scroll.
  */
 add_filter('body_class', function ($classes) {
-    if (!is_front_page()) {
+    /* About templates open with their own dark hero nav (like the homepage),
+       so they keep the scroll-to-reveal behaviour instead. */
+    if (!is_front_page() && !is_page_template(['page-about-a.php', 'page-about-b.php'])) {
         $classes[] = 'sck-interior';
     }
     return $classes;

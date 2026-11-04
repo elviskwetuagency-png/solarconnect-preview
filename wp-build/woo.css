@@ -83,6 +83,13 @@ ul.products li.product {
   width: 100% !important;
   margin: 0 !important;
   float: none !important;
+  /* Cards in a row share the same height, but titles wrap to different
+     numbers of lines, so the Add to Cart button used to land at a
+     different height on every card. Lay the card out as a column and
+     pin the button to the bottom with margin-top:auto so it always
+     lines up across a row regardless of title length. */
+  display: flex !important;
+  flex-direction: column !important;
 }
 ul.products li.product:hover { transform: translateY(-4px); box-shadow: 0 16px 36px rgba(17,17,17,.12); }
 
@@ -137,10 +144,11 @@ ul.products li.product .button,
 ul.products li.product a.add_to_cart_button,
 ul.products li.product a.button {
   display: inline-flex; align-items: center; justify-content: center;
-  margin: 0 16px 16px; min-height: 42px; padding: 0 20px;
+  margin: auto 16px 16px; min-height: 42px; padding: 0 20px;
   border-radius: 999px; background: var(--ink); color: var(--white) !important;
   font-size: 13.5px; font-weight: 500; transition: transform .25s ease, opacity .25s;
   width: calc(100% - 32px);
+  flex-shrink: 0;
 }
 ul.products li.product .button:hover { transform: translateY(-2px); opacity: .92; }
 ul.products li.product .added_to_cart { display: block; margin: 0 16px 16px; font-size: 12.5px; color: var(--ink-2); }
@@ -248,9 +256,14 @@ nav.woocommerce-pagination ul li span.current { background: var(--ink); color: v
 .woocommerce-tabs ul.tabs li { border: none !important; background: none !important; margin: 0 !important; }
 .woocommerce-tabs ul.tabs li a {
   display: inline-flex; padding: 10px 20px; border-radius: 999px; border: 1px solid var(--line-2);
-  color: var(--ink-2); font-size: 14px;
+  color: var(--ink-2) !important; font-size: 14px;
 }
-.woocommerce-tabs ul.tabs li.active a { background: var(--ink); color: var(--white); border-color: var(--ink); }
+/* !important: WooCommerce's own bundled CSS ships a more specific
+   ".woocommerce div.product .woocommerce-tabs ul.tabs li.active a"
+   rule that sets color:inherit, which otherwise wins the cascade and
+   leaves the active (dark-background) tab's text at a near-invisible
+   inherited gray instead of white. */
+.woocommerce-tabs ul.tabs li.active a { background: var(--ink) !important; color: var(--white) !important; border-color: var(--ink) !important; }
 .woocommerce-tabs .panel { border: none; padding: 28px 0 0; color: var(--ink-2); line-height: 1.7; }
 
 /* related / upsells */

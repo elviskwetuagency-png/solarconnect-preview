@@ -25,7 +25,11 @@ body.woocommerce-page main {
 .woocommerce, .woocommerce-page { color: var(--ink); font-family: var(--f-display); }
 .woocommerce h1, .woocommerce h2, .woocommerce h3,
 .woocommerce-page h1, .woocommerce-page h2 { font-weight: 300; letter-spacing: -.03em; color: var(--ink); }
-.woocommerce a:not(.btn) { color: inherit; }
+/* Zero-specificity on purpose (:where): neutralise link colours inside
+   WooCommerce areas without out-ranking any class-based colour, e.g.
+   .btn-white in the header or the active filter pill (.sck-pill.active),
+   which both went invisible when this rule was more specific. */
+:where(.woocommerce, .woocommerce-page) a { color: inherit; }
 
 main.woocommerce-main > h1.page-title,
 .woocommerce-products-header h1 {
@@ -235,7 +239,9 @@ nav.woocommerce-pagination ul li span.current { background: var(--ink); color: v
   font-size: clamp(28px,3vw,40px); font-weight: 300; letter-spacing: -.02em; margin-bottom: 10px;
 }
 .single-product div.summary .price {
-  font-size: 24px; font-weight: 500; color: var(--ink); margin-bottom: 16px; display: block;
+  /* !important on colour: WooCommerce's ".woocommerce div.product p.price"
+     out-specifies this and paints the price olive (#958e09). */
+  font-size: 24px; font-weight: 500; color: var(--ink) !important; margin-bottom: 16px; display: block;
 }
 .single-product div.summary .price del { color: var(--ink-3); font-size: 16px; opacity: .7; margin-right: 10px; }
 .single-product div.summary .price ins { text-decoration: none; }

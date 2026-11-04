@@ -68,6 +68,12 @@ ul.products {
 @media (min-width:640px){ ul.products{ grid-template-columns: repeat(3,1fr); gap: 24px; } }
 @media (min-width:1040px){ ul.products{ grid-template-columns: repeat(4,1fr); } }
 
+/* WooCommerce's legacy float-layout clearfix (content:' '; display:table;
+   on ::before/::after) becomes a real, invisible grid item once the list
+   is display:grid, eating the first column and pushing every product over
+   by one slot (and wrapping one fewer per row than intended). Kill it. */
+ul.products::before, ul.products::after { content: none !important; display: none !important; }
+
 ul.products li.product {
   background: var(--white);
   border-radius: var(--r-lg);

@@ -192,13 +192,18 @@ nav.woocommerce-pagination ul li span.current { background: var(--ink); color: v
   text-align: center; font-family: var(--f-display); font-size: 15px; color: var(--ink);
 }
 .single-product button.single_add_to_cart_button,
-.single-product .single_add_to_cart_button {
+.single-product .single_add_to_cart_button,
+.single-product a.button.alt,
+.single-product button.button.alt,
+.woocommerce .single_add_to_cart_button.button.alt {
   display: inline-flex; align-items: center; justify-content: center; gap: 10px;
-  min-height: 48px; padding: 0 28px; border-radius: 999px;
-  background: var(--ink); color: var(--white) !important; font-size: 15px; font-weight: 500;
+  min-height: 48px; padding: 0 28px; border-radius: 999px !important;
+  background: var(--ink) !important; color: var(--white) !important; font-size: 15px; font-weight: 500;
+  border: none !important; box-shadow: none !important; text-shadow: none !important;
   transition: transform .25s ease, opacity .25s;
 }
-.single-product button.single_add_to_cart_button:hover { transform: translateY(-2px); opacity: .92; }
+.single-product button.single_add_to_cart_button:hover,
+.single-product a.button.alt:hover { transform: translateY(-2px); opacity: .92; background: var(--ink) !important; }
 
 .single-product .product_meta { margin-top: 24px; font-size: 13.5px; color: var(--ink-3); }
 .single-product .product_meta a { color: var(--ink-2); text-decoration: underline; }
@@ -240,11 +245,13 @@ table.shop_table img { border-radius: 10px; }
 .woocommerce-checkout #order_review { background: var(--paper-2); border-radius: var(--r-md); padding: 24px; }
 
 button.checkout, input#place_order, .woocommerce #respond input#submit,
-a.checkout-button, .wc-proceed-to-checkout a.checkout-button {
+a.checkout-button, .wc-proceed-to-checkout a.checkout-button,
+.woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
   display: inline-flex; align-items: center; justify-content: center;
-  min-height: 50px; padding: 0 30px; border-radius: 999px;
+  min-height: 50px; padding: 0 30px; border-radius: 999px !important;
   background: var(--ink) !important; color: var(--white) !important;
-  font-size: 15px; font-weight: 500; border: none; transition: transform .25s ease, opacity .25s;
+  font-size: 15px; font-weight: 500; border: none !important; box-shadow: none !important;
+  transition: transform .25s ease, opacity .25s;
 }
 button.checkout:hover, input#place_order:hover, a.checkout-button:hover { transform: translateY(-2px); opacity: .92; }
 

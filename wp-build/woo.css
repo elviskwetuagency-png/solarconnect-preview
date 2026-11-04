@@ -413,7 +413,7 @@ button.checkout:hover, input#place_order:hover, a.checkout-button:hover { transf
 .sck-page-wide .wp-block-woocommerce-cart,
 .sck-page-wide .wp-block-woocommerce-checkout { max-width: 100%; }
 .sck-page-wide .wc-block-components-sidebar-layout { gap: 32px; }
-.sck-page-wide .wc-block-components-sidebar {
+.sck-page-wide .wp-block-woocommerce-cart .wc-block-components-sidebar {
   background: var(--white); border-radius: var(--r-lg); padding: 24px !important;
 }
 .wc-block-components-button:not(.is-link),

@@ -7,6 +7,7 @@
 .ab .btn{margin-top:0}
 .ab .eyebrow{display:block}
 .ab .dark .eyebrow{color:var(--mist)}
+.ab .dark .lede{max-width:430px;color:var(--mist);font-size:16px;line-height:1.6}
 .ab figure{margin:0}
 .ab .head-row .h2{max-width:16ch}
 
@@ -46,7 +47,8 @@
 /* approach */
 .ab-steps{list-style:none;margin:56px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
 .ab-steps li{background:var(--night-2);border:1px solid var(--night-line);border-radius:var(--r-lg);padding:28px 24px;display:flex;flex-direction:column;gap:14px;min-height:320px}
-.ab-step-n{font-size:56px;font-weight:300;letter-spacing:-.04em;line-height:1;color:var(--sun);margin-bottom:auto}
+.ab-step-n{font-size:56px;font-weight:300;letter-spacing:-.04em;line-height:1;color:var(--sun);margin-bottom:36px}
+.ab-steps .tags{margin-top:auto;padding-top:6px}
 .ab-steps h3{font-size:22px;font-weight:400;letter-spacing:-.02em;line-height:1.2}
 .ab-steps p{font-size:15px;line-height:1.6;color:var(--mist)}
 
@@ -105,7 +107,7 @@
 
 .ab .abB-hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(32px,5vw,80px);align-items:center;padding-block:clamp(56px,7vw,100px) 56px}
 .abB-hero-txt{display:flex;flex-direction:column;gap:24px;align-items:flex-start;min-width:0}
-.abB-hero h1{font-size:clamp(42px,6vw,88px);line-height:.98;letter-spacing:-.05em;font-weight:400;animation:fade 1s .1s both}
+.abB-hero h1{font-size:clamp(40px,5vw,72px);line-height:.98;letter-spacing:-.05em;font-weight:400;animation:fade 1s .1s both}
 .abB-em{color:var(--ink-3)}
 .abB-hero-txt p{font-size:17px;line-height:1.6;color:var(--ink-2);max-width:46ch;animation:fade 1s .3s both}
 .abB-actions{display:flex;flex-wrap:wrap;gap:10px;animation:fade 1s .45s both}

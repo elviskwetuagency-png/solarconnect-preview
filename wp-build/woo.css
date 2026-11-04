@@ -158,6 +158,16 @@ nav.woocommerce-pagination ul li span.current { background: var(--ink); color: v
 }
 @media (min-width: 900px){ .single-product div.product{ grid-template-columns: 1.1fr 1fr; } }
 
+/* WooCommerce hooks the tabs and related/upsell products INSIDE div.product
+   (same container as the images/summary grid), so without this they get
+   auto-placed as a 3rd/4th grid cell beside the gallery instead of
+   stacking full-width below it. */
+.single-product div.product > .woocommerce-tabs,
+.single-product div.product > .related.products,
+.single-product div.product > .upsells.products {
+  grid-column: 1 / -1;
+}
+
 /* WooCommerce's core CSS floats .images/.summary at fixed % widths
    (e.g. "float:right;width:48%"), which breaks inside our CSS grid and
    squeezes the summary column down to a sliver. Reset both to fill

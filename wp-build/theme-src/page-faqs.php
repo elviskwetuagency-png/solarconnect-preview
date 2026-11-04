@@ -15,6 +15,11 @@ $contact = get_page_by_path('contact-us');
 $contact_url = ($contact && $contact->post_status === 'publish') ? get_permalink($contact) : $wa('Hello Solar Connect,');
 $sck_nav_current = 'faqs';
 
+/* Brands that actually have products right now, largest range first. */
+$brand_terms = get_terms(['taxonomy' => 'product_tag', 'hide_empty' => true, 'orderby' => 'count', 'order' => 'DESC', 'number' => 10]);
+$brand_names = is_wp_error($brand_terms) ? [] : wp_list_pluck($brand_terms, 'name');
+$brand_list  = count($brand_names) > 1 ? implode(', ', array_slice($brand_names, 0, -1)) . ' and ' . end($brand_names) : implode('', $brand_names);
+
 $groups = [
     'choosing' => ['Choosing a system', [
         ['How do I know what size of solar system I need?',
@@ -34,7 +39,7 @@ $groups = [
         ['Can I buy single components, or only complete systems?',
          'Both. Our <a href="' . esc_url($shop) . '">shop</a> stocks panels, inverters, batteries, charge controllers, water heaters, lighting and accessories. If you’re adding to an existing setup, tell us what you already have so we can confirm the new part is compatible.'],
         ['Which brands do you stock?',
-         'Genuine brands including Deye, Felicity Solar, JA Solar, Jinko Solar, SMA, SRNE, Must, Taico, Suntree and Vestwoods. You can filter the shop by brand to see what’s currently available.'],
+         'Genuine brands including ' . $brand_list . '. You can <a href="' . esc_url($shop) . '">filter the shop by brand</a> to see what’s currently available.'],
         ['Do products come with a warranty?',
          'Warranty cover depends on the product and manufacturer, and it’s stated on each product page where provided. For example, some of our gel batteries list 1 year and several lithium batteries list 3 to 5 years. Ask us to confirm the cover on any item before you buy.'],
         ['How do I check the status of my order?',

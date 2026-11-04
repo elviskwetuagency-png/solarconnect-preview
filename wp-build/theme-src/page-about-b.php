@@ -137,16 +137,7 @@ $shop = function_exists('wc_get_page_permalink') ? wc_get_page_permalink('shop')
 <section class="brands abB-brands" aria-label="Brands we supply and install">
   <p class="mono eyebrow">Genuine brands behind every system</p>
   <div class="marquee"><div class="track">
-    <?php
-    $brands = ['deye' => 'Deye', 'felicity-solar' => 'Felicity Solar', 'ja-solar' => 'JA Solar', 'jinko-solar' => 'Jinko Solar', 'sma' => 'SMA', 'srne' => 'SRNE', 'must' => 'Must', 'taico' => 'Taico', 'suntree' => 'Suntree', 'vestwoods' => 'Vestwoods'];
-    foreach ([false, true] as $dup) {
-      foreach ($brands as $slug => $name) {
-        $t = get_term_by('slug', $slug, 'product_tag');
-        $href = $t ? get_term_link($t) : $shop;
-        echo '<span' . ($dup ? ' aria-hidden="true"' : '') . '><a href="' . esc_url($href) . '"' . ($dup ? ' tabindex="-1"' : '') . ' aria-label="Shop ' . esc_attr($name) . ' products"><img src="' . esc_url($img . 'brands/logo_' . $slug . '.webp') . '" alt="' . esc_attr($name) . '" loading="lazy"></a></span>';
-      }
-    }
-    ?>
+    <?php include get_stylesheet_directory() . '/parts/brand-marquee.php'; ?>
   </div></div>
 </section>
 

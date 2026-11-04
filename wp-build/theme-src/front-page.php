@@ -266,50 +266,9 @@ get_header();
 
 </main>
 
-<!-- ============ FOOTER ============ -->
-<footer>
-  <div class="wrap">
-    <div class="f-head">
-      <div class="f-brand">
-        <img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/685172a7fa.png" alt="Solar Connect Kenya" style="height:34px;width:auto">
-        <p>Solar Connect Kenya provides quality solar products, system guidance, project delivery, installation, testing, and local support for homes and businesses.</p>
-      </div>
-      <ul class="f-promise" aria-label="Our service promise"><li><span class="f-chk"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Consultation and system sizing</li><li><span class="f-chk"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Delivery and installation support</li><li><span class="f-chk"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Testing and confirmation</li><li><span class="f-chk"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>After-sales WhatsApp support</li></ul>
-    </div>
-
-    <div class="f-main">
-      <nav class="f-col f-paths" aria-label="Customer paths">
-        <h3>Customer paths</h3>
-        <a href="https://solarconnectkenya.com/products">Shop products</a>
-        <a href="https://solarconnectkenya.com/user/orders">Check order status</a>
-        <a href="https://wa.me/254706636447?text=Hello%20Solar%20Connect%2C%20I%20need%20help%20choosing%20a%20solar%20system.">Request a quote</a>
-        <a href="<?php echo esc_url(home_url('/about-us/')); ?>">About Solar Connect</a>
-      </nav>
-      <nav class="f-deps" aria-label="Departments">
-        <h3>Departments</h3>
-        <div class="f-dep-grid"><div class="f-dep"><h4><a href="https://solarconnectkenya.com/product/c/solar-inverters" style="color:inherit">Solar inverters</a></h4><a href="https://solarconnectkenya.com/product/c/hybrid-solar-inverters">Hybrid solar inverters</a><a href="https://solarconnectkenya.com/product/c/off-grid-solar-inverters">Off-grid solar inverters</a><a href="https://solarconnectkenya.com/product/c/inverter-chargers">Inverter chargers</a><a href="https://solarconnectkenya.com/product/c/grid-tie-inverters">Grid-tie inverters</a></div><div class="f-dep"><h4><a href="https://solarconnectkenya.com/product/c/solar-charger-controllers" style="color:inherit">Solar charge controllers</a></h4><a href="https://solarconnectkenya.com/product/c/mppt-charge-controller">MPPT charge controllers</a><a href="https://solarconnectkenya.com/product/c/pwm-charge-controller">PWM charge controllers</a></div><div class="f-dep"><h4><a href="https://solarconnectkenya.com/product/c/solar-batteries" style="color:inherit">Solar batteries</a></h4><a href="https://solarconnectkenya.com/product/c/lithium-batteries">Lithium batteries</a><a href="https://solarconnectkenya.com/product/c/solar-gel-batteries">Solar gel batteries</a><a href="https://solarconnectkenya.com/product/c/tubular-battery">Tubular batteries</a></div><div class="f-dep"><h4><a href="https://solarconnectkenya.com/product/c/solar-panel" style="color:inherit">Solar panels</a></h4><a href="https://solarconnectkenya.com/product/c/monocrystalline">Monocrystalline panels</a><a href="https://solarconnectkenya.com/product/c/polycrystalline-solar-panel">Polycrystalline panels</a></div></div>
-      </nav>
-      <div class="f-branches">
-        <h3>Visit us</h3>
-        <div class="branch">
-          <span class="b-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
-          <div class="b-txt"><span class="b-name">Nairobi branch</span><span class="b-addr">Lusaka Road</span><a class="b-tel" href="tel:+254706636447"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg> 0706 636 447</a></div>
-        </div>
-        <div class="branch">
-          <span class="b-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
-          <div class="b-txt"><span class="b-name">Watamu branch</span><span class="b-addr">M2H7+23Q, Watamu</span><a class="b-tel" href="tel:+254705760861"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg> 0705 760 861</a><a class="b-map" href="https://www.google.com/maps/place/M2H7%2B23Q,+Watamu/@-3.3224125,40.0127344,17z">View on Google Maps ↗</a></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="f-base">
-      <span>© 2026 Solar Connect Kenya. All rights reserved. <span style="opacity:.55">(deploy test ok)</span></span>
-      <span class="f-legal"><a href="#">Terms</a><a href="#">Privacy</a><a href="https://solarconnectkenya.com/sitemap.xml">Sitemap</a></span>
-      <a class="f-top" href="#top">Back to top <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
-    </div>
-  </div>
-  <div class="giant" id="giant" aria-hidden="true">Solar Connect</div>
-</footer>
+<!-- ============ FOOTER (shared: parts/site-footer.php) ============ -->
+<?php include get_stylesheet_directory() . '/parts/site-footer.php'; ?>
+<?php include get_stylesheet_directory() . '/parts/wa-float.php'; ?>
 
 <?php wp_footer(); ?>
 </body>

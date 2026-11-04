@@ -53,18 +53,18 @@ add_action('wp_enqueue_scripts', function () {
         );
     }
 
-    if (is_page_template(['page-about-a.php', 'page-about-b.php'])) {
+    if (is_page_template(sck_hero_templates())) {
         wp_enqueue_style(
-            'sck-about',
-            get_stylesheet_directory_uri() . '/assets/about.css',
+            'sck-pages',
+            get_stylesheet_directory_uri() . '/assets/pages.css',
             ['sck-global'],
-            filemtime(get_stylesheet_directory() . '/assets/about.css')
+            filemtime(get_stylesheet_directory() . '/assets/pages.css')
         );
         wp_enqueue_script(
-            'sck-about',
-            get_stylesheet_directory_uri() . '/assets/about.js',
+            'sck-pages',
+            get_stylesheet_directory_uri() . '/assets/pages.js',
             [],
-            filemtime(get_stylesheet_directory() . '/assets/about.js'),
+            filemtime(get_stylesheet_directory() . '/assets/pages.js'),
             true
         );
     }
@@ -84,7 +84,7 @@ add_action('wp_enqueue_scripts', function () {
 add_filter('body_class', function ($classes) {
     /* About templates open with their own dark hero nav (like the homepage),
        so they keep the scroll-to-reveal behaviour instead. */
-    if (!is_front_page() && !is_page_template(['page-about-a.php', 'page-about-b.php'])) {
+    if (!is_front_page() && !is_page_template(sck_hero_templates())) {
         $classes[] = 'sck-interior';
     }
     return $classes;
@@ -100,3 +100,12 @@ require_once get_stylesheet_directory() . '/inc-shop-filters.php';
  * Categories) since our theme has no sidebar.php. Remove it entirely.
  */
 remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar');
+
+/**
+ * Content-page templates that open with their own dark hero nav and use
+ * assets/pages.css (About, Contact, FAQs). Single source for the enqueue,
+ * the body class and the header's "Get a quote" target.
+ */
+function sck_hero_templates() {
+    return ['page-about-a.php', 'page-about-b.php', 'page-contact.php', 'page-faqs.php'];
+}

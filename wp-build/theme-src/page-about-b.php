@@ -181,7 +181,4 @@ $shop = function_exists('wc_get_page_permalink') ? wc_get_page_permalink('shop')
 </section>
 
 </main>
-<?php include get_stylesheet_directory() . '/parts/site-footer.php'; ?>
-<?php wp_footer(); ?>
-</body>
-</html>
+<?php get_footer(); ?>

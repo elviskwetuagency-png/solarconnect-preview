@@ -10,28 +10,29 @@ get_header();
 <!-- ============ HERO ============ -->
 <section class="hero" id="hero">
   <div class="hero-bg" aria-hidden="true">
-    <video class="bg-vid" autoplay muted loop playsinline preload="auto" poster="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/hero-poster.webp">
-      <source src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/video/hero-solar.mp4" type="video/mp4">
+    <video class="bg-vid" autoplay muted loop playsinline preload="auto" poster="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/hero-poster.webp">
+      <source src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/video/hero-solar.mp4" type="video/mp4">
     </video>
   </div>
   <div class="hero-in">
     <div class="ubar">
       <div class="ubar-l"><span class="ubar-k">Visit or call</span><a href="tel:+254706636447">Nairobi · 0706 636 447</a><a href="tel:+254705760861">Watamu · 0705 760 861</a><a href="https://www.google.com/maps/place/M2H7%2B23Q,+Watamu/@-3.3224125,40.0127344,17z" class="ubar-map">Watamu map ↗</a></div>
-      <div class="ubar-r"><a href="<?php echo esc_url(home_url('/about-us/')); ?>">About us</a><a href="https://solarconnectkenya.com/user/orders">Order tracking</a><a href="https://solarconnectkenya.com/login">Login / My account</a></div>
+      <div class="ubar-r"><a href="<?php echo esc_url(home_url('/faqs/')); ?>">FAQs</a><a href="<?php echo esc_url(home_url('/about-us/')); ?>">About us</a><a href="<?php echo esc_url(wc_get_page_permalink('myaccount')); ?>">Order tracking</a><a href="<?php echo esc_url(wc_get_page_permalink('myaccount')); ?>">Login / My account</a></div>
     </div>
     <div class="hnav">
-      <a class="logo" href="#top" aria-label="Solar Connect Kenya home"><img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/685172a7fa.png" alt="Solar Connect, Building a better future"></a>
+      <a class="logo" href="#top" aria-label="Solar Connect Kenya home"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/685172a7fa.png" alt="Solar Connect, Building a better future"></a>
       <nav aria-label="Hero menu"><ul>
         <li><a href="#solutions">Solutions</a></li>
         <li><a href="#shop">Shop</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#process">How we work</a></li>
         <li><a href="<?php echo esc_url(home_url('/about-us/')); ?>">About</a></li>
+        <li><a href="<?php echo esc_url(home_url('/contact-us/')); ?>">Contact</a></li>
       </ul></nav>
       <div class="right">
-        <a class="icon-btn" href="https://solarconnectkenya.com/products" aria-label="Search panels, batteries, inverters"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4-4"/></svg></a>
-        <a class="icon-btn acct" href="https://solarconnectkenya.com/login" aria-label="Login or my account"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></a>
-        <a class="icon-btn" href="https://solarconnectkenya.com/get/cart" aria-label="Cart, Ksh 0.00"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L21 8H6.2"/><circle cx="9.5" cy="20" r="1.2"/><circle cx="17.5" cy="20" r="1.2"/></svg></a>
+        <a class="icon-btn" href="<?php echo esc_url(wc_get_page_permalink('shop')); ?>" aria-label="Search panels, batteries, inverters"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4-4"/></svg></a>
+        <a class="icon-btn acct" href="<?php echo esc_url(wc_get_page_permalink('myaccount')); ?>" aria-label="Login or my account"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></a>
+        <a class="icon-btn" href="<?php echo esc_url(wc_get_cart_url()); ?>" aria-label="Cart"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L21 8H6.2"/><circle cx="9.5" cy="20" r="1.2"/><circle cx="17.5" cy="20" r="1.2"/></svg></a>
         <a class="btn btn-white contact" href="https://wa.me/254706636447?text=Hello%20Solar%20Connect%2C%20I%20need%20help%20choosing%20a%20solar%20system.">Contact us</a>
         <button class="icon-btn menu-toggle" type="button" id="menu-toggle" aria-expanded="false" aria-controls="mmenu" aria-label="Open menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
       </div>
@@ -41,8 +42,10 @@ get_header();
         <a href="#projects">Projects</a>
         <a href="#process">How we work</a>
         <a href="<?php echo esc_url(home_url('/about-us/')); ?>">About</a>
-        <a href="https://solarconnectkenya.com/user/orders">Order tracking</a>
-        <a href="https://solarconnectkenya.com/login">Login / My account</a>
+        <a href="<?php echo esc_url(home_url('/contact-us/')); ?>">Contact</a>
+        <a href="<?php echo esc_url(home_url('/faqs/')); ?>">FAQs</a>
+        <a href="<?php echo esc_url(wc_get_page_permalink('myaccount')); ?>">Order tracking</a>
+        <a href="<?php echo esc_url(wc_get_page_permalink('myaccount')); ?>">Login / My account</a>
         <a class="btn btn-white" href="https://wa.me/254706636447?text=Hello%20Solar%20Connect%2C%20I%20need%20help%20choosing%20a%20solar%20system.">Get a free quote</a>
       </nav>
     </div>
@@ -83,11 +86,11 @@ get_header();
         <a class="link-arrow" href="<?php echo esc_url(home_url('/about-us/')); ?>">More about Solar Connect <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <div class="astats"><div class="stat"><b data-count="200" data-suffix="+">200+</b><span class="mono">Project records</span></div><div class="stat"><b data-count="10" data-suffix="+">10+</b><span class="mono">Genuine brands stocked</span></div><div class="stat"><b data-count="2">2</b><span class="mono">Bases · Nairobi &amp; Watamu</span></div><div class="stat"><b data-count="4" data-suffix="-step">4-step</b><span class="mono">Service process</span></div></div>
     </div>
-    <div class="ashow rv" id="ashow"><figure class="aslide on"><img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/6fd700f137.webp" alt="Solar Connect technician handling a panel on site"></figure><figure class="aslide"><img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/b40d931493.webp" alt="6kW hybrid rooftop array in South C" loading="lazy"></figure><figure class="aslide"><img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/510a930c57.webp" alt="Inverter, battery and protection wall" loading="lazy"></figure><figure class="aslide"><img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/360449f788.webp" alt="Battery storage cabinet delivered to site" loading="lazy"></figure><figure class="aslide"><img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/eec44d0885.webp" alt="Completed 4kW hybrid array" loading="lazy"></figure><figure class="aslide"><img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/90fc216d74.webp" alt="Clean indoor inverter and battery backup" loading="lazy"></figure>
+    <div class="ashow rv" id="ashow"><figure class="aslide on"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/6fd700f137.webp" alt="Solar Connect technician handling a panel on site"></figure><figure class="aslide"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/b40d931493.webp" alt="6kW hybrid rooftop array in South C" loading="lazy"></figure><figure class="aslide"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/510a930c57.webp" alt="Inverter, battery and protection wall" loading="lazy"></figure><figure class="aslide"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/360449f788.webp" alt="Battery storage cabinet delivered to site" loading="lazy"></figure><figure class="aslide"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/eec44d0885.webp" alt="Completed 4kW hybrid array" loading="lazy"></figure><figure class="aslide"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/90fc216d74.webp" alt="Clean indoor inverter and battery backup" loading="lazy"></figure>
       <div class="ashow-bar"><span class="ashow-cap" id="ashow-cap">Solar Connect technician handling a panel on site</span><span class="adots"><button type="button" class="adot on" aria-label="Show photo 1" aria-current="true"></button><button type="button" class="adot" aria-label="Show photo 2"></button><button type="button" class="adot" aria-label="Show photo 3"></button><button type="button" class="adot" aria-label="Show photo 4"></button><button type="button" class="adot" aria-label="Show photo 5"></button><button type="button" class="adot" aria-label="Show photo 6"></button></span></div>
     </div>
   </div>
-  <div class="gband rv"><img class="gband-bg" src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/ae37fea010.webp" alt="" aria-hidden="true"><div class="gband-in"><h3 class="gband-h">What every Solar Connect customer gets</h3><div class="gcards"><div class="gcard"><h3>System-first guidance</h3><p>Start with your power need before choosing panels, batteries, inverters or accessories.</p></div><div class="gcard"><h3>Professional installation</h3><p>Delivery, mounting, wiring, inverter and battery setup, testing and handover, done by our own team.</p></div><div class="gcard"><h3>Genuine solar products</h3><p>Quality panels, batteries, inverters, protection equipment and accessories for complete systems.</p></div><div class="gcard"><h3>After-sales support you can reach</h3><p>Phone and WhatsApp guidance before purchase, during installation and after handover.</p></div></div></div></div>
+  <div class="gband rv"><img class="gband-bg" src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/ae37fea010.webp" alt="" aria-hidden="true"><div class="gband-in"><h3 class="gband-h">What every Solar Connect customer gets</h3><div class="gcards"><div class="gcard"><h3>System-first guidance</h3><p>Start with your power need before choosing panels, batteries, inverters or accessories.</p></div><div class="gcard"><h3>Professional installation</h3><p>Delivery, mounting, wiring, inverter and battery setup, testing and handover, done by our own team.</p></div><div class="gcard"><h3>Genuine solar products</h3><p>Quality panels, batteries, inverters, protection equipment and accessories for complete systems.</p></div><div class="gcard"><h3>After-sales support you can reach</h3><p>Phone and WhatsApp guidance before purchase, during installation and after handover.</p></div></div></div></div>
 </section>
 
 <!-- ============ SHOP ============ -->
@@ -122,7 +125,7 @@ get_header();
     </div>
     <div class="way-row">
       <article class="way a rv">
-        <div class="media"><img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/home-rooftop.webp" alt="Rooftop solar panels installed on a home" loading="lazy"><span class="tag mono">Residential</span></div>
+        <div class="media"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/home-rooftop.webp" alt="Rooftop solar panels installed on a home" loading="lazy"><span class="tag mono">Residential</span></div>
         <div class="way-body">
           <h3>For homes</h3>
           <p>Full home solar and inverter-battery backup that keeps essential appliances running through outages.</p>
@@ -131,7 +134,7 @@ get_header();
         </div>
       </article>
       <article class="way b rv">
-        <div class="media"><img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/business-solar-farm.webp" alt="Aerial view of a large-scale solar installation" loading="lazy"><span class="tag mono">Business</span></div>
+        <div class="media"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/business-solar-farm.webp" alt="Aerial view of a large-scale solar installation" loading="lazy"><span class="tag mono">Business</span></div>
         <div class="way-body">
           <h3>For businesses</h3>
           <p>Practical hybrid setups for shops, offices, apartments and facilities, plus solar lighting for compounds and walkways.</p>
@@ -166,11 +169,11 @@ get_header();
 <section class="dark band">
   <div class="wrap layers">
     <div class="anat media rv" id="anat">
-      <div class="shot on"><img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/eec44d0885.webp" alt="Solar panel array" loading="lazy"></div>
-      <div class="shot"><img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/90fc216d74.webp" alt="Wall-mounted inverter" loading="lazy"></div>
-      <div class="shot"><img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/360449f788.webp" alt="Lithium battery cabinet on delivery" loading="lazy"></div>
-      <div class="shot"><img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/510a930c57.webp" alt="Breakers, isolator and wiring under the inverter" loading="lazy"></div>
-      <div class="shot"><img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/6fd700f137.webp" alt="Technician handling a solar panel on site" loading="lazy"></div>
+      <div class="shot on"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/eec44d0885.webp" alt="Solar panel array" loading="lazy"></div>
+      <div class="shot"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/90fc216d74.webp" alt="Wall-mounted inverter" loading="lazy"></div>
+      <div class="shot"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/360449f788.webp" alt="Lithium battery cabinet on delivery" loading="lazy"></div>
+      <div class="shot"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/510a930c57.webp" alt="Breakers, isolator and wiring under the inverter" loading="lazy"></div>
+      <div class="shot"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/6fd700f137.webp" alt="Technician handling a solar panel on site" loading="lazy"></div>
       <span class="lbl mono">System anatomy</span>
       <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></div>
       <div class="now" aria-live="polite"><b class="swap" id="anat-name">Solar panels</b><span class="mono" id="anat-n">1 of 5</span></div>
@@ -209,7 +212,7 @@ get_header();
       </div>
       <div class="tags" id="step-tags"><span>Site survey</span><span>Load audit</span><span>Budget</span></div>
     </div>
-    <div class="media" id="step-media"><img id="step-img" src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/6fd700f137.webp" alt="Technician on site" loading="lazy" onerror="this.style.visibility='hidden'"></div>
+    <div class="media" id="step-media"><img id="step-img" src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/6fd700f137.webp" alt="Technician on site" loading="lazy" onerror="this.style.visibility='hidden'"></div>
   </div>
 </section>
 
@@ -217,12 +220,12 @@ get_header();
 <section class="wrap services">
   <h2 class="h2 rv">What we install.</h2>
   <div class="svc-list">
-    <a class="svc rv" href="#contact"><span class="nm">Full home solar</span><span class="ds">Panels, inverter, battery, protection, installation and testing for dependable home power.</span><span class="media"><img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/b40d931493.webp" alt="" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
-    <a class="svc rv" href="#contact"><span class="nm">Power backup</span><span class="ds">Keep essential appliances running with a properly matched inverter and battery system.</span><span class="media"><img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/90fc216d74.webp" alt="" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
-    <a class="svc rv" href="#contact"><span class="nm">Business power systems</span><span class="ds">Practical hybrid setups for shops, offices, apartments and small business operations.</span><span class="media"><img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/eec44d0885.webp" alt="" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
-    <a class="svc rv" href="#contact"><span class="nm">Solar water heating</span><span class="ds">Reliable water heating that reduces electricity use in homes and facilities.</span><span class="media"><img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/solar-water-heating.webp" alt="Seven SS Stars solar water heater" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
-    <a class="svc rv" href="#contact"><span class="nm">Outdoor lighting</span><span class="ds">Solar lighting for compounds, walkways, security points and commercial outdoor spaces.</span><span class="media"><img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/outdoor-lighting.webp" alt="Solar garden and pathway lighting" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
-    <a class="svc rv" href="#contact"><span class="nm">Parts &amp; accessories</span><span class="ds">Controllers, cables, breakers, rails, cabinets and mounting hardware for clean installations.</span><span class="media"><img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/510a930c57.webp" alt="" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
+    <a class="svc rv" href="#contact"><span class="nm">Full home solar</span><span class="ds">Panels, inverter, battery, protection, installation and testing for dependable home power.</span><span class="media"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/b40d931493.webp" alt="" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
+    <a class="svc rv" href="#contact"><span class="nm">Power backup</span><span class="ds">Keep essential appliances running with a properly matched inverter and battery system.</span><span class="media"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/90fc216d74.webp" alt="" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
+    <a class="svc rv" href="#contact"><span class="nm">Business power systems</span><span class="ds">Practical hybrid setups for shops, offices, apartments and small business operations.</span><span class="media"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/eec44d0885.webp" alt="" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
+    <a class="svc rv" href="#contact"><span class="nm">Solar water heating</span><span class="ds">Reliable water heating that reduces electricity use in homes and facilities.</span><span class="media"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/solar-water-heating.webp" alt="Seven SS Stars solar water heater" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
+    <a class="svc rv" href="#contact"><span class="nm">Outdoor lighting</span><span class="ds">Solar lighting for compounds, walkways, security points and commercial outdoor spaces.</span><span class="media"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/outdoor-lighting.webp" alt="Solar garden and pathway lighting" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
+    <a class="svc rv" href="#contact"><span class="nm">Parts &amp; accessories</span><span class="ds">Controllers, cables, breakers, rails, cabinets and mounting hardware for clean installations.</span><span class="media"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/510a930c57.webp" alt="" loading="lazy"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span></a>
   </div>
 </section>
 
@@ -244,7 +247,7 @@ get_header();
 <!-- ============ CTA ============ -->
 <section id="contact" class="cta">
   <div class="cta-frame media">
-    <img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/cta-bg.webp" alt="" loading="lazy">
+    <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/cta-bg.webp" alt="" loading="lazy">
     
     <div class="cta-body">
       <div class="cta-copy rv">

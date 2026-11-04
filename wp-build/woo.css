@@ -86,7 +86,13 @@ ul.products li.product {
 }
 ul.products li.product:hover { transform: translateY(-4px); box-shadow: 0 16px 36px rgba(17,17,17,.12); }
 
-ul.products li.product a.woocommerce-LoopProduct-link { display: block; color: inherit; }
+ul.products li.product a.woocommerce-LoopProduct-link {
+  display: block;
+  color: inherit;
+  margin: 14px 14px 0;
+  border-radius: var(--r-md);
+  overflow: hidden;
+}
 
 ul.products li.product img {
   width: 100%;
@@ -95,6 +101,7 @@ ul.products li.product img {
   background: var(--paper-2);
   padding: 14px;
   display: block;
+  border-radius: var(--r-md);
 }
 
 ul.products li.product .woocommerce-loop-product__title {

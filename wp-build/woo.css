@@ -393,10 +393,18 @@ button.checkout:hover, input#place_order:hover, a.checkout-button:hover { transf
   .sck-toolbar { border-radius: 22px; padding: 10px; }
   .sck-tb-filters { width: 100%; }
   .sck-tb-filters .sck-dd { flex: 1 1 0; min-width: 0; }
-  .sck-dd > summary { width: 100%; justify-content: space-between; padding: 0 12px 0 14px; }
-  .sck-dd-v { max-width: 12ch; }
-  .sck-tb-right { width: 100%; justify-content: space-between; padding: 0 4px; }
+  .sck-dd > summary { width: 100%; padding: 0 12px 0 14px; font-size: 13.5px; }
+  .sck-dd-v { min-width: 0; max-width: none; }
+  .sck-dd-chev { margin-left: auto; flex-shrink: 0; }
+  .sck-tb-right { width: 100%; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding: 0 4px; }
+  .sck-tb-right .woocommerce-ordering { flex: 1 1 170px; min-width: 0; }
+  .sck-tb-right .woocommerce-ordering select { width: 100%; }
   .sck-dd-panel, .sck-dd-grid { min-width: 0; width: min(88vw, 360px); }
   .sck-tb-filters .sck-dd:nth-child(2) .sck-dd-panel { left: auto; right: 0; }
   .sck-dd-grid { grid-template-columns: minmax(0, 1fr); }
+}
+/* Very narrow phones: give each dropdown its own row so labels never truncate. */
+@media (max-width: 420px) {
+  .sck-tb-filters .sck-dd { flex: 1 1 100%; }
+  .sck-dd-panel, .sck-dd-grid, .sck-tb-filters .sck-dd:nth-child(2) .sck-dd-panel { left: 0; right: 0; width: auto; }
 }

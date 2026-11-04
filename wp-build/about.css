@@ -82,12 +82,12 @@
   .ab-who-media{min-height:460px;margin-bottom:32px}
 }
 @media (max-width:760px){
-  .ab-who{padding-block:80px 48px}
-  .ab-standard{padding-block:48px}
+  .ab-who{padding-block:80px 16px}
+  .ab-standard{padding-block:32px 48px}
   .ab-services,.ab-work,.ab-reviews{padding-block:64px}
-  .ab-bento{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none;grid-auto-rows:200px}
+  .ab-bento{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none;grid-auto-rows:210px}
   .ab-bento figure{grid-column:auto;grid-row:auto}
-  .ab-bento .ab-b1{grid-column:1/-1;grid-row:span 1;height:240px}
+  .ab-bento .ab-b1{grid-column:1/-1}
   .ab-rev-grid{grid-template-columns:minmax(0,1fr)}
   .ab-cta-btns{width:100%}
 }

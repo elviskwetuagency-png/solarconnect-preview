@@ -125,3 +125,29 @@ add_filter('wp_sitemaps_add_provider', function ($provider, $name) {
  */
 add_filter('wpcf7_load_js', '__return_false');
 add_filter('wpcf7_load_css', '__return_false');
+
+/**
+ * Rank Math schema on pages: Rank Math only builds the schema graph
+ * (Organization, WebSite, WebPage) when pages have a default schema type,
+ * and its page default adds a blog Article + author Person, which is wrong
+ * for About/Contact/FAQs. Keep the graph, drop Article/Person on pages, and
+ * mark About and Contact with their specific WebPage types.
+ */
+add_filter('rank_math/json_ld', function ($data) {
+    if (!is_page() || !is_array($data)) return $data;
+    foreach ($data as $key => $node) {
+        $types = isset($node['@type']) ? (array) $node['@type'] : [];
+        if (array_intersect($types, ['Article', 'BlogPosting', 'NewsArticle', 'Person'])) {
+            unset($data[$key]);
+        }
+    }
+    $page_types = ['page-about-a.php' => 'AboutPage', 'page-about-b.php' => 'AboutPage', 'page-contact.php' => 'ContactPage'];
+    $tpl = get_page_template_slug();
+    foreach ($data as $key => $node) {
+        if (isset($node['@type']) && $node['@type'] === 'WebPage') {
+            if (isset($page_types[$tpl])) $data[$key]['@type'] = $page_types[$tpl];
+            unset($data[$key]['author']);
+        }
+    }
+    return $data;
+}, 99);

@@ -286,3 +286,11 @@ button.checkout:hover, input#place_order:hover, a.checkout-button:hover { transf
 .sck-pill:hover { border-color: var(--ink); color: var(--ink); }
 .sck-pill.active { background: var(--ink); color: var(--white); border-color: var(--ink); }
 .sck-pill-n { font-size: 11px; opacity: .6; }
+
+/* clear WooCommerce's default floated result-count / ordering row
+   so it doesn't collide with our filter bar below it */
+.woocommerce-result-count, .woocommerce-ordering { float: none; }
+.woocommerce-products-header + .woocommerce-result-count,
+p.woocommerce-result-count { display: block; margin-bottom: 4px; }
+form.woocommerce-ordering { display: inline-block; margin-bottom: 24px; }
+.sck-shop-filters { clear: both; }

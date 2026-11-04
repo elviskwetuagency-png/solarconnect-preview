@@ -34,7 +34,7 @@ $sck_tel  = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke=
         <a href="<?php echo esc_url($sck_shop); ?>">Shop products</a>
         <a href="<?php echo esc_url($sck_acct); ?>">Check order status</a>
         <a href="https://wa.me/254706636447?text=<?php echo rawurlencode('Hello Solar Connect, I need help choosing a solar system.'); ?>">Request a quote</a>
-        <a href="<?php echo esc_url(get_permalink()); ?>">About Solar Connect</a>
+        <a href="<?php echo esc_url(home_url('/about-us/')); ?>">About Solar Connect</a>
       </nav>
       <nav class="f-deps" aria-label="Departments">
         <h3>Departments</h3>

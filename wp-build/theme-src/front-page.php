@@ -17,7 +17,7 @@ get_header();
   <div class="hero-in">
     <div class="ubar">
       <div class="ubar-l"><span class="ubar-k">Visit or call</span><a href="tel:+254706636447">Nairobi · 0706 636 447</a><a href="tel:+254705760861">Watamu · 0705 760 861</a><a href="https://www.google.com/maps/place/M2H7%2B23Q,+Watamu/@-3.3224125,40.0127344,17z" class="ubar-map">Watamu map ↗</a></div>
-      <div class="ubar-r"><a href="https://solarconnectkenya.com/about-us">About us</a><a href="https://solarconnectkenya.com/user/orders">Order tracking</a><a href="https://solarconnectkenya.com/login">Login / My account</a></div>
+      <div class="ubar-r"><a href="<?php echo esc_url(home_url('/about-us/')); ?>">About us</a><a href="https://solarconnectkenya.com/user/orders">Order tracking</a><a href="https://solarconnectkenya.com/login">Login / My account</a></div>
     </div>
     <div class="hnav">
       <a class="logo" href="#top" aria-label="Solar Connect Kenya home"><img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/685172a7fa.png" alt="Solar Connect, Building a better future"></a>
@@ -26,7 +26,7 @@ get_header();
         <li><a href="#shop">Shop</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#process">How we work</a></li>
-        <li><a href="https://solarconnectkenya.com/about-us">About</a></li>
+        <li><a href="<?php echo esc_url(home_url('/about-us/')); ?>">About</a></li>
       </ul></nav>
       <div class="right">
         <a class="icon-btn" href="https://solarconnectkenya.com/products" aria-label="Search panels, batteries, inverters"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4-4"/></svg></a>
@@ -40,7 +40,7 @@ get_header();
         <a href="#shop">Shop</a>
         <a href="#projects">Projects</a>
         <a href="#process">How we work</a>
-        <a href="https://solarconnectkenya.com/about-us">About</a>
+        <a href="<?php echo esc_url(home_url('/about-us/')); ?>">About</a>
         <a href="https://solarconnectkenya.com/user/orders">Order tracking</a>
         <a href="https://solarconnectkenya.com/login">Login / My account</a>
         <a class="btn btn-white" href="https://wa.me/254706636447?text=Hello%20Solar%20Connect%2C%20I%20need%20help%20choosing%20a%20solar%20system.">Get a free quote</a>
@@ -80,7 +80,7 @@ get_header();
     <div class="about2-txt rv">
       <h2>Solar Connect Kenya is a solar shop and installation team, <em>with bases in Nairobi and Watamu.</em></h2>
       <p>We supply genuine panels, inverters, batteries and accessories from brands like Deye, Felicity and Jinko. Our own team then sizes the system to your power needs, installs and tests it, and stays reachable on WhatsApp after handover.</p>
-        <a class="link-arrow" href="https://solarconnectkenya.com/about-us">More about Solar Connect <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="link-arrow" href="<?php echo esc_url(home_url('/about-us/')); ?>">More about Solar Connect <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <div class="astats"><div class="stat"><b data-count="200" data-suffix="+">200+</b><span class="mono">Project records</span></div><div class="stat"><b data-count="10" data-suffix="+">10+</b><span class="mono">Genuine brands stocked</span></div><div class="stat"><b data-count="2">2</b><span class="mono">Bases · Nairobi &amp; Watamu</span></div><div class="stat"><b data-count="4" data-suffix="-step">4-step</b><span class="mono">Service process</span></div></div>
     </div>
     <div class="ashow rv" id="ashow"><figure class="aslide on"><img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/6fd700f137.webp" alt="Solar Connect technician handling a panel on site"></figure><figure class="aslide"><img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/b40d931493.webp" alt="6kW hybrid rooftop array in South C" loading="lazy"></figure><figure class="aslide"><img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/510a930c57.webp" alt="Inverter, battery and protection wall" loading="lazy"></figure><figure class="aslide"><img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/360449f788.webp" alt="Battery storage cabinet delivered to site" loading="lazy"></figure><figure class="aslide"><img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/eec44d0885.webp" alt="Completed 4kW hybrid array" loading="lazy"></figure><figure class="aslide"><img src="https://palevioletred-panther-439834.hostingersite.com/wp-content/themes/solarconnect-custom/assets/img/90fc216d74.webp" alt="Clean indoor inverter and battery backup" loading="lazy"></figure>
@@ -283,7 +283,7 @@ get_header();
         <a href="https://solarconnectkenya.com/products">Shop products</a>
         <a href="https://solarconnectkenya.com/user/orders">Check order status</a>
         <a href="https://wa.me/254706636447?text=Hello%20Solar%20Connect%2C%20I%20need%20help%20choosing%20a%20solar%20system.">Request a quote</a>
-        <a href="https://solarconnectkenya.com/about-us">About Solar Connect</a>
+        <a href="<?php echo esc_url(home_url('/about-us/')); ?>">About Solar Connect</a>
       </nav>
       <nav class="f-deps" aria-label="Departments">
         <h3>Departments</h3>

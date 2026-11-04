@@ -26,6 +26,7 @@ $sck_h_quote = $sck_h_has_contact ? '#contact' : 'https://wa.me/254706636447?tex
       <a class="lk" href="<?php echo esc_url($sck_h_shop); ?>">Shop</a>
       <a class="lk" href="<?php echo esc_url($sck_h_home . '#projects'); ?>">Projects</a>
       <a class="lk" href="<?php echo esc_url($sck_h_home . '#process'); ?>">How we work</a>
+      <a class="lk" href="<?php echo esc_url(home_url('/about-us/')); ?>">About</a>
       <a class="icon" href="<?php echo esc_url($sck_h_shop); ?>" aria-label="Search products"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4-4"/></svg></a>
       <a class="icon" href="<?php echo esc_url($sck_h_cart); ?>" aria-label="Cart"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L21 8H6.2"/><circle cx="9.5" cy="20" r="1.2"/><circle cx="17.5" cy="20" r="1.2"/></svg></a>
       <a class="btn btn-white cta" href="<?php echo esc_url($sck_h_quote); ?>">Get a quote</a>

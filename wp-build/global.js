@@ -45,9 +45,13 @@
     panel.hidden = !open; nav.classList.toggle('menu-open', open);
     btn.setAttribute('aria-expanded', open ? 'true' : 'false');
     btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-    if (open) { var f = panel.querySelector('a'); if (f) f.focus({preventScroll:true}); }
+    document.documentElement.classList.toggle('np-open', open);
   }
-  btn.addEventListener('click', function(){ set(panel.hidden); });
+  btn.addEventListener('click', function(e){
+    var opening = panel.hidden; set(opening);
+    /* keyboard users land on the first link; mouse/touch users keep their place */
+    if (opening && e.detail === 0) { var f = panel.querySelector('a'); if (f) f.focus({preventScroll:true}); }
+  });
   document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && !panel.hidden){ set(false); btn.focus(); } });
   document.addEventListener('click', function(e){ if (!panel.hidden && !panel.contains(e.target) && !btn.contains(e.target)) set(false); });
   panel.addEventListener('click', function(e){ if (e.target.closest('a')) set(false); });

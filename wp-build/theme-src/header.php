@@ -50,7 +50,7 @@ $sck_h_quote = home_url('/contact-us/');
     </div>
     <div class="np-act">
       <a class="btn btn-sun" href="<?php echo esc_url($sck_h_quote); ?>">Get a free quote</a>
-      <a class="btn btn-ghost-dark" href="tel:+254706636447">Call 0706 636 447</a>
+      <a class="btn btn-ghost-dark" href="tel:+254706636447">Call us</a>
       <a class="btn btn-ghost-dark" href="https://wa.me/254706636447?text=<?php echo rawurlencode('Hello Solar Connect, I need help choosing a solar system.'); ?>">WhatsApp</a>
     </div>
   </div>

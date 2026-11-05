@@ -479,3 +479,4 @@ footer h3{font-size:14px;font-weight:500;letter-spacing:0;color:var(--mist-2);ma
   .pill .cta{padding:0 14px}
 }
 @media (prefers-reduced-motion:reduce){ .nav-panel{animation:none} }
+.np-open .wa{opacity:0;pointer-events:none;transition:opacity .2s}

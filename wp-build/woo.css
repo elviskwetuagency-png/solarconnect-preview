@@ -467,7 +467,7 @@ button.checkout:hover, input#place_order:hover, a.checkout-button:hover { transf
 .woocommerce-checkout #customer_details::before, .woocommerce-checkout #customer_details::after { display: none !important; }
 .woocommerce-checkout #order_review_heading { grid-column: 2; font-size: 22px; font-weight: 400; letter-spacing: -.02em; margin: 0; }
 .woocommerce-checkout #order_review { grid-column: 2; position: sticky; top: 110px; }
-.woocommerce-billing-fields > h3, .woocommerce-additional-fields > h3, .woocommerce-shipping-fields { display: none !important; }
+.woocommerce-billing-fields > h3:not(.sck-co-h), .woocommerce-additional-fields > h3, .woocommerce-shipping-fields { display: none !important; }
 .sck-co-h { font-size: 22px; font-weight: 400; letter-spacing: -.02em; margin: 0 0 18px; color: var(--ink); }
 .woocommerce-checkout .woocommerce-billing-fields__field-wrapper { display: flex; flex-wrap: wrap; gap: 0 4%; }
 .woocommerce-checkout .form-row { margin: 0 0 16px !important; padding: 0 !important; width: 100%; float: none !important; }
@@ -485,6 +485,7 @@ button.checkout:hover, input#place_order:hover, a.checkout-button:hover { transf
 .sck-fulfil .woocommerce-input-wrapper { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 8px; }
 .sck-fulfil input.input-radio { position: absolute; opacity: 0; width: 1px; height: 1px; }
 .sck-fulfil label.radio { display: flex !important; flex-direction: column; justify-content: center; min-height: 72px; margin: 0 !important; padding: 12px 14px; border: 1px solid var(--line-2); border-radius: 14px; background: var(--white); cursor: pointer; font-size: 14px !important; line-height: 1.35; transition: border-color .2s, box-shadow .2s; }
+.sck-fulfil label.radio .required { display: none; }
 .sck-fulfil label.radio:hover { border-color: var(--ink-3); }
 .sck-fulfil input.input-radio:checked + label.radio { border-color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
 .sck-fulfil input.input-radio:focus-visible + label.radio { outline: 2px solid var(--sun); outline-offset: 2px; }

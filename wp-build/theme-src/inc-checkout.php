@@ -125,9 +125,6 @@ add_filter('woocommerce_email_order_meta_fields', function ($fields, $sent_to_ad
 
 /** Button label and a reassurance line under it. */
 add_filter('woocommerce_order_button_text', function () { return 'Place order, pay after we confirm'; });
-add_action('woocommerce_review_order_after_submit', function () {
-    echo '<p class="sck-reassure">No payment is taken now. We call or WhatsApp you to confirm stock, delivery and installation, then you pay by M-Pesa or bank transfer.</p>';
-});
 
 /** Order summary heading. */
 add_filter('gettext', function ($t, $text, $domain) {

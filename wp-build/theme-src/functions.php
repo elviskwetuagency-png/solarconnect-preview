@@ -92,6 +92,7 @@ add_filter('body_class', function ($classes) {
 
 require_once get_stylesheet_directory() . '/inc-shop-filters.php';
 require_once get_stylesheet_directory() . '/inc-solutions.php';
+require_once get_stylesheet_directory() . '/inc-checkout.php';
 
 
 /**

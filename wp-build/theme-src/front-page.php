@@ -81,7 +81,7 @@ get_header();
         <a class="link-arrow" href="<?php echo esc_url(home_url('/about-us/')); ?>">More about Solar Connect <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <div class="astats"><div class="stat"><b data-count="200" data-suffix="+">200+</b><span class="mono">Project records</span></div><div class="stat"><b data-count="10" data-suffix="+">10+</b><span class="mono">Genuine brands stocked</span></div><div class="stat"><b data-count="2">2</b><span class="mono">Bases · Nairobi &amp; Watamu</span></div><div class="stat"><b data-count="4" data-suffix="-step">4-step</b><span class="mono">Service process</span></div></div>
     </div>
-    <div class="ashow rv" id="ashow"><figure class="aslide on"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/6fd700f137.webp" alt="Solar Connect technician handling a panel on site"></figure><figure class="aslide"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/b40d931493.webp" alt="6kW hybrid rooftop array in South C" loading="lazy"></figure><figure class="aslide"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/510a930c57.webp" alt="Inverter, battery and protection wall" loading="lazy"></figure><figure class="aslide"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/360449f788.webp" alt="Battery storage cabinet delivered to site" loading="lazy"></figure><figure class="aslide"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/eec44d0885.webp" alt="Completed 4kW hybrid array" loading="lazy"></figure><figure class="aslide"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/90fc216d74.webp" alt="Clean indoor inverter and battery backup" loading="lazy"></figure>
+    <div class="ashow rv" id="ashow"><figure class="aslide on"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/about/field-tech-panel.webp" alt="Solar Connect technician handling a panel on site"></figure><figure class="aslide"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/b40d931493.webp" alt="6kW hybrid rooftop array in South C" loading="lazy"></figure><figure class="aslide"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/510a930c57.webp" alt="Inverter, battery and protection wall" loading="lazy"></figure><figure class="aslide"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/360449f788.webp" alt="Battery storage cabinet delivered to site" loading="lazy"></figure><figure class="aslide"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/eec44d0885.webp" alt="Completed 4kW hybrid array" loading="lazy"></figure><figure class="aslide"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/90fc216d74.webp" alt="Clean indoor inverter and battery backup" loading="lazy"></figure>
       <div class="ashow-bar"><span class="ashow-cap" id="ashow-cap">Solar Connect technician handling a panel on site</span><span class="adots"><button type="button" class="adot on" aria-label="Show photo 1" aria-current="true"></button><button type="button" class="adot" aria-label="Show photo 2"></button><button type="button" class="adot" aria-label="Show photo 3"></button><button type="button" class="adot" aria-label="Show photo 4"></button><button type="button" class="adot" aria-label="Show photo 5"></button><button type="button" class="adot" aria-label="Show photo 6"></button></span></div>
     </div>
   </div>
@@ -164,11 +164,11 @@ get_header();
 <section class="dark band">
   <div class="wrap layers">
     <div class="anat media rv" id="anat">
-      <div class="shot on"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/eec44d0885.webp" alt="Solar panel array" loading="lazy"></div>
-      <div class="shot"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/90fc216d74.webp" alt="Wall-mounted inverter" loading="lazy"></div>
-      <div class="shot"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/360449f788.webp" alt="Lithium battery cabinet on delivery" loading="lazy"></div>
-      <div class="shot"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/510a930c57.webp" alt="Breakers, isolator and wiring under the inverter" loading="lazy"></div>
-      <div class="shot"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/6fd700f137.webp" alt="Technician handling a solar panel on site" loading="lazy"></div>
+      <div class="shot on"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/about/rooftop-landscape.webp" alt="Rooftop solar panel array installed by Solar Connect" loading="lazy"></div>
+      <div class="shot"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/about/inverter-wall-c.webp" alt="Wall-mounted hybrid inverter with lithium battery" loading="lazy"></div>
+      <div class="shot"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/about/battery-rack.webp" alt="Lithium battery cabinet installed on site" loading="lazy"></div>
+      <div class="shot"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/about/inverter-wall-b.webp" alt="Isolator, breakers and neat cabling around the inverter" loading="lazy"></div>
+      <div class="shot"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/about/field-tech-panel.webp" alt="Technician handling a solar panel on site" loading="lazy"></div>
       <span class="lbl mono">System anatomy</span>
       <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></div>
       <div class="now" aria-live="polite"><b class="swap" id="anat-name">Solar panels</b><span class="mono" id="anat-n">1 of 5</span></div>
@@ -207,7 +207,7 @@ get_header();
       </div>
       <div class="tags" id="step-tags"><span>Site survey</span><span>Load audit</span><span>Budget</span></div>
     </div>
-    <div class="media" id="step-media"><img id="step-img" src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/6fd700f137.webp" alt="Technician on site" loading="lazy" onerror="this.style.visibility='hidden'"></div>
+    <div class="media" id="step-media"><img id="step-img" src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/about/field-tech-panel.webp" alt="Technician on site" loading="lazy" onerror="this.style.visibility='hidden'"></div>
   </div>
 </section>
 

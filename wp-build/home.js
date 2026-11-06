@@ -57,8 +57,8 @@
     {h:'Testing & support', p:'We confirm the system works, explain how to use it, and keep WhatsApp support open after handover.', t:['Testing','Walkthrough','WhatsApp support'], img:'inverter-wall', cap:'clean indoor backup', alt:'Wall-mounted inverter and battery backup'}
   ];
   var stepImgEl = document.getElementById('step-img');
-  var IMGBASE = stepImgEl ? stepImgEl.src.replace(/[^\/]+$/, '') : '';
-  var IMG = {'team-panels':IMGBASE+'6fd700f137.webp', diagram:IMGBASE+'b645ffe928.webp', roof:IMGBASE+'b40d931493.webp', 'inverter-wall':IMGBASE+'90fc216d74.webp'};
+  var IMGBASE = stepImgEl ? stepImgEl.src.replace(/(about\/)?[^\/]+$/, '') : '';
+  var IMG = {'team-panels':IMGBASE+'about/field-tech-panel.webp', diagram:IMGBASE+'b645ffe928.webp', roof:IMGBASE+'b40d931493.webp', 'inverter-wall':IMGBASE+'about/inverter-wall-a.webp'};
   var tabs = [].slice.call(document.querySelectorAll('.tab')), proc = document.getElementById('process'), cur = 0, timer = null;
   var top = document.getElementById('step-top'), img = document.getElementById('step-img');
   function show(i){

@@ -480,3 +480,10 @@ footer h3{font-size:14px;font-weight:500;letter-spacing:0;color:var(--mist-2);ma
 }
 @media (prefers-reduced-motion:reduce){ .nav-panel{animation:none} }
 .np-open .wa{opacity:0;pointer-events:none;transition:opacity .2s}
+
+/* Logo: never stretch or squash (keep the artwork's aspect ratio) */
+.brand img,.hnav .logo img,.f-brand img{object-fit:contain;object-position:left center;max-width:100%}
+.f-brand img{align-self:flex-start;width:auto!important}
+.brand{min-width:0}
+.brand img{min-width:0}
+@media (max-width:480px){.brand img{height:30px!important}}

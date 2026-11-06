@@ -160,3 +160,15 @@ add_action('wp_footer', function () {
 })();
 </script>
 <?php }, 99);
+
+/**
+ * Customer emails: no em dashes. WooCommerce's "order received" email opens
+ * with "Just to let you know — we've received your order…"; use a comma.
+ * Targeted to that sentence so admin screens keep their own wording.
+ */
+add_filter('gettext', function ($t, $text, $domain) {
+    if ($domain === 'woocommerce' && stripos($text, 'Just to let you know') === 0) {
+        $t = preg_replace('/\s*(?:&mdash;|—)\s*/u', ', ', $t);
+    }
+    return $t;
+}, 20, 3);

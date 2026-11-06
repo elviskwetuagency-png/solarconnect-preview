@@ -23,6 +23,7 @@ $sck_h_quote = home_url('/contact-us/');
     <nav class="pill" aria-label="Main">
       <a class="lk" href="<?php echo esc_url(home_url('/solutions/')); ?>">Solutions</a>
       <a class="lk" href="<?php echo esc_url($sck_h_shop); ?>">Shop</a>
+      <?php if (function_exists('sck_projects_live') && sck_projects_live()) : ?><a class="lk" href="<?php echo esc_url(get_post_type_archive_link('sck_project')); ?>">Projects</a><?php endif; ?>
       <a class="lk" href="<?php echo esc_url(home_url('/about-us/')); ?>">About</a>
       <a class="lk" href="<?php echo esc_url(home_url('/blog/')); ?>">Guides</a>
       <a class="lk" href="<?php echo esc_url(home_url('/contact-us/')); ?>">Contact</a>
@@ -38,6 +39,7 @@ $sck_h_quote = home_url('/contact-us/');
       <a href="<?php echo esc_url(home_url('/')); ?>">Home</a>
       <a href="<?php echo esc_url(home_url('/solutions/')); ?>">Solutions</a>
       <a href="<?php echo esc_url($sck_h_shop); ?>">Shop</a>
+      <?php if (function_exists('sck_projects_live') && sck_projects_live()) : ?><a href="<?php echo esc_url(get_post_type_archive_link('sck_project')); ?>">Projects</a><?php endif; ?>
       <a href="<?php echo esc_url(home_url('/about-us/')); ?>">About</a>
       <a href="<?php echo esc_url(home_url('/blog/')); ?>">Guides</a>
       <a href="<?php echo esc_url(home_url('/contact-us/')); ?>">Contact</a>

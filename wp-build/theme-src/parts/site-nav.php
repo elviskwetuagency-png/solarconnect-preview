@@ -29,6 +29,7 @@ $sck_cur   = function ($k) use ($sck_nav_current) { return $k === $sck_nav_curre
   <nav aria-label="Main menu"><ul>
     <li><a href="<?php echo esc_url(home_url('/solutions/')); ?>"<?php echo $sck_cur('solutions'); ?>>Solutions</a></li>
     <li><a href="<?php echo esc_url($sck_shop); ?>"<?php echo $sck_cur('shop'); ?>>Shop</a></li>
+    <?php if (function_exists('sck_projects_live') && sck_projects_live()) : ?><li><a href="<?php echo esc_url(get_post_type_archive_link('sck_project')); ?>"<?php echo $sck_cur('projects'); ?>>Projects</a></li><?php endif; ?>
     <li><a href="<?php echo esc_url($sck_about); ?>"<?php echo $sck_cur('about'); ?>>About</a></li>
     <li><a href="<?php echo esc_url($sck_blog); ?>"<?php echo $sck_cur('blog'); ?>>Guides</a></li>
     <li><a href="<?php echo esc_url($sck_contact); ?>"<?php echo $sck_cur('contact'); ?>>Contact</a></li>
@@ -43,6 +44,7 @@ $sck_cur   = function ($k) use ($sck_nav_current) { return $k === $sck_nav_curre
   <nav class="mmenu" id="mmenu" aria-label="Mobile menu" hidden>
     <a href="<?php echo esc_url(home_url('/solutions/')); ?>"<?php echo $sck_cur('solutions'); ?>>Solutions</a>
     <a href="<?php echo esc_url($sck_shop); ?>">Shop</a>
+    <?php if (function_exists('sck_projects_live') && sck_projects_live()) : ?><a href="<?php echo esc_url(get_post_type_archive_link('sck_project')); ?>"<?php echo $sck_cur('projects'); ?>>Projects</a><?php endif; ?>
     <a href="<?php echo esc_url($sck_about); ?>"<?php echo $sck_cur('about'); ?>>About</a>
     <a href="<?php echo esc_url($sck_blog); ?>"<?php echo $sck_cur('blog'); ?>>Guides</a>
     <a href="<?php echo esc_url($sck_contact); ?>"<?php echo $sck_cur('contact'); ?>>Contact</a>

@@ -486,3 +486,64 @@
   .sl-choose a{flex-direction:column;align-items:flex-start;gap:8px}
   .sl-prices div{min-width:0;flex:1 1 140px}
 }
+
+/* =================================================================
+   PROJECTS (archive + single)
+   ================================================================= */
+.pj-hero{display:flex;flex-direction:column;gap:28px;padding-block:clamp(48px,6vw,88px) 40px}
+.pj-hero h1,.pj-head h1{font-size:clamp(38px,4.8vw,68px);line-height:1;letter-spacing:-.045em;font-weight:400;max-width:18ch}
+.pj-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;border-top:1px solid var(--line);padding-top:24px}
+.pj-stats b{display:block;font-size:clamp(30px,3vw,44px);font-weight:400;letter-spacing:-.03em;line-height:1.1}
+.pj-stats span{color:var(--ink-3)}
+.pj-list{display:flex;flex-direction:column;gap:28px;padding-bottom:96px}
+.pj-filter{display:flex;flex-wrap:wrap;gap:8px}
+.pj-chip{padding:10px 16px;border-radius:999px;border:1px solid var(--line-2);font-size:14px;background:transparent}
+.pj-chip[aria-pressed="true"]{background:var(--ink);color:var(--white);border-color:var(--ink)}
+.pj-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.pjc{position:relative;display:flex;flex-direction:column;background:var(--paper-2);border-radius:22px;padding:10px;transition:transform .35s cubic-bezier(.2,.7,.1,1)}
+.pjc[hidden]{display:none}
+.pjc:hover{transform:translateY(-3px)}
+.pjc figure{position:relative;aspect-ratio:4/3;border-radius:16px;margin:0;overflow:hidden}
+.pjc figure img{width:100%;height:100%;object-fit:cover}
+.pjc-tag{position:absolute;left:12px;top:12px;padding:5px 9px;border-radius:6px;background:rgba(255,255,255,.88);color:var(--ink);font-size:12px;font-weight:500}
+.pjc-b{display:flex;flex-direction:column;gap:8px;padding:16px 12px 12px}
+.pjc-k{color:var(--ink-3)}
+.pjc h3{font-size:21px;font-weight:400;letter-spacing:-.02em;line-height:1.25}
+.pjc h3 a::after{content:"";position:absolute;inset:0;border-radius:22px}
+.pjc-size{font-size:14.5px;line-height:1.5;color:var(--ink-2)}
+.pj-empty{display:flex;flex-direction:column;gap:18px;align-items:flex-start;padding:56px;border-radius:var(--r-lg);background:var(--paper-2)}
+
+.pj-head{display:flex;flex-direction:column;gap:18px;align-items:flex-start;padding-block:clamp(48px,6vw,80px) 36px}
+.pj-sol{border-bottom:1px solid var(--line-2)}
+.pj-dek{font-size:clamp(18px,1.6vw,21px);line-height:1.55;color:var(--ink-2);max-width:60ch}
+.pj-main .media{border-radius:var(--r-xl);aspect-ratio:16/9;max-height:78vh}
+.pj-main img{width:100%;height:100%;object-fit:cover}
+.pj-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0;margin:28px 0 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.pj-facts div{padding:20px 20px 20px 0}
+.pj-facts div + div{border-left:1px solid var(--line);padding-left:20px}
+.pj-facts dt{color:var(--ink-3)}
+.pj-facts dd{margin:6px 0 0;font-size:17px;line-height:1.4}
+.pj-story{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(24px,4vw,56px);padding-block:72px}
+.pj-block{display:flex;flex-direction:column;gap:14px}
+.pj-block > p{font-size:18px;line-height:1.6;color:var(--ink)}
+.pj-prose{font-size:16.5px}
+.pj-quote{margin:0 0 72px}
+.pj-gal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding-bottom:24px}
+.pj-gal .media{aspect-ratio:1/1;border-radius:18px;display:block}
+.pj-gal img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.1,1)}
+.pj-gal a:hover img{transform:scale(1.04)}
+.pj-one .sl-prods{padding-block:72px 0}
+.pj-more{display:flex;flex-direction:column;gap:32px;padding-block:96px}
+.sl-projects{display:flex;flex-direction:column;gap:32px;padding-bottom:96px}
+
+@media (max-width:1060px){ .pj-grid{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (max-width:760px){
+  .pj-grid,.pj-gal{grid-template-columns:minmax(0,1fr)}
+  .pj-stats{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .pj-facts{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .pj-facts div + div{border-left:0;padding-left:0}
+  .pj-facts div:nth-child(even){border-left:1px solid var(--line);padding-left:16px}
+  .pj-main .media{aspect-ratio:4/3}
+  .pj-empty{padding:28px}
+}
+.pj-quote{min-height:0}

@@ -93,6 +93,7 @@ add_filter('body_class', function ($classes) {
 require_once get_stylesheet_directory() . '/inc-shop-filters.php';
 require_once get_stylesheet_directory() . '/inc-solutions.php';
 require_once get_stylesheet_directory() . '/inc-checkout.php';
+require_once get_stylesheet_directory() . '/inc-projects.php';
 
 
 /**
@@ -114,7 +115,7 @@ function sck_hero_templates() {
 
 /** Content pages that use pages.css and the in-page hero nav: the templates above plus the blog. */
 function sck_is_content_page() {
-    return is_page_template(sck_hero_templates()) || is_home() || is_singular('post');
+    return (bool) apply_filters('sck_extra_content_page', is_page_template(sck_hero_templates()) || is_home() || is_singular('post'));
 }
 
 /**

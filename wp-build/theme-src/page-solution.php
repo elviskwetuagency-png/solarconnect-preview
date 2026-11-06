@@ -130,6 +130,13 @@ $products = sck_solution_products($s, 4);
   </div>
 </section>
 
+<?php $sck_rel = function_exists('sck_projects') ? sck_projects(['numberposts' => 3, 'meta_key' => '_sck_p_solution', 'meta_value' => $slug]) : []; if ($sck_rel) : ?>
+<section class="wrap sl-projects">
+  <div class="head-row rv"><div><span class="mono eyebrow">Recent projects</span><h2 class="h2"><?php echo esc_html($s['title']); ?> we have installed.</h2></div><a class="link-arrow" href="<?php echo esc_url(get_post_type_archive_link('sck_project')); ?>">All projects <?php echo $arrow_r; ?></a></div>
+  <div class="pj-grid"><?php foreach ($sck_rel as $p) echo sck_project_card($p); ?></div>
+</section>
+<?php endif; ?>
+
 <section class="wrap sl-more">
   <div class="head-row rv"><div><span class="mono eyebrow">Other solutions</span><h2 class="h2">Explore more ways to power up.</h2></div></div>
   <div class="sl-more-grid">

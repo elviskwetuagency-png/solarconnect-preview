@@ -490,3 +490,5 @@ footer h3{font-size:14px;font-weight:500;letter-spacing:0;color:var(--mist-2);ma
 /* Small phones: give the logo room; search and cart stay reachable in the menu panel */
 @media (max-width:480px){.pill a.icon[aria-label="Search products"]{display:none}}
 @media (max-width:380px){.pill a.icon[aria-label="Cart"]{display:none}}
+/* Homepage project rail: whole card opens the project when cards link to project pages */
+.ocard-link::after{content:"";position:absolute;inset:0;z-index:1}

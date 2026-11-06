@@ -10,9 +10,13 @@
   /* project rail: drag, arrows, counter */
   var rail = document.getElementById('rail'), cards = [].slice.call(rail.querySelectorAll('.ocard'));
   var pjN = document.getElementById('pj-n'), pjCap = document.getElementById('pj-cap'), curIdx = 0;
-  var down = false, sx = 0, sl = 0;
-  rail.addEventListener('pointerdown', function(e){ if (e.pointerType !== 'mouse') return; down = true; sx = e.clientX; sl = rail.scrollLeft; });
-  window.addEventListener('pointermove', function(e){ if (!down) return; var dx = e.clientX - sx; if (Math.abs(dx) > 4) rail.classList.add('dragging'); rail.scrollLeft = sl - dx; });
+  /* counter total and first caption follow the cards actually rendered */
+  if (cards.length && pjN && pjN.nextElementSibling) { pjN.nextElementSibling.textContent = '/' + (cards.length < 10 ? '0' : '') + cards.length; pjCap.textContent = cards[0].dataset.cap; }
+  var down = false, sx = 0, sl = 0, moved = false;
+  rail.addEventListener('pointerdown', function(e){ if (e.pointerType !== 'mouse') return; down = true; moved = false; sx = e.clientX; sl = rail.scrollLeft; });
+  window.addEventListener('pointermove', function(e){ if (!down) return; var dx = e.clientX - sx; if (Math.abs(dx) > 4) { rail.classList.add('dragging'); moved = true; } rail.scrollLeft = sl - dx; });
+  /* a drag across a project card must not open it */
+  rail.addEventListener('click', function(e){ if (moved && e.target.closest('a')) { e.preventDefault(); moved = false; } }, true);
   window.addEventListener('pointerup', function(){ down = false; rail.classList.remove('dragging'); });
   function goCard(i){ i = Math.max(0, Math.min(cards.length - 1, i)); rail.scrollTo({left: cards[i].offsetLeft - cards[0].offsetLeft, behavior: reduce ? 'auto' : 'smooth'}); }
   function setIdx(i){ if (i === curIdx) return; curIdx = i; pjN.textContent = (i + 1 < 10 ? '0' : '') + (i + 1); pjCap.textContent = cards[i].dataset.cap; }

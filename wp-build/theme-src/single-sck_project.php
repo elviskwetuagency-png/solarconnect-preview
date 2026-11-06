@@ -52,7 +52,7 @@ $wa = 'https://wa.me/254706636447?text=' . rawurlencode('Hello Solar Connect, I 
 </section>
 
 <?php if ($m('quote')) : ?>
-<section class="wrap"><figure class="abB-feature pj-quote rv">
+<section class="wrap pj-quote-wrap"><figure class="abB-feature pj-quote rv">
   <span class="abB-q" aria-hidden="true">“</span>
   <blockquote><?php echo esc_html($m('quote')); ?></blockquote>
   <?php if ($m('quote_by')) : ?><figcaption><b><?php echo esc_html($m('quote_by')); ?></b></figcaption><?php endif; ?>

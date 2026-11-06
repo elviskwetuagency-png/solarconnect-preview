@@ -8,16 +8,15 @@ $sck_pj_items = function_exists('sck_projects') ? sck_projects(['numberposts' =>
 if (count($sck_pj_items) >= 4) {
     $sck_pj_sols = sck_project_solutions();
     foreach ($sck_pj_items as $i => $p) {
-        $sv  = sck_project_meta($p->ID, 'solution');
-        $loc = sck_project_meta($p->ID, 'location');
-        $txt = has_excerpt($p) ? get_the_excerpt($p) : sck_project_meta($p->ID, 'size');
-        $img = get_the_post_thumbnail_url($p, 'large');
-        echo '<article class="ocard" data-cap="' . esc_attr(get_the_title($p)) . '">'
+        $sv    = sck_project_meta($p->ID, 'solution');
+        $name  = sck_project_meta($p->ID, 'card_title') ?: get_the_title($p);
+        $spec  = sck_project_meta($p->ID, 'card_spec');
+        $img   = get_the_post_thumbnail_url($p, 'large');
+        echo '<article class="ocard ocard-min" data-cap="' . esc_attr($name) . '">'
             . ($img ? '<img src="' . esc_url($img) . '" alt="' . esc_attr(get_the_title($p)) . '" loading="lazy" draggable="false">' : '')
-            . ($loc ? '<span class="ocard-tag">' . esc_html($loc) . '</span>' : '')
-            . '<div class="ocard-txt"><span class="ocard-k">' . esc_html($sck_pj_sols[$sv] ?? sprintf('Project %02d', $i + 1)) . '</span>'
-            . '<h3><a class="ocard-link" href="' . esc_url(get_permalink($p)) . '" draggable="false">' . esc_html(get_the_title($p)) . '</a></h3>'
-            . ($txt ? '<p>' . esc_html(wp_trim_words($txt, 22)) . '</p>' : '') . '</div></article>';
+            . (isset($sck_pj_sols[$sv]) ? '<span class="ocard-tag">' . esc_html($sck_pj_sols[$sv]) . '</span>' : '')
+            . '<div class="ocard-txt"><h3><a class="ocard-link" href="' . esc_url(get_permalink($p)) . '" draggable="false">' . esc_html($name) . '</a></h3>'
+            . ($spec ? '<span class="ocard-k">' . esc_html($spec) . '</span>' : '') . '</div></article>';
     }
     return;
 }

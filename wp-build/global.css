@@ -492,3 +492,7 @@ footer h3{font-size:14px;font-weight:500;letter-spacing:0;color:var(--mist-2);ma
 @media (max-width:380px){.pill a.icon[aria-label="Cart"]{display:none}}
 /* Homepage project rail: whole card opens the project when cards link to project pages */
 .ocard-link::after{content:"";position:absolute;inset:0;z-index:1}
+/* Homepage project cards (from Projects): short name + spec only, lighter shade */
+.ocard-min::after{background:linear-gradient(180deg,rgba(8,10,8,.22) 0%,rgba(8,10,8,0) 30%,rgba(8,10,8,0) 55%,rgba(8,10,8,.78) 100%)}
+.ocard-min .ocard-txt{gap:6px}
+.ocard-min .ocard-k{font-size:13.5px;color:#E4E4DE}

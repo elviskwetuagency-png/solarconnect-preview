@@ -39,6 +39,8 @@ add_action('init', function () {
 /** Field definitions: key => [label, type, help]. */
 function sck_project_fields() {
     return [
+        'card_title'=> ['Short name (homepage card)', 'text', 'A few words for the homepage card, e.g. "Mansion in Watamu". Leave empty to use the title.'],
+        'card_spec' => ['Short spec (homepage card)', 'text', 'Key numbers only, e.g. "50.2kWp · 45kWh".'],
         'location'  => ['Location', 'text', 'Area and town, e.g. "Kitengela, Kajiado". No customer names or exact addresses.'],
         'solution'  => ['Solution type', 'select', 'Links the project to the matching solution page.'],
         'customer'  => ['Customer type', 'select', ''],

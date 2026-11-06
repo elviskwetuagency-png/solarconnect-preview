@@ -20,7 +20,7 @@ get_header();
       <div class="ubar-r"><a href="<?php echo esc_url(home_url('/faqs/')); ?>">FAQs</a><a href="<?php echo esc_url(home_url('/about-us/')); ?>">About us</a><a href="<?php echo esc_url(wc_get_page_permalink('myaccount')); ?>">Order tracking</a><a href="<?php echo esc_url(wc_get_page_permalink('myaccount')); ?>">Login / My account</a></div>
     </div>
     <div class="hnav">
-      <a class="logo" href="<?php echo esc_url(home_url('/')); ?>" aria-label="Solar Connect Kenya home"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/685172a7fa.png" alt="Solar Connect, Building a better future"></a>
+      <a class="logo" href="<?php echo esc_url(home_url('/')); ?>" aria-label="Solar Connect Kenya home"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/sck-logo-dark-720.webp" width="720" height="176" alt="Solar Connect, Building a better future"></a>
       <nav aria-label="Hero menu"><ul>
         <li><a href="<?php echo esc_url(home_url('/solutions/')); ?>">Solutions</a></li>
         <li><a href="<?php echo esc_url(wc_get_page_permalink('shop')); ?>">Shop</a></li>

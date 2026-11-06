@@ -67,7 +67,7 @@ $sck_terms   = ($sck_terms_id && get_post_status($sck_terms_id) === 'publish') ?
   <div class="wrap">
     <div class="f-head">
       <div class="f-brand">
-        <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/685172a7fa.png" alt="Solar Connect Kenya" style="height:34px;width:auto">
+        <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/sck-logo-dark-720.webp" width="720" height="176" alt="Solar Connect Kenya" style="height:34px;width:auto">
         <p>Solar Connect Kenya provides quality solar products, system guidance, project delivery, installation, testing, and local support for homes and businesses.</p>
       </div>
       <ul class="f-promise" aria-label="Our service promise"><li><?php echo $sck_chk; ?>Consultation and system sizing</li><li><?php echo $sck_chk; ?>Delivery and installation support</li><li><?php echo $sck_chk; ?>Testing and confirmation</li><li><?php echo $sck_chk; ?>After-sales WhatsApp support</li></ul>

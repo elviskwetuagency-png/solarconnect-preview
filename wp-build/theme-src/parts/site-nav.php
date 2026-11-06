@@ -25,7 +25,7 @@ $sck_cur   = function ($k) use ($sck_nav_current) { return $k === $sck_nav_curre
   <div class="ubar-r"><a href="<?php echo esc_url($sck_faqs); ?>"<?php echo $sck_cur('faqs'); ?>>FAQs</a><a href="<?php echo esc_url($sck_about); ?>">About us</a><a href="<?php echo esc_url($sck_acct); ?>">Order tracking</a><a href="<?php echo esc_url($sck_acct); ?>">Login / My account</a></div>
 </div>
 <div class="hnav">
-  <a class="logo" href="<?php echo esc_url($sck_home); ?>" aria-label="Solar Connect Kenya home"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/685172a7fa.png" alt="Solar Connect, Building a better future"></a>
+  <a class="logo" href="<?php echo esc_url($sck_home); ?>" aria-label="Solar Connect Kenya home"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/sck-logo-dark-720.webp" width="720" height="176" alt="Solar Connect, Building a better future"></a>
   <nav aria-label="Main menu"><ul>
     <li><a href="<?php echo esc_url(home_url('/solutions/')); ?>"<?php echo $sck_cur('solutions'); ?>>Solutions</a></li>
     <li><a href="<?php echo esc_url($sck_shop); ?>"<?php echo $sck_cur('shop'); ?>>Shop</a></li>

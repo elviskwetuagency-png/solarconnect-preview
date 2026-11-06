@@ -18,7 +18,7 @@ $sck_h_quote = home_url('/contact-us/');
 ?>
 <header class="nav" id="nav">
   <div class="nav-in">
-    <a class="brand" href="<?php echo esc_url($sck_h_home); ?>" aria-label="Solar Connect Kenya home"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/685172a7fa.png" alt="Solar Connect, Building a better future" style="height:36px;width:auto;display:block">
+    <a class="brand" href="<?php echo esc_url($sck_h_home); ?>" aria-label="Solar Connect Kenya home"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/sck-logo-dark-720.webp" width="720" height="176" alt="Solar Connect, Building a better future" style="height:36px;width:auto;display:block">
     </a>
     <nav class="pill" aria-label="Main">
       <a class="lk" href="<?php echo esc_url(home_url('/solutions/')); ?>">Solutions</a>

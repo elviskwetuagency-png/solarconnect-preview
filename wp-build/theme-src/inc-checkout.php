@@ -17,7 +17,7 @@
 const SCK_FULFIL = [
     'delivery'       => ['Deliver to me', 'cost confirmed when we call'],
     'pickup-nairobi' => ['Pick up in Nairobi', 'Lusaka Road, Nairobi'],
-    'pickup-watamu'  => ['Pick up in Watamu', 'M2H7+23Q, Watamu'],
+    'pickup-watamu'  => ['Pick up in Watamu', 'Watamu, Kilifi County'],
 ];
 
 /* No WooCommerce shipping rates: fulfilment is chosen with our own field. */

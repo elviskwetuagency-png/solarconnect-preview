@@ -51,7 +51,7 @@ $groups = [
         ['What happens after installation?',
          'We test the system, hand it over working, and explain the basic operating routine. After that you keep talking to the same team for follow-up support on WhatsApp.'],
         ['Where are you based?',
-         'We have two bases: our Nairobi branch on Lusaka Road (0706 636 447) and our Watamu branch at M2H7+23Q, Watamu (0705 760 861). Tell us where your site is and the nearest branch will take it from there.'],
+         'We have two locations: our Nairobi branch on Lusaka Road (0706 636 447) and our Watamu branch in Kilifi County (0705 760 861). Tell us where your site is and the nearest branch will take it from there.'],
     ]],
 ];
 

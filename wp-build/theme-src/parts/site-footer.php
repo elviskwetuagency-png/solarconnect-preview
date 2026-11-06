@@ -107,7 +107,7 @@ $sck_terms   = ($sck_terms_id && get_post_status($sck_terms_id) === 'publish') ?
         </div>
         <div class="branch">
           <?php echo $sck_pin; ?>
-          <div class="b-txt"><span class="b-name">Watamu branch</span><span class="b-addr">M2H7+23Q, Watamu</span><a class="b-tel" href="tel:+254705760861"><?php echo $sck_tel; ?> 0705 760 861</a><a class="b-map" href="https://www.google.com/maps/place/M2H7%2B23Q,+Watamu/@-3.3224125,40.0127344,17z">View on Google Maps ↗</a></div>
+          <div class="b-txt"><span class="b-name">Watamu branch</span><span class="b-addr">Watamu, Kilifi County</span><a class="b-tel" href="tel:+254705760861"><?php echo $sck_tel; ?> 0705 760 861</a><a class="b-map" href="https://www.google.com/maps/place/M2H7%2B23Q,+Watamu/@-3.3224125,40.0127344,17z">View on Google Maps ↗</a></div>
         </div>
       </div>
     </div>

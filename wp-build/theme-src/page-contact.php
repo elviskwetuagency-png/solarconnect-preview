@@ -40,7 +40,7 @@ $i_tel = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="cu
     </a>
     <a class="ct-q" href="tel:+254705760861">
       <span class="ct-q-ic"><?php echo $i_tel; ?></span>
-      <span class="ct-q-txt"><span class="mono">Watamu branch</span><b>0705 760 861</b><span>M2H7+23Q, Watamu</span></span>
+      <span class="ct-q-txt"><span class="mono">Watamu branch</span><b>0705 760 861</b><span>Watamu, Kilifi County</span></span>
       <span class="ct-q-go"><?php echo $arrow; ?></span>
     </a>
   </div>
@@ -101,7 +101,7 @@ $i_tel = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="cu
 <!-- ============ BRANCHES ============ -->
 <section class="wrap abB-bases ct-bases">
   <div class="head-row rv">
-    <div><span class="mono eyebrow">Visit us</span><h2 class="h2">Two bases, one team.</h2></div>
+    <div><span class="mono eyebrow">Visit us</span><h2 class="h2">Two locations, one team.</h2></div>
     <p class="shop-lede">Visit, call or WhatsApp either branch. The same team handles your enquiry from first message to handover.</p>
   </div>
   <div class="abB-base-row">
@@ -112,7 +112,7 @@ $i_tel = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="cu
     </article>
     <article class="abB-base rv">
       <span class="mono abB-k">Watamu branch</span>
-      <h3>M2H7+23Q, Watamu</h3>
+      <h3>Watamu, Kilifi County</h3>
       <div class="abB-base-links"><a class="btn btn-ink" href="tel:+254705760861">Call 0705 760 861</a><a class="btn btn-ghost" href="https://www.google.com/maps/place/M2H7%2B23Q,+Watamu/@-3.3224125,40.0127344,17z">Directions ↗</a></div>
     </article>
   </div>

@@ -31,7 +31,7 @@ $shop = function_exists('wc_get_page_permalink') ? wc_get_page_permalink('shop')
     <div class="hstats">
       <div class="hstat"><b>200+</b><span>Solar projects completed</span></div>
       <div class="hstat"><b>10+</b><span>Genuine brands in stock</span></div>
-      <div class="hstat"><b>2</b><span>Bases in Nairobi &amp; Watamu</span></div>
+      <div class="hstat"><b>2</b><span>Locations in Nairobi &amp; Watamu</span></div>
     </div>
   </div>
 </section>

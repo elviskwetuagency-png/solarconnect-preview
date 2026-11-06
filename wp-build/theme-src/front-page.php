@@ -59,7 +59,7 @@ get_header();
     <div class="hstats">
       <div class="hstat"><b>200+</b><span>Solar projects completed</span></div>
       <div class="hstat"><b>10+</b><span>Genuine brands in stock</span></div>
-      <div class="hstat"><b>2</b><span>Bases in Nairobi &amp; Watamu</span></div>
+      <div class="hstat"><b>2</b><span>Locations in Nairobi &amp; Watamu</span></div>
     </div>
   </div>
 </section>
@@ -76,10 +76,10 @@ get_header();
 <section class="wrap statement">
   <div class="about2">
     <div class="about2-txt rv">
-      <h2>Solar Connect Kenya is a solar shop and installation team, <em>with bases in Nairobi and Watamu.</em></h2>
+      <h2>Solar Connect Kenya is a solar shop and installation team, <em>with locations in Nairobi and Watamu.</em></h2>
       <p>We supply genuine panels, inverters, batteries and accessories from brands like Deye, Felicity and Jinko. Our own team then sizes the system to your power needs, installs and tests it, and stays reachable on WhatsApp after handover.</p>
         <a class="link-arrow" href="<?php echo esc_url(home_url('/about-us/')); ?>">More about Solar Connect <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <div class="astats"><div class="stat"><b data-count="200" data-suffix="+">200+</b><span class="mono">Project records</span></div><div class="stat"><b data-count="10" data-suffix="+">10+</b><span class="mono">Genuine brands stocked</span></div><div class="stat"><b data-count="2">2</b><span class="mono">Bases · Nairobi &amp; Watamu</span></div><div class="stat"><b data-count="4" data-suffix="-step">4-step</b><span class="mono">Service process</span></div></div>
+      <div class="astats"><div class="stat"><b data-count="200" data-suffix="+">200+</b><span class="mono">Project records</span></div><div class="stat"><b data-count="10" data-suffix="+">10+</b><span class="mono">Genuine brands stocked</span></div><div class="stat"><b data-count="2">2</b><span class="mono">Locations · Nairobi &amp; Watamu</span></div><div class="stat"><b data-count="4" data-suffix="-step">4-step</b><span class="mono">Service process</span></div></div>
     </div>
     <div class="ashow rv" id="ashow"><figure class="aslide on"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/about/field-tech-panel.webp" alt="Solar Connect technician handling a panel on site"></figure><figure class="aslide"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/b40d931493.webp" alt="6kW hybrid rooftop array in South C" loading="lazy"></figure><figure class="aslide"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/510a930c57.webp" alt="Inverter, battery and protection wall" loading="lazy"></figure><figure class="aslide"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/360449f788.webp" alt="Battery storage cabinet delivered to site" loading="lazy"></figure><figure class="aslide"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/eec44d0885.webp" alt="Completed 4kW hybrid array" loading="lazy"></figure><figure class="aslide"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/90fc216d74.webp" alt="Clean indoor inverter and battery backup" loading="lazy"></figure>
       <div class="ashow-bar"><span class="ashow-cap" id="ashow-cap">Solar Connect technician handling a panel on site</span><span class="adots"><button type="button" class="adot on" aria-label="Show photo 1" aria-current="true"></button><button type="button" class="adot" aria-label="Show photo 2"></button><button type="button" class="adot" aria-label="Show photo 3"></button><button type="button" class="adot" aria-label="Show photo 4"></button><button type="button" class="adot" aria-label="Show photo 5"></button><button type="button" class="adot" aria-label="Show photo 6"></button></span></div>

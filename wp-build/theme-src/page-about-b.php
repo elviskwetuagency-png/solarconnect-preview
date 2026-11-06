@@ -31,14 +31,14 @@ $shop = function_exists('wc_get_page_permalink') ? wc_get_page_permalink('shop')
   <div class="abB-collage">
     <figure class="media abB-c1"><img src="<?php echo esc_url($img . 'about/field-tech-panel.webp'); ?>" alt="Solar Connect technician carrying a solar panel on site" fetchpriority="high"></figure>
     <figure class="media abB-c2"><img src="<?php echo esc_url($img . 'about/rooftop-sky.webp'); ?>" alt="Rooftop solar array" loading="lazy"></figure>
-    <div class="abB-badge"><b>Nairobi</b><span>Lusaka Road</span><b>Watamu</b><span>M2H7+23Q</span></div>
+    <div class="abB-badge"><b>Nairobi</b><span>Lusaka Road</span><b>Watamu</b><span>Kilifi County</span></div>
   </div>
 </section>
 
 <section class="wrap abB-stats">
   <div class="stat rv"><b>200+</b><span class="mono">Solar projects completed</span></div>
   <div class="stat rv"><b>10+</b><span class="mono">Genuine brands in stock</span></div>
-  <div class="stat rv"><b>2</b><span class="mono">Bases · Nairobi &amp; Watamu</span></div>
+  <div class="stat rv"><b>2</b><span class="mono">Locations · Nairobi &amp; Watamu</span></div>
   <div class="stat rv"><b>4-step</b><span class="mono">Consult · size · install · support</span></div>
 </section>
 
@@ -116,7 +116,7 @@ $shop = function_exists('wc_get_page_permalink') ? wc_get_page_permalink('shop')
 <!-- ============ TWO BASES ============ -->
 <section class="wrap abB-bases">
   <div class="head-row rv">
-    <div><span class="mono eyebrow">Where to find us</span><h2 class="h2">Two bases, one team.</h2></div>
+    <div><span class="mono eyebrow">Where to find us</span><h2 class="h2">Two locations, one team.</h2></div>
     <p class="shop-lede">Visit, call or WhatsApp either branch. The same team handles your enquiry from first message to handover.</p>
   </div>
   <div class="abB-base-row">
@@ -127,7 +127,7 @@ $shop = function_exists('wc_get_page_permalink') ? wc_get_page_permalink('shop')
     </article>
     <article class="abB-base rv">
       <span class="mono abB-k">Watamu branch</span>
-      <h3>M2H7+23Q, Watamu</h3>
+      <h3>Watamu, Kilifi County</h3>
       <div class="abB-base-links"><a class="btn btn-ink" href="tel:+254705760861">Call 0705 760 861</a><a class="btn btn-ghost" href="https://www.google.com/maps/place/M2H7%2B23Q,+Watamu/@-3.3224125,40.0127344,17z">Open in Maps ↗</a></div>
     </article>
   </div>

@@ -21,7 +21,7 @@ $img = get_stylesheet_directory_uri() . '/assets/img/';
   </div>
   <div class="pj-stats">
     <div><b>200+</b><span class="mono">Solar projects completed</span></div>
-    <div><b>2</b><span class="mono">Bases · Nairobi &amp; Watamu</span></div>
+    <div><b>2</b><span class="mono">Locations · Nairobi &amp; Watamu</span></div>
     <div><b>6</b><span class="mono">Solution types</span></div>
   </div>
 </section>

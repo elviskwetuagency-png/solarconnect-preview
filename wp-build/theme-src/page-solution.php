@@ -41,7 +41,7 @@ $products = sck_solution_products($s, 4);
   </div>
   <div class="abB-collage sl-collage">
     <figure class="media abB-c1"><img src="<?php echo esc_url($img . $s['img']); ?>" alt="<?php echo esc_attr($s['img_alt']); ?>" fetchpriority="high"></figure>
-    <figure class="media abB-c2"><img src="<?php echo esc_url($img . $s['img2']); ?>" alt="" loading="lazy"></figure>
+    <figure class="media abB-c2"><img src="<?php echo esc_url($img . $s['img2']); ?>" alt="" decoding="async"></figure>
     <?php if ($prices) : ?><div class="abB-badge sl-badge"><span>From</span><b><?php echo esc_html($ksh($prices[0][1])); ?></b><span><?php echo esc_html($prices[0][0]); ?></span></div><?php endif; ?>
   </div>
 </section>

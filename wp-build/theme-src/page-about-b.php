@@ -30,7 +30,7 @@ $shop = function_exists('wc_get_page_permalink') ? wc_get_page_permalink('shop')
   </div>
   <div class="abB-collage">
     <figure class="media abB-c1"><img src="<?php echo esc_url($img . 'about/field-tech-panel.webp'); ?>" alt="Solar Connect technician carrying a solar panel on site" fetchpriority="high"></figure>
-    <figure class="media abB-c2"><img src="<?php echo esc_url($img . 'about/rooftop-sky.webp'); ?>" alt="Rooftop solar array" loading="lazy"></figure>
+    <figure class="media abB-c2"><img src="<?php echo esc_url($img . 'about/rooftop-sky.webp'); ?>" alt="Rooftop solar array" decoding="async"></figure>
     <div class="abB-badge"><b>Nairobi</b><span>Lusaka Road</span><b>Watamu</b><span>Kilifi County</span></div>
   </div>
 </section>

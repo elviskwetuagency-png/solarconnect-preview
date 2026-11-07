@@ -37,7 +37,7 @@ $choose = [
   </div>
   <div class="abB-collage">
     <figure class="media abB-c1"><img src="<?php echo esc_url($img . 'about/rooftop-landscape.webp'); ?>" alt="Rooftop solar array installed by Solar Connect" fetchpriority="high"></figure>
-    <figure class="media abB-c2"><img src="<?php echo esc_url($img . 'about/inverter-wall-a.webp'); ?>" alt="" loading="lazy"></figure>
+    <figure class="media abB-c2"><img src="<?php echo esc_url($img . 'about/inverter-wall-a.webp'); ?>" alt="" decoding="async"></figure>
     <div class="abB-badge"><b>6</b><span>Solutions</span><b>2</b><span>Locations · Nairobi &amp; Watamu</span></div>
   </div>
 </section>

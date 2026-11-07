@@ -46,8 +46,6 @@ function sck_menu_items() {
         foreach (sck_solutions() as $slug => $s) $sol_children[] = [$s['title'], sck_solution_url($slug), $s['eyebrow']];
     }
 
-    $guide_children = [];
-    foreach (get_posts(['numberposts' => 4, 'post_status' => 'publish']) as $p) $guide_children[] = [get_the_title($p), get_permalink($p)];
 
     $items = [
         ['solutions', 'Solutions', home_url('/solutions/'), ['type' => 'list', 'links' => $sol_children, 'all' => ['All solutions', home_url('/solutions/')]]],
@@ -57,7 +55,7 @@ function sck_menu_items() {
         $items[] = ['projects', 'Projects', get_post_type_archive_link('sck_project'), null];
     }
     $items[] = ['about', 'About', home_url('/about-us/'), null];
-    $items[] = ['blog', 'Guides', home_url('/blog/'), $guide_children ? ['type' => 'list', 'links' => $guide_children, 'all' => ['All solar guides', home_url('/blog/')]] : null];
+    $items[] = ['blog', 'Guides', home_url('/blog/'), null];
     $items[] = ['contact', 'Contact', home_url('/contact-us/'), null];
     return $items;
 }

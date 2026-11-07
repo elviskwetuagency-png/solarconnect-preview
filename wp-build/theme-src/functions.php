@@ -94,6 +94,7 @@ require_once get_stylesheet_directory() . '/inc-shop-filters.php';
 require_once get_stylesheet_directory() . '/inc-solutions.php';
 require_once get_stylesheet_directory() . '/inc-checkout.php';
 require_once get_stylesheet_directory() . '/inc-projects.php';
+require_once get_stylesheet_directory() . '/inc-menu.php';
 
 
 /**

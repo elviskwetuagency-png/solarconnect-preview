@@ -27,12 +27,7 @@ $sck_cur   = function ($k) use ($sck_nav_current) { return $k === $sck_nav_curre
 <div class="hnav">
   <a class="logo" href="<?php echo esc_url($sck_home); ?>" aria-label="Solar Connect Kenya home"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/sck-logo-dark-720.webp" width="720" height="176" alt="Solar Connect, Building a better future"></a>
   <nav aria-label="Main menu"><ul>
-    <li><a href="<?php echo esc_url(home_url('/solutions/')); ?>"<?php echo $sck_cur('solutions'); ?>>Solutions</a></li>
-    <li><a href="<?php echo esc_url($sck_shop); ?>"<?php echo $sck_cur('shop'); ?>>Shop</a></li>
-    <?php if (function_exists('sck_projects_live') && sck_projects_live()) : ?><li><a href="<?php echo esc_url(get_post_type_archive_link('sck_project')); ?>"<?php echo $sck_cur('projects'); ?>>Projects</a></li><?php endif; ?>
-    <li><a href="<?php echo esc_url($sck_about); ?>"<?php echo $sck_cur('about'); ?>>About</a></li>
-    <li><a href="<?php echo esc_url($sck_blog); ?>"<?php echo $sck_cur('blog'); ?>>Guides</a></li>
-    <li><a href="<?php echo esc_url($sck_contact); ?>"<?php echo $sck_cur('contact'); ?>>Contact</a></li>
+    <?php echo sck_menu_desktop('hero'); ?>
   </ul></nav>
   <div class="right">
     <a class="icon-btn" href="<?php echo esc_url($sck_shop); ?>" aria-label="Search panels, batteries, inverters"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4-4"/></svg></a>
@@ -42,12 +37,7 @@ $sck_cur   = function ($k) use ($sck_nav_current) { return $k === $sck_nav_curre
     <button class="icon-btn menu-toggle" type="button" id="menu-toggle" aria-expanded="false" aria-controls="mmenu" aria-label="Open menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
   <nav class="mmenu" id="mmenu" aria-label="Mobile menu" hidden>
-    <a href="<?php echo esc_url(home_url('/solutions/')); ?>"<?php echo $sck_cur('solutions'); ?>>Solutions</a>
-    <a href="<?php echo esc_url($sck_shop); ?>">Shop</a>
-    <?php if (function_exists('sck_projects_live') && sck_projects_live()) : ?><a href="<?php echo esc_url(get_post_type_archive_link('sck_project')); ?>"<?php echo $sck_cur('projects'); ?>>Projects</a><?php endif; ?>
-    <a href="<?php echo esc_url($sck_about); ?>"<?php echo $sck_cur('about'); ?>>About</a>
-    <a href="<?php echo esc_url($sck_blog); ?>"<?php echo $sck_cur('blog'); ?>>Guides</a>
-    <a href="<?php echo esc_url($sck_contact); ?>"<?php echo $sck_cur('contact'); ?>>Contact</a>
+    <?php echo sck_menu_mobile(); ?>
     <a href="<?php echo esc_url($sck_faqs); ?>"<?php echo $sck_cur('faqs'); ?>>FAQs</a>
     <a href="<?php echo esc_url($sck_acct); ?>">Order tracking</a>
     <a href="<?php echo esc_url($sck_acct); ?>">Login / My account</a>

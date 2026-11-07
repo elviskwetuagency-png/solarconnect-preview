@@ -21,12 +21,7 @@ $sck_h_quote = home_url('/contact-us/');
     <a class="brand" href="<?php echo esc_url($sck_h_home); ?>" aria-label="Solar Connect Kenya home"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/sck-logo-dark-720.webp" width="720" height="176" alt="Solar Connect, Building a better future" style="height:36px;width:auto;display:block">
     </a>
     <nav class="pill" aria-label="Main">
-      <a class="lk" href="<?php echo esc_url(home_url('/solutions/')); ?>">Solutions</a>
-      <a class="lk" href="<?php echo esc_url($sck_h_shop); ?>">Shop</a>
-      <?php if (function_exists('sck_projects_live') && sck_projects_live()) : ?><a class="lk" href="<?php echo esc_url(get_post_type_archive_link('sck_project')); ?>">Projects</a><?php endif; ?>
-      <a class="lk" href="<?php echo esc_url(home_url('/about-us/')); ?>">About</a>
-      <a class="lk" href="<?php echo esc_url(home_url('/blog/')); ?>">Guides</a>
-      <a class="lk" href="<?php echo esc_url(home_url('/contact-us/')); ?>">Contact</a>
+      <ul class="sm-pill"><?php echo sck_menu_desktop('pill'); ?></ul>
       <a class="icon" href="<?php echo esc_url($sck_h_shop); ?>" aria-label="Search products"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4-4"/></svg></a>
       <a class="icon" href="<?php echo esc_url($sck_h_cart); ?>" aria-label="Cart"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L21 8H6.2"/><circle cx="9.5" cy="20" r="1.2"/><circle cx="17.5" cy="20" r="1.2"/></svg></a>
       <a class="btn btn-white cta" href="<?php echo esc_url($sck_h_quote); ?>">Get a quote</a>
@@ -37,12 +32,7 @@ $sck_h_quote = home_url('/contact-us/');
   <div class="nav-panel" id="nav-panel" hidden>
     <nav class="np-main" aria-label="Menu">
       <a href="<?php echo esc_url(home_url('/')); ?>">Home</a>
-      <a href="<?php echo esc_url(home_url('/solutions/')); ?>">Solutions</a>
-      <a href="<?php echo esc_url($sck_h_shop); ?>">Shop</a>
-      <?php if (function_exists('sck_projects_live') && sck_projects_live()) : ?><a href="<?php echo esc_url(get_post_type_archive_link('sck_project')); ?>">Projects</a><?php endif; ?>
-      <a href="<?php echo esc_url(home_url('/about-us/')); ?>">About</a>
-      <a href="<?php echo esc_url(home_url('/blog/')); ?>">Guides</a>
-      <a href="<?php echo esc_url(home_url('/contact-us/')); ?>">Contact</a>
+      <?php echo sck_menu_mobile(); ?>
     </nav>
     <div class="np-sub">
       <a href="<?php echo esc_url(home_url('/faqs/')); ?>">FAQs</a>

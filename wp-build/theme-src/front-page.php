@@ -22,11 +22,7 @@ get_header();
     <div class="hnav">
       <a class="logo" href="<?php echo esc_url(home_url('/')); ?>" aria-label="Solar Connect Kenya home"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/sck-logo-dark-720.webp" width="720" height="176" alt="Solar Connect, Building a better future"></a>
       <nav aria-label="Hero menu"><ul>
-        <li><a href="<?php echo esc_url(home_url('/solutions/')); ?>">Solutions</a></li>
-        <li><a href="<?php echo esc_url(wc_get_page_permalink('shop')); ?>">Shop</a></li>
-        <li><a href="<?php echo esc_url(home_url('/about-us/')); ?>">About</a></li>
-        <li><a href="<?php echo esc_url(home_url('/blog/')); ?>">Guides</a></li>
-        <li><a href="<?php echo esc_url(home_url('/contact-us/')); ?>">Contact</a></li>
+        <?php echo sck_menu_desktop('hero'); ?>
       </ul></nav>
       <div class="right">
         <a class="icon-btn" href="<?php echo esc_url(wc_get_page_permalink('shop')); ?>" aria-label="Search panels, batteries, inverters"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4-4"/></svg></a>
@@ -36,11 +32,7 @@ get_header();
         <button class="icon-btn menu-toggle" type="button" id="menu-toggle" aria-expanded="false" aria-controls="mmenu" aria-label="Open menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
       </div>
       <nav class="mmenu" id="mmenu" aria-label="Mobile menu" hidden>
-        <a href="<?php echo esc_url(home_url('/solutions/')); ?>">Solutions</a>
-        <a href="<?php echo esc_url(wc_get_page_permalink('shop')); ?>">Shop</a>
-        <a href="<?php echo esc_url(home_url('/about-us/')); ?>">About</a>
-        <a href="<?php echo esc_url(home_url('/blog/')); ?>">Guides</a>
-        <a href="<?php echo esc_url(home_url('/contact-us/')); ?>">Contact</a>
+        <?php echo sck_menu_mobile(); ?>
         <a href="<?php echo esc_url(home_url('/faqs/')); ?>">FAQs</a>
         <a href="<?php echo esc_url(wc_get_page_permalink('myaccount')); ?>">Order tracking</a>
         <a href="<?php echo esc_url(wc_get_page_permalink('myaccount')); ?>">Login / My account</a>
